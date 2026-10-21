@@ -64,6 +64,7 @@
     <div class="card">
       <h2>Bảng điểm</h2>
       <button id="reloadBtn">Tải lại điểm</button>
+       <button id="exportBtn">Xuất Excel (CSV)</button>
       <button id="logoutBtn" class="secondary">Đăng xuất</button>
 
       <div class="filters">
@@ -187,18 +188,21 @@ const SUPABASE_URL = "https://" + "klonfitgrdkqsofveavz.supabase.co";
     });
   }
 
-  function render() {
+  function filteredRows() {
     const search = $("search").value.trim().toLowerCase();
     const cls = $("classFilter").value;
     const lesson = $("lessonFilter").value;
     const set = $("setFilter").value;
-
-    const filtered = allRows.filter(r =>
+    return allRows.filter(r =>
       String(r.ten_hoc_sinh || "").toLowerCase().includes(search) &&
       (!cls || String(r.lop) === cls) &&
       (!lesson || String(r.bai_hoc) === lesson) &&
       (!set || String(r.so_de) === set)
     );
+  }
+
+  function render() {
+    const filtered = filteredRows();
 
     $("rows").replaceChildren();
     filtered.forEach(r => {
@@ -222,6 +226,36 @@ const SUPABASE_URL = "https://" + "klonfitgrdkqsofveavz.supabase.co";
       " / " + allRows.length + " lượt nộp";
   }
 
+  function exportScores() {
+    const rows = filteredRows();
+    if (!rows.length) {
+      message("Không có lượt nộp nào để xuất.");
+      return;
+    }
+    const headers = ["Học sinh", "Lớp", "Bài", "Đề", "Điểm", "Ngày nộp"];
+    const safeCell = value => {
+      let text = String(value ?? "");
+      // Ngăn Excel thực thi công thức từ dữ liệu học sinh nhập vào.
+      if (/^[\s\u0000-\u001f]*[=+@-]/.test(text)) text = "'" + text;
+      return '"' + text.replace(/"/g, '""') + '"';
+    };
+    const data = rows.map(r => [
+      r.ten_hoc_sinh, r.lop, r.bai_hoc, r.so_de ?? "", r.diem,
+      r.created_at ? new Date(r.created_at).toLocaleString("vi-VN") : ""
+    ]);
+    const csv = "\uFEFF" + [headers, ...data]
+      .map(row => row.map(safeCell).join(",")).join("\r\n");
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "bang-diem-hoc-sinh.csv";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    message("");
+  }
+
   function logout() {
     accessToken = "";
     allRows = [];
@@ -233,6 +267,7 @@ const SUPABASE_URL = "https://" + "klonfitgrdkqsofveavz.supabase.co";
 
   $("loginBtn").addEventListener("click", login);
   $("reloadBtn").addEventListener("click", loadScores);
+  $("exportBtn").addEventListener("click", exportScores);
   $("logoutBtn").addEventListener("click", logout);
   ["search", "classFilter", "lessonFilter", "setFilter"]
     .forEach(id => $(id).addEventListener(
