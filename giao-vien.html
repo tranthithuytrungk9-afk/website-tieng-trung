@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quản lý điểm - Tiếng Trung Thùy Trần</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 24px;
+      background: #f3f7f3; color: #203b31;
+    }
+    main { max-width: 1100px; margin: auto; }
+    h1 { color: #256b50; }
+    .card {
+      background: white; padding: 24px;
+      border-radius: 14px; margin: 20px 0;
+      box-shadow: 0 2px 12px #0000000a;
+    }
+    input, select, button {
+      padding: 12px; margin: 6px 4px 6px 0;
+      border: 1px solid #cbd9ce;
+      border-radius: 8px; font-size: 16px;
+    }
+    button {
+      background: #2f7958; color: white;
+      cursor: pointer; border: 0;
+    }
+    button:hover { background: #225e43; }
+    .secondary { background: #607b70; }
+    .hidden { display: none; }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%; border-collapse: collapse;
+      margin-top: 16px; background: white;
+    }
+    th, td {
+      padding: 12px; border-bottom: 1px solid #e0e8e2;
+      text-align: left;
+    }
+    th { background: #e7f2e9; }
+    #message { color: #a12b2b; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filters input, .filters select { flex: 1; min-width: 160px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Quản lý điểm học sinh</h1>
+  <p>Tiếng Trung Thùy Trần - Dành cho giáo viên</p>
+
+  <section id="loginBox" class="card">
+    <h2>Đăng nhập giáo viên</h2>
+    <input id="email" type="email" placeholder="Email giáo viên"
+           autocomplete="username">
+    <input id="password" type="password" placeholder="Mật khẩu"
+           autocomplete="current-password">
+    <button id="loginBtn">Đăng nhập</button>
+  </section>
+
+  <section id="dashboard" class="hidden">
+    <div class="card">
+      <h2>Bảng điểm</h2>
+      <button id="reloadBtn">Tải lại điểm</button>
+      <button id="logoutBtn" class="secondary">Đăng xuất</button>
+
+      <div class="filters">
+        <input id="search" placeholder="Tìm tên học sinh">
+        <select id="classFilter">
+          <option value="">Tất cả lớp</option>
+        </select>
+        <select id="lessonFilter">
+          <option value="">Tất cả bài</option>
+        </select>
+        <select id="setFilter">
+          <option value="">Tất cả đề</option>
+        </select>
+      </div>
+
+      <p id="count"></p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Học sinh</th><th>Lớp</th><th>Bài</th>
+              <th>Đề</th><th>Điểm</th><th>Ngày nộp</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <p id="message" role="status"></p>
+  <p><a href="/">← Trở về trang bài tập</a></p>
+</main>
+
+<script>
+  // Thay bằng Project URL và publishable/anon key của Supabase.
+  // Tuyệt đối không sử dụng service_role key trong tệp này.
+ const SUPABASE_URL = "https://klonfitgrdkqsofveavz.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_nrP8b2Bm_XUdP3yMMCW7Iw_2Rt9aC_o";
+
+  let accessToken = "";
+  let allRows = [];
+
+  const $ = id => document.getElementById(id);
+  const message = text => { $("message").textContent = text; };
+
+  async function api(path, options = {}) {
+    const response = await fetch(SUPABASE_URL + path, {
+      ...options,
+      headers: {
+        apikey: SUPABASE_ANON_KEY,
+        ...(accessToken ? { Authorization: "Bearer " + accessToken } : {}),
+        ...(options.headers || {})
+      }
+    });
+    const result = await response.json();
+    if (!response.ok) {
+      throw new Error(result.msg || result.message ||
+                      result.error_description || "Yêu cầu thất bại");
+    }
+    return result;
+  }
+
+  async function login() {
+    message("");
+    try {
+      const result = await api(
+        "/auth/v1/token?grant_type=password",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: $("email").value.trim(),
+            password: $("password").value
+          })
+        }
+      );
+      accessToken = result.access_token;
+      $("password").value = "";
+      $("loginBox").classList.add("hidden");
+      $("dashboard").classList.remove("hidden");
+      await loadScores();
+    } catch (error) {
+      message("Không đăng nhập được: " + error.message);
+    }
+  }
+
+  async function loadScores() {
+    message("");
+    try {
+      allRows = await api(
+        "/rest/v1/ket_qua_hoc_sinh" +
+        "?select=ten_hoc_sinh,lop,bai_hoc,so_de,diem,created_at" +
+        "&order=created_at.desc&limit=1000"
+      );
+      buildFilters();
+      render();
+    } catch (error) {
+      message("Không tải được điểm: " + error.message);
+    }
+  }
+
+  function buildFilters() {
+    [
+      ["classFilter", "lop"],
+      ["lessonFilter", "bai_hoc"],
+      ["setFilter", "so_de"]
+    ].forEach(([id, field]) => {
+      const select = $(id);
+      const old = select.value;
+      select.length = 1;
+      const values = [...new Set(allRows.map(r => r[field])
+        .filter(v => v !== null && v !== undefined && v !== ""))];
+      values.sort((a, b) => String(a).localeCompare(String(b), "vi"));
+      values.forEach(value => {
+        const option = document.createElement("option");
+        option.value = String(value);
+        option.textContent = String(value);
+        select.appendChild(option);
+      });
+      select.value = old;
+    });
+  }
+
+  function render() {
+    const search = $("search").value.trim().toLowerCase();
+    const cls = $("classFilter").value;
+    const lesson = $("lessonFilter").value;
+    const set = $("setFilter").value;
+
+    const filtered = allRows.filter(r =>
+      String(r.ten_hoc_sinh || "").toLowerCase().includes(search) &&
+      (!cls || String(r.lop) === cls) &&
+      (!lesson || String(r.bai_hoc) === lesson) &&
+      (!set || String(r.so_de) === set)
+    );
+
+    $("rows").replaceChildren();
+    filtered.forEach(r => {
+      const tr = document.createElement("tr");
+      const values = [
+        r.ten_hoc_sinh, r.lop, r.bai_hoc,
+        r.so_de ?? "—", r.diem,
+        r.created_at
+          ? new Date(r.created_at).toLocaleString("vi-VN")
+          : "—"
+      ];
+      values.forEach(value => {
+        const td = document.createElement("td");
+        td.textContent = String(value ?? "");
+        tr.appendChild(td);
+      });
+      $("rows").appendChild(tr);
+    });
+
+    $("count").textContent = "Hiển thị " + filtered.length +
+      " / " + allRows.length + " lượt nộp";
+  }
+
+  function logout() {
+    accessToken = "";
+    allRows = [];
+    $("rows").replaceChildren();
+    $("dashboard").classList.add("hidden");
+    $("loginBox").classList.remove("hidden");
+    message("Đã đăng xuất.");
+  }
+
+  $("loginBtn").addEventListener("click", login);
+  $("reloadBtn").addEventListener("click", loadScores);
+  $("logoutBtn").addEventListener("click", logout);
+  ["search", "classFilter", "lessonFilter", "setFilter"]
+    .forEach(id => $(id).addEventListener(
+      id === "search" ? "input" : "change", render
+    ));
+</script>
+</body>
+</html>
