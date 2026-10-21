@@ -1,0 +1,10 @@
+WEBSITE BÀI 58 - BẢN LƯU ĐIỂM
+
+1. Đây là bản nâng cấp. KHÔNG kéo riêng index.html lên Netlify Drop: trang cần Netlify Function (netlify/functions/nop-bai.js) để chấm và lưu điểm.
+2. Đưa cả thư mục dự án vào GitHub và kết nối GitHub repository với Netlify (Add new project > Import an existing project). Có thể tạo site mới để thử trước, không thay thế website cũ.
+3. Netlify > Site configuration > Environment variables: thêm SUPABASE_URL và SUPABASE_SERVICE_ROLE_KEY. Chỉ lưu service role key ở môi trường Netlify; không ghi vào index.html, không gửi trong chat, không đẩy lên GitHub.
+4. Deploy lại site sau khi lưu biến môi trường.
+5. Supabase: bảng public.ket_qua_hoc_sinh gồm id int8 tự tăng, created_at timestamptz default now(), ten_hoc_sinh text, lop text, bai_hoc text, diem int4. Giữ RLS bật, KHÔNG tạo policy công khai.
+6. Thử nộp một bài mẫu và xem dòng mới trong Supabase Table Editor.
+
+GIỚI HẠN: Không đăng nhập nên học sinh có thể khai tên người khác hoặc gửi bài nhiều lần. Đáp án được chấm trên máy chủ nhưng một người có kiến thức kỹ thuật vẫn có thể tự động gửi nhiều yêu cầu; cần CAPTCHA, giới hạn tốc độ và cơ chế quản lý lượt nộp nếu sử dụng chính thức. Bài tập trong bản gốc chưa được đối chiếu lại với PDF giáo trình.
