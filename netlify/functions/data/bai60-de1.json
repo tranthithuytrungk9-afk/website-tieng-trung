@@ -1,0 +1,277 @@
+[
+  {
+    "type": "mc",
+    "question": "“用心”在“只要我用心，就没有克服不了的困难”中是什么意思？",
+    "options": [
+      "A. 花钱",
+      "B. 专心、认真",
+      "C. 担心",
+      "D. 着急"
+    ],
+    "answer": "b",
+    "explain": "用心：chú tâm, chuyên tâm; nhấn mạnh thái độ học tập nghiêm túc。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“克服困难”最接近下面哪个意思？",
+    "options": [
+      "A. 避开所有人",
+      "B. 增加困难",
+      "C. 战胜困难",
+      "D. 忘记困难"
+    ],
+    "answer": "c",
+    "explain": "克服困难：khắc phục, vượt qua khó khăn。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“我的愿望终于实现了”中“终于”强调什么？",
+    "options": [
+      "A. 事情最终发生了",
+      "B. 事情从未发生",
+      "C. 事情马上停止",
+      "D. 事情经常发生"
+    ],
+    "answer": "a",
+    "explain": "终于：cuối cùng; kết quả đạt được sau một quá trình。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“他拿不动这么重的箱子”表示什么？",
+    "options": [
+      "A. 他不想拿箱子",
+      "B. 他已经拿走箱子",
+      "C. 他没有箱子",
+      "D. 他没有力气拿起或搬动箱子"
+    ],
+    "answer": "d",
+    "explain": "拿不动 là bổ ngữ khả năng: không đủ sức cầm hoặc bê nổi。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“这几个汉字我记得住”是什么意思？",
+    "options": [
+      "A. 我能记住这几个字",
+      "B. 我已经忘了",
+      "C. 我不想学习",
+      "D. 我写不出这些字"
+    ],
+    "answer": "a",
+    "explain": "记得住：có khả năng ghi nhớ được。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“他连筷子都不会用”强调什么？",
+    "options": [
+      "A. 他会做饭",
+      "B. 他不喜欢筷子",
+      "C. 连用筷子这件事他也做不到",
+      "D. 他有很多筷子"
+    ],
+    "answer": "c",
+    "explain": "连……都…… nhấn mạnh trường hợp bất ngờ: ngay cả dùng đũa cũng không biết。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“我觉得很没面子”在课文中表达什么感受？",
+    "options": [
+      "A. 很自豪",
+      "B. 觉得丢脸、难为情",
+      "C. 特别轻松",
+      "D. 很满意"
+    ],
+    "answer": "b",
+    "explain": "没面子：mất thể diện, xấu hổ trong hoàn cảnh giao tiếp。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "“大师傅服务态度很好”中的“态度”指什么？",
+    "options": [
+      "A. 工作地点",
+      "B. 菜的味道",
+      "C. 年龄大小",
+      "D. 对待别人的方式和表现"
+    ],
+    "answer": "d",
+    "explain": "服务态度：thái độ phục vụ, cách ứng xử với người khác。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "下面哪句话使用可能补语正确？",
+    "options": [
+      "A. 我听不懂他说的话",
+      "B. 我不听懂他说的话",
+      "C. 我听懂不他说的话",
+      "D. 我听得不懂他说的话"
+    ],
+    "answer": "a",
+    "explain": "听不懂 là dạng phủ định của bổ ngữ khả năng: nghe không hiểu。",
+    "tag": "选择题"
+  },
+  {
+    "type": "mc",
+    "question": "课文中，作者学会用筷子的直接原因是什么？",
+    "options": [
+      "A. 外公给他买了新筷子",
+      "B. 他每天只吃面条",
+      "C. 食堂的一位大师傅耐心教他",
+      "D. 他从来没遇到困难"
+    ],
+    "answer": "c",
+    "explain": "Bài khóa kể người phục vụ ở nhà ăn nhiệt tình chỉ cách dùng đũa cho tác giả。",
+    "tag": "选择题"
+  },
+  {
+    "type": "fill",
+    "question": "补全句子：只要我们认真练习，就能____困难。",
+    "options": null,
+    "answer": "克服",
+    "explain": "克服困难 là kết hợp từ thông dụng: vượt qua khó khăn。",
+    "tag": "填空题"
+  },
+  {
+    "type": "fill",
+    "question": "补全句子：这个箱子太重了，我一个人搬不____。",
+    "options": null,
+    "answer": "动",
+    "explain": "搬不动：không bê nổi, dùng bổ ngữ khả năng 动。",
+    "tag": "填空题"
+  },
+  {
+    "type": "fill",
+    "question": "补全句子：我练习了很多次，____学会了用筷子。",
+    "options": null,
+    "answer": "终于",
+    "explain": "终于 biểu thị kết quả cuối cùng sau nhiều lần luyện tập。",
+    "tag": "填空题"
+  },
+  {
+    "type": "fill",
+    "question": "补全句子：这几个生词太难了，我一下子记不____。",
+    "options": null,
+    "answer": "住",
+    "explain": "记不住：không ghi nhớ được; 住 là bổ ngữ chỉ khả năng giữ lại trong trí nhớ。",
+    "tag": "填空题"
+  },
+  {
+    "type": "fill",
+    "question": "补全句子：妈妈看到我会用筷子了，感到很____。",
+    "options": null,
+    "answer": "高兴",
+    "explain": "Theo bài khóa, mẹ vui khi biết tác giả đã học được cách dùng đũa。",
+    "tag": "填空题"
+  },
+  {
+    "type": "order",
+    "question": "把词语排成句子：终于 / 我 / 学会了 / 用筷子",
+    "options": null,
+    "answer": "我终于学会了用筷子",
+    "explain": "Chủ ngữ + 终于 + động từ + tân ngữ。",
+    "tag": "排序题"
+  },
+  {
+    "type": "order",
+    "question": "把词语排成句子：这个箱子 / 太重了 / 我 / 搬不动",
+    "options": null,
+    "answer": "这个箱子太重了我搬不动",
+    "explain": "Nêu chủ đề 这个箱子, sau đó diễn đạt nguyên nhân và khả năng 搬不动。",
+    "tag": "排序题"
+  },
+  {
+    "type": "order",
+    "question": "把词语排成句子：连 / 他 / 筷子 / 都 / 不会用",
+    "options": null,
+    "answer": "他连筷子都不会用",
+    "explain": "Cấu trúc 他 + 连 + đối tượng nhấn mạnh + 都 + vị ngữ。",
+    "tag": "排序题"
+  },
+  {
+    "type": "order",
+    "question": "把词语排成句子：只要 / 用心 / 就 / 能 / 克服困难",
+    "options": null,
+    "answer": "只要用心就能克服困难",
+    "explain": "只要……就…… biểu thị điều kiện đủ。",
+    "tag": "排序题"
+  },
+  {
+    "type": "order",
+    "question": "把词语排成句子：我 / 的 / 愿望 / 终于 / 实现了",
+    "options": null,
+    "answer": "我的愿望终于实现了",
+    "explain": "Cụm sở hữu 我的愿望 làm chủ ngữ; 终于 đặt trước động từ 实现。",
+    "tag": "排序题"
+  },
+  {
+    "type": "reading",
+    "question": "小林刚到中国留学时，不会用筷子。第一次和同学一起吃饭，他夹了好几次菜，都没夹起来，觉得有点儿没面子。后来，食堂的一位师傅耐心地教他：先把筷子拿稳，再慢慢练习。小林每天练习十分钟，虽然有时还是夹不住菜，但他没有放弃。两个星期后，他终于能用筷子夹起花生米了。他高兴地给家人发消息：“原来只要用心，困难就能慢慢克服！”\n\n小林第一次和同学吃饭时，为什么觉得没面子？",
+    "options": [
+      "A. 他忘了带钱",
+      "B. 他夹不起菜",
+      "C. 他不喜欢食堂",
+      "D. 他来晚了"
+    ],
+    "answer": "b",
+    "explain": "Đoạn văn nêu 小林夹了好几次菜，都没夹起来。",
+    "tag": "阅读理解"
+  },
+  {
+    "type": "reading",
+    "question": "小林刚到中国留学时，不会用筷子。第一次和同学一起吃饭，他夹了好几次菜，都没夹起来，觉得有点儿没面子。后来，食堂的一位师傅耐心地教他：先把筷子拿稳，再慢慢练习。小林每天练习十分钟，虽然有时还是夹不住菜，但他没有放弃。两个星期后，他终于能用筷子夹起花生米了。他高兴地给家人发消息：“原来只要用心，困难就能慢慢克服！”\n\n食堂的师傅建议小林先做什么？",
+    "options": [
+      "A. 先拿稳筷子",
+      "B. 先买花生米",
+      "C. 先给家人打电话",
+      "D. 先换一家食堂"
+    ],
+    "answer": "a",
+    "explain": "Người hướng dẫn nói 先把筷子拿稳，再慢慢练习。",
+    "tag": "阅读理解"
+  },
+  {
+    "type": "reading",
+    "question": "小林刚到中国留学时，不会用筷子。第一次和同学一起吃饭，他夹了好几次菜，都没夹起来，觉得有点儿没面子。后来，食堂的一位师傅耐心地教他：先把筷子拿稳，再慢慢练习。小林每天练习十分钟，虽然有时还是夹不住菜，但他没有放弃。两个星期后，他终于能用筷子夹起花生米了。他高兴地给家人发消息：“原来只要用心，困难就能慢慢克服！”\n\n小林每天练习多长时间？",
+    "options": [
+      "A. 两个小时",
+      "B. 半个小时",
+      "C. 十分钟",
+      "D. 一分钟"
+    ],
+    "answer": "c",
+    "explain": "Đoạn văn ghi rõ 每天练习十分钟。",
+    "tag": "阅读理解"
+  },
+  {
+    "type": "reading",
+    "question": "小林刚到中国留学时，不会用筷子。第一次和同学一起吃饭，他夹了好几次菜，都没夹起来，觉得有点儿没面子。后来，食堂的一位师傅耐心地教他：先把筷子拿稳，再慢慢练习。小林每天练习十分钟，虽然有时还是夹不住菜，但他没有放弃。两个星期后，他终于能用筷子夹起花生米了。他高兴地给家人发消息：“原来只要用心，困难就能慢慢克服！”\n\n“夹不住菜”在短文中是什么意思？",
+    "options": [
+      "A. 菜太贵",
+      "B. 菜已经吃完",
+      "C. 不愿意吃菜",
+      "D. 不能把菜稳稳地夹住"
+    ],
+    "answer": "d",
+    "explain": "夹不住菜: không gắp giữ được thức ăn bằng đũa。",
+    "tag": "阅读理解"
+  },
+  {
+    "type": "reading",
+    "question": "小林刚到中国留学时，不会用筷子。第一次和同学一起吃饭，他夹了好几次菜，都没夹起来，觉得有点儿没面子。后来，食堂的一位师傅耐心地教他：先把筷子拿稳，再慢慢练习。小林每天练习十分钟，虽然有时还是夹不住菜，但他没有放弃。两个星期后，他终于能用筷子夹起花生米了。他高兴地给家人发消息：“原来只要用心，困难就能慢慢克服！”\n\n这篇短文主要说明什么？",
+    "options": [
+      "A. 学习新技能需要耐心和坚持",
+      "B. 在中国不能用勺子",
+      "C. 花生米比其他菜好吃",
+      "D. 所有人一开始都会用筷子"
+    ],
+    "answer": "a",
+    "explain": "Đoạn văn nhấn mạnh luyện tập kiên trì và chú tâm giúp vượt khó。",
+    "tag": "阅读理解"
+  }
+]
