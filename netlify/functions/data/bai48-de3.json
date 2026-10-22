@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Câu tồn hiện thường dùng địa điểm + động từ + 着 + danh từ."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "放着: đặt sẵn."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "挂着 diễn tả trạng thái treo."
+  },
+  {
+    "type": "fill",
+    "answer": "下",
+    "explain": "走下来: đi từ trên xuống."
+  },
+  {
+    "type": "order",
+    "answer": "他把信寄出去了",
+    "explain": "把 + động từ + bổ ngữ xu hướng."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "开着 mô tả trạng thái cửa đang mở."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "来 biểu thị hướng về vị trí người nói."
+  },
+  {
+    "type": "order",
+    "answer": "老师走进来了",
+    "explain": "Chủ ngữ + động từ + bổ ngữ xu hướng."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "小李 chạy từ trên lầu xuống."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出来: lấy ra."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "出去 nhấn mạnh chuyển ra ngoài."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "回来 biểu thị mang trở lại."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "拿出来: lấy từ trong ra ngoài."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Có hai cốc trà."
+  },
+  {
+    "type": "fill",
+    "answer": "过",
+    "explain": "搬过来: chuyển lại phía người nói."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Bảng có bài tập hôm nay."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Học sinh đứng dậy."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出去: đem ra ngoài."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "着 biểu thị trạng thái tồn tại kéo dài."
+  },
+  {
+    "type": "order",
+    "answer": "我走过去跟他说话",
+    "explain": "Hành động nối tiếp hợp lý."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "“进去” chỉ chuyển động từ ngoài vào trong."
+  },
+  {
+    "type": "order",
+    "answer": "请把那本书拿出来",
+    "explain": "把 + tân ngữ + động từ + bổ ngữ."
+  },
+  {
+    "type": "order",
+    "answer": "墙上挂着一张地图",
+    "explain": "Địa điểm + động từ 着 + danh từ."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "坐下来 diễn tả chuyển sang trạng thái ngồi."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "去: hướng ra xa người nói."
+  }
+]

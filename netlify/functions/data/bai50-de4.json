@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Hộ chiếu ở khách sạn."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "把 + đồ vật + động từ + 给 + người."
+  },
+  {
+    "type": "fill",
+    "answer": "给",
+    "explain": "交给: giao cho."
+  },
+  {
+    "type": "fill",
+    "answer": "下",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "搬上: chuyển lên."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Ghi lại để tránh quên."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "给 chỉ người nhận."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "Đóng cửa sổ trước."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "打开: mở ra."
+  },
+  {
+    "type": "order",
+    "answer": "请把表格填好",
+    "explain": "填好: điền xong."
+  },
+  {
+    "type": "fill",
+    "answer": "开",
+    "explain": "打开: mở ra."
+  },
+  {
+    "type": "fill",
+    "answer": "好",
+    "explain": "收好: cất giữ cẩn thận."
+  },
+  {
+    "type": "fill",
+    "answer": "清",
+    "explain": "写清楚: viết rõ."
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "搬上车: đưa lên xe."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "找钱: trả tiền thừa."
+  },
+  {
+    "type": "order",
+    "answer": "我已经把行李收好了",
+    "explain": "已经 + 把 + động từ kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "交给: giao cho."
+  },
+  {
+    "type": "order",
+    "answer": "工作人员把机票还给了旅客",
+    "explain": "还给 + người nhận."
+  },
+  {
+    "type": "order",
+    "answer": "请把护照放进包里",
+    "explain": "放进: đặt vào."
+  },
+  {
+    "type": "order",
+    "answer": "请把门关上",
+    "explain": "关上: đóng lại."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "Đối tượng cụ thể + xử lý có kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Trả lại hai vé máy bay."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "到…上: đặt đến vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "放错: đặt sai."
+  }
+]

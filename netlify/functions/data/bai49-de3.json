@@ -1,0 +1,127 @@
+[
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "停着: đang đỗ."
+  },
+  {
+    "type": "order",
+    "answer": "这里的生活越来越方便了",
+    "explain": "越来越 + tính từ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Hai vế thay đổi liên hệ."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "结着 chỉ trạng thái đang có quả."
+  },
+  {
+    "type": "order",
+    "answer": "汉语越学越有意思",
+    "explain": "越…越…."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Địa điểm + động từ xu hướng + số lượng + danh từ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Câu tồn hiện mô tả vị trí và trạng thái."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Địa điểm + động từ + danh từ mới xuất hiện."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Cô ấy muốn bắt taxi."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Trong sân có cây táo tàu."
+  },
+  {
+    "type": "order",
+    "answer": "学习越来越有意思了",
+    "explain": "越来越 + tính từ."
+  },
+  {
+    "type": "fill",
+    "answer": "来",
+    "explain": "越来越 + tính từ."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "结着: trạng thái có quả."
+  },
+  {
+    "type": "fill",
+    "answer": "过",
+    "explain": "开过来: lái tới."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "越来越 chỉ mức độ tăng dần theo thời gian."
+  },
+  {
+    "type": "fill",
+    "answer": "习",
+    "explain": "习惯: quen."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Câu tồn hiện diễn tả sự xuất hiện của xe."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "越来越 + tính từ/trạng thái."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Khẩu ngữ ngày càng lưu loát."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Các tòa nhà ngày càng nhiều."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "Câu tồn hiện thông báo đối tượng xuất hiện."
+  },
+  {
+    "type": "order",
+    "answer": "年轻人越打扮越漂亮",
+    "explain": "越…越…."
+  },
+  {
+    "type": "order",
+    "answer": "前边开过来了一辆空车",
+    "explain": "Câu tồn hiện với bổ ngữ xu hướng."
+  },
+  {
+    "type": "fill",
+    "answer": "越",
+    "explain": "越…越…."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "越…越… diễn tả hai thay đổi liên hệ."
+  }
+]

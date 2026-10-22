@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Xe đỗ dưới cây."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Mẫu câu tồn hiện."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "越来越 không dùng với hành động hoàn thành đơn lẻ."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Anh ấy chú ý nghỉ ngơi."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "越…越… là càng…càng…."
+  },
+  {
+    "type": "fill",
+    "answer": "多",
+    "explain": "越来越多: ngày càng nhiều."
+  },
+  {
+    "type": "fill",
+    "answer": "越",
+    "explain": "越…越…."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Trang trí trên cửa hàng."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Hai vế thay đổi cùng nhau."
+  },
+  {
+    "type": "order",
+    "answer": "你越练习发音越准确",
+    "explain": "Quan hệ 越…越…."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "越…越… chỉ quan hệ tăng tiến."
+  },
+  {
+    "type": "order",
+    "answer": "门口停着两辆出租车",
+    "explain": "Địa điểm + 停着 + danh từ."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "贴着: đang được dán."
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "走上来: đi lên."
+  },
+  {
+    "type": "order",
+    "answer": "树上结着很多红枣",
+    "explain": "Câu tồn hiện."
+  },
+  {
+    "type": "order",
+    "answer": "他越来越喜欢中国菜",
+    "explain": "越来越 + động từ tâm lý."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "越来越 biểu thị mức độ quen tăng dần."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Càng học càng thú vị."
+  },
+  {
+    "type": "fill",
+    "answer": "越",
+    "explain": "越说越流利."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "挂着: trạng thái treo."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "越来越多 = ngày càng đông."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "种着: trồng sẵn."
+  },
+  {
+    "type": "order",
+    "answer": "窗外飞来一只鸟",
+    "explain": "Câu xuất hiện."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "贴着 diễn tả trạng thái dán."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "跑过来: chạy về phía người nói."
+  }
+]

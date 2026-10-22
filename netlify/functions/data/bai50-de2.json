@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "找钱: trả tiền thừa."
+  },
+  {
+    "type": "fill",
+    "answer": "清",
+    "explain": "写清楚: viết rõ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "给 chỉ người nhận."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "搬上: chuyển lên."
+  },
+  {
+    "type": "order",
+    "answer": "请把门关上",
+    "explain": "关上: đóng lại."
+  },
+  {
+    "type": "order",
+    "answer": "她把名字写清楚了",
+    "explain": "写清楚: viết rõ."
+  },
+  {
+    "type": "order",
+    "answer": "工作人员把机票还给了旅客",
+    "explain": "还给 + người nhận."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "把 + đồ vật + động từ + 给 + người."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "交给: giao cho."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "打开: mở ra."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "放错: đặt sai."
+  },
+  {
+    "type": "fill",
+    "answer": "好",
+    "explain": "收好: cất giữ cẩn thận."
+  },
+  {
+    "type": "fill",
+    "answer": "给",
+    "explain": "交给: giao cho."
+  },
+  {
+    "type": "fill",
+    "answer": "开",
+    "explain": "打开: mở ra."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "Trả lại hai vé máy bay."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Đối tượng cụ thể + xử lý có kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Ghi lại để tránh quên."
+  },
+  {
+    "type": "fill",
+    "answer": "下",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "order",
+    "answer": "请把护照放进包里",
+    "explain": "放进: đặt vào."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Hộ chiếu ở khách sạn."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "到…上: đặt đến vị trí."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Đóng cửa sổ trước."
+  },
+  {
+    "type": "order",
+    "answer": "请把行李搬上车",
+    "explain": "搬上车: đưa lên xe."
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "搬上车: đưa lên xe."
+  }
+]

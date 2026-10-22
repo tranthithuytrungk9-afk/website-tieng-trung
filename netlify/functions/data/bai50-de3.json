@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "拿过来: mang tới phía người nói."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Hành lý đặt lên băng chuyền."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "喜欢 không phù hợp cấu trúc 把 theo cách này."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "填好 là điền xong."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Lấy thẻ lên máy bay ra."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "Cô ấy chưa ký tên."
+  },
+  {
+    "type": "order",
+    "answer": "他把护照忘在家里了",
+    "explain": "忘在 + địa điểm."
+  },
+  {
+    "type": "fill",
+    "answer": "把",
+    "explain": "把 + đối tượng + động từ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "把 nhấn mạnh xử lý đối tượng xác định."
+  },
+  {
+    "type": "fill",
+    "answer": "给",
+    "explain": "还给: trả cho."
+  },
+  {
+    "type": "order",
+    "answer": "请把机票放在桌子上",
+    "explain": "把 + đối tượng + động từ + vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "把 dùng khi vị trí đối tượng thay đổi."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "忘在家里: để quên ở nhà."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Anh ấy lấy thẻ lên máy bay ra."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "关上: đóng lại thành công."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "把 + tân ngữ + động từ + bổ ngữ."
+  },
+  {
+    "type": "order",
+    "answer": "请把座位号记下来",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "order",
+    "answer": "我把票交给了工作人员",
+    "explain": "交给 + người nhận."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "忘在: để quên ở."
+  },
+  {
+    "type": "order",
+    "answer": "请把护照给我",
+    "explain": "把 + tân ngữ + 给 + người."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "清楚 là bổ ngữ kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "好",
+    "explain": "填好: điền xong."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Yêu cầu hộ chiếu và vé máy bay."
+  },
+  {
+    "type": "fill",
+    "answer": "到",
+    "explain": "放到: đặt tới vị trí."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出来: lấy ra."
+  }
+]

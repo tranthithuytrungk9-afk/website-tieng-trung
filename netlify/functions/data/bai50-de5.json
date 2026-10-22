@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "把 dùng khi vị trí đối tượng thay đổi."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "填好 là điền xong."
+  },
+  {
+    "type": "fill",
+    "answer": "把",
+    "explain": "把 + đối tượng + động từ."
+  },
+  {
+    "type": "order",
+    "answer": "请把行李搬上车",
+    "explain": "搬上车: đưa lên xe."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "忘在家里: để quên ở nhà."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出来: lấy ra."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "把 nhấn mạnh xử lý đối tượng xác định."
+  },
+  {
+    "type": "order",
+    "answer": "我把票交给了工作人员",
+    "explain": "交给 + người nhận."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Yêu cầu hộ chiếu và vé máy bay."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "Hành lý đặt lên băng chuyền."
+  },
+  {
+    "type": "order",
+    "answer": "请把护照给我",
+    "explain": "把 + tân ngữ + 给 + người."
+  },
+  {
+    "type": "fill",
+    "answer": "好",
+    "explain": "填好: điền xong."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "把 + tân ngữ + động từ + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "清楚 là bổ ngữ kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "拿过来: mang tới phía người nói."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "喜欢 không phù hợp cấu trúc 把 theo cách này."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "关上: đóng lại thành công."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "忘在: để quên ở."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Cô ấy chưa ký tên."
+  },
+  {
+    "type": "order",
+    "answer": "她把名字写清楚了",
+    "explain": "写清楚: viết rõ."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Anh ấy lấy thẻ lên máy bay ra."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Lấy thẻ lên máy bay ra."
+  },
+  {
+    "type": "order",
+    "answer": "请把座位号记下来",
+    "explain": "记下来: ghi lại."
+  },
+  {
+    "type": "fill",
+    "answer": "给",
+    "explain": "还给: trả cho."
+  },
+  {
+    "type": "fill",
+    "answer": "到",
+    "explain": "放到: đặt tới vị trí."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "order",
+    "answer": "孩子从楼上跑下来了",
+    "explain": "Bổ ngữ xu hướng  下来."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "提着 diễn tả trạng thái đi kèm động tác đi vào."
+  },
+  {
+    "type": "order",
+    "answer": "桌子上摆着一盆花",
+    "explain": "Trật tự câu tồn hiện."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Cuối cùng cất ảnh đi."
+  },
+  {
+    "type": "order",
+    "answer": "书包里装着一本书",
+    "explain": "Câu tồn hiện."
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "跑进: chạy vào."
+  },
+  {
+    "type": "order",
+    "answer": "门口站着两个人",
+    "explain": "Địa điểm + 站着 + người."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Câu tồn hiện: địa điểm + động từ + 着 + người/vật."
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "走进: đi vào."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "着 dùng mô tả trạng thái hiện hữu."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "站着: trạng thái đứng."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "下去: xuống dưới và xa người nói."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "掏出: móc ra."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "起来 có thể chỉ thu gom/cất lại."
+  },
+  {
+    "type": "fill",
+    "answer": "回",
+    "explain": "带回来: mang trở về."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "出来 là từ trong ra ngoài, về phía người nói."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "贴着 nhấn mạnh trạng thái đang được dán."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "贴在: dán ở vị trí nào đó."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Gửi thư vào ngày hôm sau."
+  },
+  {
+    "type": "order",
+    "answer": "他从教室跑出去了",
+    "explain": "从 + địa điểm + động từ xu hướng."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "来/去 phụ thuộc hướng về/xa người nói."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Xe đạp đỗ trước cửa."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "拿出来 cần có tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "Cấu trúc địa điểm + 摆着 + danh từ."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "Đồ chơi được bỏ vào hộp."
+  }
+]

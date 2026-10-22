@@ -1,0 +1,127 @@
+[
+  {
+    "type": "order",
+    "answer": "他把信寄出去了",
+    "explain": "把 + động từ + bổ ngữ xu hướng."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "去: hướng ra xa người nói."
+  },
+  {
+    "type": "order",
+    "answer": "我走过去跟他说话",
+    "explain": "Hành động nối tiếp hợp lý."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "挂着 diễn tả trạng thái treo."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "拿出来: lấy từ trong ra ngoài."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "Bảng có bài tập hôm nay."
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "放着: đặt sẵn."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "着 biểu thị trạng thái tồn tại kéo dài."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "开着 mô tả trạng thái cửa đang mở."
+  },
+  {
+    "type": "fill",
+    "answer": "下",
+    "explain": "走下来: đi từ trên xuống."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "“进去” chỉ chuyển động từ ngoài vào trong."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出来: lấy ra."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "小李 chạy từ trên lầu xuống."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "出去 nhấn mạnh chuyển ra ngoài."
+  },
+  {
+    "type": "fill",
+    "answer": "过",
+    "explain": "搬过来: chuyển lại phía người nói."
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出去: đem ra ngoài."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "Học sinh đứng dậy."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "来 biểu thị hướng về vị trí người nói."
+  },
+  {
+    "type": "order",
+    "answer": "桌子上摆着一盆花",
+    "explain": "Trật tự câu tồn hiện."
+  },
+  {
+    "type": "order",
+    "answer": "墙上挂着一张地图",
+    "explain": "Địa điểm + động từ 着 + danh từ."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "回来 biểu thị mang trở lại."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "Có hai cốc trà."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Câu tồn hiện thường dùng địa điểm + động từ + 着 + danh từ."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "坐下来 diễn tả chuyển sang trạng thái ngồi."
+  },
+  {
+    "type": "order",
+    "answer": "孩子从楼上跑下来了",
+    "explain": "Bổ ngữ xu hướng  下来."
+  }
+]
