@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "课文中的通知单说明邮票没贴够。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "出来表示从内向外并朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "上来表示向上且朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "去表示离开说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "拿出来表示从内部取出。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "来表示动作朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "刚才指说话前不久。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "回来强调回到说话者所在处。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "下去表示动作向下并远离说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "来、去由说话人的位置决定。"
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "放进表示放入内部。"
+  },
+  {
+    "type": "fill",
+    "answer": "够",
+    "explain": "没贴够表示数量不足。"
+  },
+  {
+    "type": "fill",
+    "answer": "过",
+    "explain": "拿过来表示拿到说话人这边。"
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "投进表示投入里面。"
+  },
+  {
+    "type": "fill",
+    "answer": "贴",
+    "explain": "补贴邮票表示补上邮资。"
+  },
+  {
+    "type": "order",
+    "answer": "把信投进邮筒里去吧",
+    "explain": "把字句：把信投进邮筒里去吧。"
+  },
+  {
+    "type": "order",
+    "answer": "爸爸给我买回来一件礼物",
+    "explain": "给我表示受益对象。"
+  },
+  {
+    "type": "order",
+    "answer": "请把书从包里拿出来",
+    "explain": "从包里是起点，拿出来是方向。"
+  },
+  {
+    "type": "order",
+    "answer": "这封信邮票没贴够",
+    "explain": "没贴够表示邮资不足。"
+  },
+  {
+    "type": "order",
+    "answer": "我们不等电梯了走下去吧",
+    "explain": "先说明不等电梯，再提出建议。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "他建议投进楼下的邮筒。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "礼物正是儿子想要的光盘。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "不等电梯，走下去，说明打算走楼梯。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "说话人在楼下，因此使用下来。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "老师在教室里，说进来。"
+  }
+]

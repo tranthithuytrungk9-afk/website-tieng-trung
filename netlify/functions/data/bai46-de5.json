@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "回来强调回到说话者所在处。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "下是共同的方向成分。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "出去表示由内向外。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "下去表示动作向下并远离说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "补贴表示补上不足的邮资。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "进去表示进入内部。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "买回来包含买和返回。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "出来表示从内向外并朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "刚才指说话前不久。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "进去强调进入内部。"
+  },
+  {
+    "type": "fill",
+    "answer": "过",
+    "explain": "拿过来表示拿到说话人这边。"
+  },
+  {
+    "type": "fill",
+    "answer": "来",
+    "explain": "回来表示返回说话人所在位置。"
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "放进表示放入内部。"
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "拿上来表示拿到上方来。"
+  },
+  {
+    "type": "fill",
+    "answer": "重",
+    "explain": "超重是超过规定重量。"
+  },
+  {
+    "type": "order",
+    "answer": "这封信邮票没贴够",
+    "explain": "没贴够表示邮资不足。"
+  },
+  {
+    "type": "order",
+    "answer": "我们不等电梯了走下去吧",
+    "explain": "先说明不等电梯，再提出建议。"
+  },
+  {
+    "type": "order",
+    "answer": "他从楼上跑下来了",
+    "explain": "下来表示朝下且朝向说话人。"
+  },
+  {
+    "type": "order",
+    "answer": "请把照片放进去",
+    "explain": "把字句搭配放进去。"
+  },
+  {
+    "type": "order",
+    "answer": "老师从教室里走出来了",
+    "explain": "出来表示从内部到外部。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "说话人在楼下，因此使用下来。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "老师在教室里，说进来。"
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "短文写拿出一支笔。"
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "孩子误把杯子放进柜子。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "因为包裹超重。"
+  }
+]

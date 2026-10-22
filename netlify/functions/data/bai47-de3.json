@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "写着说明字留在黑板上。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "戴着描述佩戴状态。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "穿着强调穿在身上，正在穿强调穿衣动作。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "坐着描述姿态。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "放着强调书的位置状态。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "呢使持续状态语气更鲜明。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "站着是伴随等车的状态。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "着表示状态持续。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "笑着说是伴随方式。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "穿着表示穿在身上的状态。"
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "挂着表示悬挂状态。"
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "站着表示讲课时的姿态。"
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "关着表示关闭状态。"
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "拿着表示持有状态。"
+  },
+  {
+    "type": "fill",
+    "answer": "着",
+    "explain": "戴着表示佩戴状态。"
+  },
+  {
+    "type": "order",
+    "answer": "桌子上放着一本书",
+    "explain": "处所+放着+物品。"
+  },
+  {
+    "type": "order",
+    "answer": "他戴着一副眼镜",
+    "explain": "戴着表示佩戴。"
+  },
+  {
+    "type": "order",
+    "answer": "教室里坐着很多学生",
+    "explain": "处所+坐着+人物。"
+  },
+  {
+    "type": "order",
+    "answer": "她穿着一件蓝色的外套",
+    "explain": "穿着描述服装状态。"
+  },
+  {
+    "type": "order",
+    "answer": "黑板上写着三个汉字",
+    "explain": "写着描述黑板上的字。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "黑板上写着今天的生词。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "电视也开着。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "门开着。"
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "穿着深色外套。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "门口站着一位店员。"
+  }
+]

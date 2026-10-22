@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "上来表示向上且朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "买回来包含买和返回。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "进去强调进入内部。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "出去表示由内向外。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "课文中的通知单说明邮票没贴够。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "出来表示从内向外并朝向说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "回来强调回到说话者所在处。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "去表示离开说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "下去表示动作向下并远离说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "来、去由说话人的位置决定。"
+  },
+  {
+    "type": "fill",
+    "answer": "够",
+    "explain": "没贴够表示数量不足。"
+  },
+  {
+    "type": "fill",
+    "answer": "出",
+    "explain": "拿出表示从里面取出。"
+  },
+  {
+    "type": "fill",
+    "answer": "开",
+    "explain": "打开是使门窗处于开启状态。"
+  },
+  {
+    "type": "fill",
+    "answer": "下",
+    "explain": "走下去表示往下走。"
+  },
+  {
+    "type": "fill",
+    "answer": "重",
+    "explain": "超重是超过规定重量。"
+  },
+  {
+    "type": "order",
+    "answer": "我们走下去吧",
+    "explain": "我们走下去吧。"
+  },
+  {
+    "type": "order",
+    "answer": "把信投进邮筒里去吧",
+    "explain": "把字句：把信投进邮筒里去吧。"
+  },
+  {
+    "type": "order",
+    "answer": "爸爸给我买回来一件礼物",
+    "explain": "给我表示受益对象。"
+  },
+  {
+    "type": "order",
+    "answer": "请把书从包里拿出来",
+    "explain": "从包里是起点，拿出来是方向。"
+  },
+  {
+    "type": "order",
+    "answer": "这封信邮票没贴够",
+    "explain": "没贴够表示邮资不足。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "通知单说明邮票没贴够。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "他建议投进楼下的邮筒。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "礼物正是儿子想要的光盘。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "不等电梯，走下去，说明打算走楼梯。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "说话人在楼下，因此使用下来。"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "刚才指说话前不久。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "没贴够说明邮资不足。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "买回来包含买和返回。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "课文中的通知单说明邮票没贴够。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "进去强调进入内部。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "下去表示动作向下并远离说话人。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "辛苦你了表示对别人劳累的体谅。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "超重指超过重量限制。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "进去表示进入内部。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "回来强调回到说话者所在处。"
+  },
+  {
+    "type": "fill",
+    "answer": "够",
+    "explain": "没贴够表示数量不足。"
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "走进表示进入。"
+  },
+  {
+    "type": "fill",
+    "answer": "来",
+    "explain": "回来表示返回说话人所在位置。"
+  },
+  {
+    "type": "fill",
+    "answer": "起来",
+    "explain": "收起来表示收好。"
+  },
+  {
+    "type": "fill",
+    "answer": "进",
+    "explain": "投进表示投入里面。"
+  },
+  {
+    "type": "order",
+    "answer": "请把书从包里拿出来",
+    "explain": "从包里是起点，拿出来是方向。"
+  },
+  {
+    "type": "order",
+    "answer": "这封信邮票没贴够",
+    "explain": "没贴够表示邮资不足。"
+  },
+  {
+    "type": "order",
+    "answer": "我们不等电梯了走下去吧",
+    "explain": "先说明不等电梯，再提出建议。"
+  },
+  {
+    "type": "order",
+    "answer": "他从楼上跑下来了",
+    "explain": "下来表示朝下且朝向说话人。"
+  },
+  {
+    "type": "order",
+    "answer": "请把照片放进去",
+    "explain": "把字句搭配放进去。"
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "不等电梯，走下去，说明打算走楼梯。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "说话人在楼下，因此使用下来。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "老师在教室里，说进来。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "短文写拿出一支笔。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "孩子误把杯子放进柜子。"
+  }
+]
