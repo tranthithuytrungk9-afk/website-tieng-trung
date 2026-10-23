@@ -57,6 +57,31 @@ import bai53de2 from "../../../netlify/functions/data/bai53-de2.json";
 import bai53de3 from "../../../netlify/functions/data/bai53-de3.json";
 import bai53de4 from "../../../netlify/functions/data/bai53-de4.json";
 import bai53de5 from "../../../netlify/functions/data/bai53-de5.json";
+
+import bai54de1 from "../../../netlify/functions/data/bai54-de1.json";
+import bai54de2 from "../../../netlify/functions/data/bai54-de2.json";
+import bai54de3 from "../../../netlify/functions/data/bai54-de3.json";
+import bai54de4 from "../../../netlify/functions/data/bai54-de4.json";
+import bai54de5 from "../../../netlify/functions/data/bai54-de5.json";
+
+import bai55de1 from "../../../netlify/functions/data/bai55-de1.json";
+import bai55de2 from "../../../netlify/functions/data/bai55-de2.json";
+import bai55de3 from "../../../netlify/functions/data/bai55-de3.json";
+import bai55de4 from "../../../netlify/functions/data/bai55-de4.json";
+import bai55de5 from "../../../netlify/functions/data/bai55-de5.json";
+
+import bai56de1 from "../../../netlify/functions/data/bai56-de1.json";
+import bai56de2 from "../../../netlify/functions/data/bai56-de2.json";
+import bai56de3 from "../../../netlify/functions/data/bai56-de3.json";
+import bai56de4 from "../../../netlify/functions/data/bai56-de4.json";
+import bai56de5 from "../../../netlify/functions/data/bai56-de5.json";
+
+import bai57de1 from "../../../netlify/functions/data/bai57-de1.json";
+import bai57de2 from "../../../netlify/functions/data/bai57-de2.json";
+import bai57de3 from "../../../netlify/functions/data/bai57-de3.json";
+import bai57de4 from "../../../netlify/functions/data/bai57-de4.json";
+import bai57de5 from "../../../netlify/functions/data/bai57-de5.json";
+
 const sets = {
   "Bài 46": [bai46de1,bai46de2,bai46de3,bai46de4,bai46de5],
   "Bài 47": [bai47de1,bai47de2,bai47de3,bai47de4,bai47de5],
@@ -66,6 +91,10 @@ const sets = {
   "Bài 51": [bai51de1,bai51de2,bai51de3,bai51de4,bai51de5],
 "Bài 52": [bai52de1,bai52de2,bai52de3,bai52de4,bai52de5],
 "Bài 53": [bai53de1,bai53de2,bai53de3,bai53de4,bai53de5],
+  "Bài 54": [bai54de1,bai54de2,bai54de3,bai54de4,bai54de5],
+"Bài 55": [bai55de1,bai55de2,bai55de3,bai55de4,bai55de5],
+"Bài 56": [bai56de1,bai56de2,bai56de3,bai56de4,bai56de5],
+"Bài 57": [bai57de1,bai57de2,bai57de3,bai57de4,bai57de5],
   "Bài 59": [bai59de1,bai59de2,bai59de3,bai59de4,bai59de5],
   "Bài 60": [bai60de1,bai60de2,bai60de3,bai60de4,bai60de5]
 };
