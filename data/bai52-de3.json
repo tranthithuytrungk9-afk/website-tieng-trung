@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 52",
+  "set": 3,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“严重”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "nhỏ",
+        "nghiêm trọng",
+        "nhanh",
+        "đơn giản"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“生气”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "vui vẻ",
+        "tức giận",
+        "yên tĩnh",
+        "mệt mỏi"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "罗兰说：“我的腿被自行车撞伤了。”问：罗兰哪里受伤了？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "手",
+        "腿",
+        "头",
+        "眼睛"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "警察 / 帮助 / 了 / 他",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“破”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đẹp",
+        "sạch",
+        "rách, vỡ",
+        "mới"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "小偷 / 偷走了 / 把 / 钱包",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "他___小偷拿走了钱包。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“伤”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đẹp",
+        "vui vẻ",
+        "yên tĩnh",
+        "bị thương"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“要紧”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "nghiêm trọng, quan trọng",
+        "đầy đủ",
+        "ồn ào",
+        "hạnh phúc"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“腿”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "chân",
+        "vai",
+        "tay",
+        "đầu"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“被”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đến",
+        "đem",
+        "bị (cấu trúc bị động)",
+        "cho"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "钱包被小偷偷走了。问：丢了什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "手机",
+        "钱包",
+        "自行车",
+        "钥匙"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "衣服被雨淋___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "我___了钱包，很着急。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“倒”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "cười",
+        "ngã, đổ",
+        "gửi",
+        "đưa"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他被自行车撞___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "我的腿___自行车撞伤了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "他的手指被刀划___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "自行车撞倒了他，他被送到了医院。问：他为什么去医院？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "去看朋友",
+        "被车撞伤了",
+        "去上课",
+        "去买药"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“撞”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "dán",
+        "đâm, va",
+        "treo",
+        "xếp"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "雨 / 把 / 衣服 / 淋湿了",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“流”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "chảy",
+        "đọc",
+        "đặt",
+        "lau"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "伤 / 严重 / 不 / 太",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“上街”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đến trường",
+        "đi ngủ",
+        "về nhà",
+        "ra phố"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "她丢了钱包以后，马上去找警察。问：她找谁帮忙？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "老师",
+        "司机",
+        "警察",
+        "同学"
+      ]
+    }
+  ]
+}

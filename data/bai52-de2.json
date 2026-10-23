@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 52",
+  "set": 2,
+  "questions": [
+    {
+      "type": "reading",
+      "question": "他受伤不严重，只擦破了一点儿皮。问：伤势怎么样？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "非常严重",
+        "不太严重",
+        "没有受伤",
+        "完全好了"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "医生让他休息几天。问：医生建议什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "继续跑步",
+        "休息几天",
+        "马上出院",
+        "买自行车"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“问”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ngủ",
+        "nghe",
+        "hỏi",
+        "ăn"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他___车撞伤了腿。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "手指 / 划破了 / 被刀 / 他的",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“丢”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mất, đánh rơi",
+        "đưa",
+        "cất",
+        "nhặt"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "她的钱包被人___走了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“湿”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "nặng",
+        "ướt",
+        "khô",
+        "cao"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "他的钱包被人偷了，所以很着急。问：他为什么着急？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "钱包丢了",
+        "考试通过了",
+        "买到书了",
+        "下雨了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“拉”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "kéo",
+        "đứng",
+        "ngồi",
+        "đẩy"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“手指”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "cánh tay",
+        "ngón tay",
+        "đầu gối",
+        "bàn chân"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“刀”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "thước",
+        "bút",
+        "dao",
+        "kéo"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "他 / 受伤了 / 昨天",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“偷”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "trộm",
+        "tặng",
+        "viết",
+        "đọc"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "雨太大了，他的衣服都淋湿了。问：衣服怎么样了？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "干了",
+        "湿了",
+        "丢了",
+        "破了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“小偷”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "tài xế",
+        "kẻ trộm",
+        "bác sĩ",
+        "giáo viên"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他___倒以后，马上站起来。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“淋”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mở",
+        "treo",
+        "ướt mưa",
+        "rửa"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "撞倒了 / 他 / 自行车 / 被",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“钱包”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ví tiền",
+        "vé máy bay",
+        "hộ chiếu",
+        "bình hoa"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“向”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "vì",
+        "hướng về, đối với",
+        "nhưng",
+        "từ"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他受___了，需要休息。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "这件事不太___重。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "孩子被雨淋得全身都___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "我 / 钱包 / 丢了 / 的",
+      "tag": "Sắp xếp câu"
+    }
+  ]
+}

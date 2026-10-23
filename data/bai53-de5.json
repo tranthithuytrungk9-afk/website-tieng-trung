@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 53",
+  "set": 5,
+  "questions": [
+    {
+      "type": "order",
+      "question": "民警 / 很 / 热情",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“帮助”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "từ chối",
+        "làm hỏng",
+        "đánh mất",
+        "giúp đỡ"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“安全”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ồn ào",
+        "bừa bộn",
+        "nguy hiểm",
+        "an toàn"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“解决”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "gây ra",
+        "làm mất",
+        "giải quyết",
+        "vứt đi"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“问路”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mua vé",
+        "hỏi đường",
+        "ăn cơm",
+        "đọc sách"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“事情”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đồ vật",
+        "màu sắc",
+        "thời tiết",
+        "sự việc"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "他 / 找到了 / 终于 / 护照",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“困难”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "khó khăn",
+        "hạnh phúc",
+        "dễ dàng",
+        "đơn giản"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“外国人”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "người nước ngoài",
+        "người bệnh",
+        "người bán hàng",
+        "người lái xe"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他把地___写在纸上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "先向左拐，___往前走。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“再”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "chưa",
+        "đã",
+        "không",
+        "sau đó"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "如果遇到困难，就向别人求助。问：遇到困难应该怎么办？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "求助",
+        "放弃",
+        "睡觉",
+        "逃跑"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "我找不到路了，想请人帮___。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "他终于找到了丢失的东西，十分高兴。问：他为什么高兴？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "找到东西了",
+        "要考试了",
+        "下雨了",
+        "生病了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“解释”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mở cửa",
+        "giải thích",
+        "vứt bỏ",
+        "đóng gói"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请___前走，再向右拐。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "我 / 民警 / 找 / 想 / 帮忙",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "___你有困难，就找民警帮忙。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "请 / 写在纸上 / 地址 / 把",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "她不懂汉语，但是民警耐心地解释。问：民警怎么解释？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "很快",
+        "耐心地",
+        "生气地",
+        "大声地"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“民警”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "bác sĩ",
+        "giáo viên",
+        "cảnh sát nhân dân",
+        "tài xế"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“找”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ném",
+        "mất",
+        "đặt",
+        "tìm, nhờ gặp"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "如果迷路了，___问问路。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "你先往前走，再向右拐。问：第二步做什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "往前走",
+        "向左拐",
+        "向右拐",
+        "坐车"
+      ]
+    }
+  ]
+}

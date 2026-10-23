@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 51",
+  "set": 4,
+  "questions": [
+    {
+      "type": "order",
+      "question": "请 / 挂在墙上 / 把 / 这幅画",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“幸福”最接近哪个意思？",
+      "options": [
+        "伤心",
+        "忙碌",
+        "快乐美满",
+        "危险"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：王老师让学生把教室布置得热闹一些。问：学生要做什么？",
+      "options": [
+        "装饰教室",
+        "打电话",
+        "买机票",
+        "写作业"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：老师说：“把这些书放到书架上，再把桌子擦干净。”问：先做什么？",
+      "options": [
+        "擦桌子",
+        "放书",
+        "洗衣服",
+        "开窗"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“请把这张画挂在墙上”强调什么？",
+      "options": [
+        "画的价格",
+        "动作及画最后的位置",
+        "说话人的年龄",
+        "房间的大小"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：妈妈说：“把不用的东西扔掉，留下有用的。”问：妈妈要扔掉什么？",
+      "options": [
+        "有用的东西",
+        "不用的东西",
+        "所有的礼物",
+        "新买的书"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“窗台”在哪里？",
+      "options": [
+        "窗户旁的台面",
+        "地板下面",
+        "门外的马路",
+        "房顶上"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把桌子擦___净。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“把纸剪成小花”中的“成”表示什么？",
+      "options": [
+        "地点",
+        "变成的结果",
+        "时间",
+        "原因"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "哪一句表达“把书放到书架上”？",
+      "options": [
+        "把书放在书架上。",
+        "把书很书架。",
+        "把书喜欢书架。",
+        "把书从书架。"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "我们 / 房间 / 收拾好了 / 把",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“开会”是什么意思？",
+      "options": [
+        "开窗户",
+        "举行会议",
+        "开汽车",
+        "开门"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "哪一句“把”字句正确？",
+      "options": [
+        "我把很高兴。",
+        "请把书放在桌子上。",
+        "他把在学校。",
+        "我们把喜欢茶。"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "把 / 请 / 窗花 / 贴在窗户上",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“请把杯子递给妈妈”中的“给妈妈”表示什么？",
+      "options": [
+        "动作发生的时间",
+        "动作的对象",
+        "动作的原因",
+        "动作的数量"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“热闹”通常形容什么？",
+      "options": [
+        "气氛活跃",
+        "房间很小",
+        "天气很冷",
+        "东西很贵"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "妈妈 / 把 / 花 / 插在花瓶里",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：麦克把花插在花瓶里，然后把花瓶放在窗台上。问：花瓶最后在哪里？",
+      "options": [
+        "窗台上",
+        "门外",
+        "地板上",
+        "书包里"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“礼物”指什么？",
+      "options": [
+        "礼品",
+        "衣柜",
+        "作业",
+        "书架"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把礼物送___老师。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "妈妈把鲜花插___花瓶里。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "把没用的纸___掉吧。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“把屋子打扫干净”中的“干净”表示什么？",
+      "options": [
+        "动作结果",
+        "动作时间",
+        "动作对象",
+        "动作地点"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把窗花___在窗户上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "他把那张纸剪___了一朵花。",
+      "tag": "Điền từ"
+    }
+  ]
+}

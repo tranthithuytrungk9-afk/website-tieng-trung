@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 51",
+  "set": 5,
+  "questions": [
+    {
+      "type": "fill",
+      "question": "屋子里乱___八糟的。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“乱七八糟”最接近哪个意思？",
+      "options": [
+        "很整齐",
+        "很安静",
+        "乱得没有条理",
+        "非常幸福"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "我们 / 把 / 教室 / 布置得很漂亮",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "新年到了，大家希望生活幸___。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“把这些旧东西扔掉吧”中的“掉”表示什么？",
+      "options": [
+        "动作结果",
+        "动作次数",
+        "动作对象",
+        "动作时间"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把新买的画挂在墙上”中，画最后在哪里？",
+      "options": [
+        "地上",
+        "墙上",
+        "桌子下",
+        "门外"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "他们正在___拾房间。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "把 / 他 / 剪成了 / 纸 / 小花",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：屋子收拾得干干净净，大家都很高兴。问：屋子现在怎么样？",
+      "options": [
+        "乱七八糟",
+        "很干净",
+        "很危险",
+        "很小"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“收拾房间”的意思是什么？",
+      "options": [
+        "整理房间",
+        "租房间",
+        "离开房间",
+        "打开房间"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“布置教室”中的“布置”是什么意思？",
+      "options": [
+        "检查",
+        "装饰、安排",
+        "打碎",
+        "借用"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“花瓶”用来做什么？",
+      "options": [
+        "装花",
+        "煮饭",
+        "写字",
+        "扫地"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：他们把纸剪成了小花，又把小花贴在墙上。问：纸变成了什么？",
+      "options": [
+        "小花",
+        "书本",
+        "照片",
+        "花瓶"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "fill",
+      "question": "我们把教室___置得很漂亮。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“收拾好”中的“好”表示什么？",
+      "options": [
+        "结果完成",
+        "方向",
+        "地点",
+        "人物"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“吉祥”最接近什么含义？",
+      "options": [
+        "幸运、吉利",
+        "悲伤",
+        "复杂",
+        "危险"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：玛丽把礼物递给老师，老师高兴地说：“谢谢！”问：谁收到了礼物？",
+      "options": [
+        "玛丽",
+        "老师",
+        "山本",
+        "妈妈"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“把桌子擦干净”正确表达什么？",
+      "options": [
+        "擦桌子的结果",
+        "桌子的颜色",
+        "擦桌子的时间",
+        "桌子的主人"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把吸尘器递给我”中的“递”是什么意思？",
+      "options": [
+        "扔掉",
+        "传递、交给",
+        "打扫",
+        "贴上"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：大家把房间收拾好以后，才开始准备晚会。问：什么时候准备晚会？",
+      "options": [
+        "收拾前",
+        "收拾后",
+        "明天早上",
+        "上课时"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "fill",
+      "question": "请把书放___书架上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "把 / 没用的东西 / 扔掉 / 请",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "这幅画挂在墙___。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "把 / 送给 / 这份礼物 / 老师",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“吸尘器”是什么？",
+      "options": [
+        "扫帚",
+        "窗帘",
+        "吸尘器",
+        "桌布"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    }
+  ]
+}

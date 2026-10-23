@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 53",
+  "set": 1,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“护照”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "bình hoa",
+        "ví tiền",
+        "hộ chiếu",
+        "sách giáo khoa"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“热情”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "lo lắng",
+        "nhiệt tình",
+        "mệt mỏi",
+        "lạnh lùng"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“帮助”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "từ chối",
+        "làm hỏng",
+        "đánh mất",
+        "giúp đỡ"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“民警”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "bác sĩ",
+        "giáo viên",
+        "cảnh sát nhân dân",
+        "tài xế"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "小王找不到护照，心里很着急。问：小王丢了什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "雨伞",
+        "护照",
+        "书包",
+        "钱包"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "如果 / 迷路了 / 就 / 问路",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "___你有困难，就找民警帮忙。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "有困难 / 找 / 就 / 民警",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“求助”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "từ chối",
+        "quên",
+        "nhờ giúp đỡ",
+        "chê bai"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“迷路”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "lạc đường",
+        "đi làm",
+        "về nhà",
+        "nghỉ ngơi"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他把地___写在纸上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "先向左拐，___往前走。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "如果你迷路了，可以问路。问：什么时候需要问路？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "迷路的时候",
+        "吃饭的时候",
+        "睡觉的时候",
+        "考试以后"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "请 / 往前走 / 先",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“耐心”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "kiên nhẫn",
+        "sợ hãi",
+        "vội vàng",
+        "tức giận"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“问路”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mua vé",
+        "hỏi đường",
+        "ăn cơm",
+        "đọc sách"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "如果迷路了，___问问路。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“困难”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "khó khăn",
+        "hạnh phúc",
+        "dễ dàng",
+        "đơn giản"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“地址”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "địa chỉ",
+        "thời tiết",
+        "bệnh viện",
+        "thức ăn"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "向右拐 / 再 / 往前走",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "请___前走，再向右拐。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "民警热情地帮助了外国朋友。问：民警的态度怎么样？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "冷淡",
+        "热情",
+        "生气",
+        "害怕"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“找”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ném",
+        "mất",
+        "đặt",
+        "tìm, nhờ gặp"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "外宾说：“我有困难，想找民警帮忙。”问：外宾想找谁？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "司机",
+        "民警",
+        "老师",
+        "医生"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "我找不到路了，想请人帮___。",
+      "tag": "Điền từ"
+    }
+  ]
+}

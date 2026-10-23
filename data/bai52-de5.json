@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 52",
+  "set": 5,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“倒”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "cười",
+        "ngã, đổ",
+        "gửi",
+        "đưa"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "撞倒了 / 他 / 自行车 / 被",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "衣服被雨淋___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "他 / 受伤了 / 昨天",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "自行车撞倒了他，他被送到了医院。问：他为什么去医院？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "去看朋友",
+        "被车撞伤了",
+        "去上课",
+        "去买药"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“生气”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "vui vẻ",
+        "tức giận",
+        "yên tĩnh",
+        "mệt mỏi"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他的手指被刀划___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“上街”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đến trường",
+        "đi ngủ",
+        "về nhà",
+        "ra phố"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "医生让他休息几天。问：医生建议什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "继续跑步",
+        "休息几天",
+        "马上出院",
+        "买自行车"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "我的腿___自行车撞伤了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "他受伤不严重，只擦破了一点儿皮。问：伤势怎么样？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "非常严重",
+        "不太严重",
+        "没有受伤",
+        "完全好了"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 钱包 / 丢了 / 的",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“严重”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "nhỏ",
+        "nghiêm trọng",
+        "nhanh",
+        "đơn giản"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“被”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đến",
+        "đem",
+        "bị (cấu trúc bị động)",
+        "cho"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他被自行车撞___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“撞”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "dán",
+        "đâm, va",
+        "treo",
+        "xếp"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他___小偷拿走了钱包。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“腿”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "chân",
+        "vai",
+        "tay",
+        "đầu"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "她丢了钱包以后，马上去找警察。问：她找谁帮忙？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "老师",
+        "司机",
+        "警察",
+        "同学"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“拉”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "kéo",
+        "đứng",
+        "ngồi",
+        "đẩy"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“破”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đẹp",
+        "sạch",
+        "rách, vỡ",
+        "mới"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "我___了钱包，很着急。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“手指”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "cánh tay",
+        "ngón tay",
+        "đầu gối",
+        "bàn chân"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“刀”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "thước",
+        "bút",
+        "dao",
+        "kéo"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "手指 / 划破了 / 被刀 / 他的",
+      "tag": "Sắp xếp câu"
+    }
+  ]
+}

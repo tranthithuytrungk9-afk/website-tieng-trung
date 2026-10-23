@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 51",
+  "set": 3,
+  "questions": [
+    {
+      "type": "reading",
+      "question": "阅读：屋子收拾得干干净净，大家都很高兴。问：屋子现在怎么样？",
+      "options": [
+        "乱七八糟",
+        "很干净",
+        "很危险",
+        "很小"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“挂”常用于哪个动作？",
+      "options": [
+        "挂画",
+        "吃饭",
+        "写信",
+        "洗澡"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把吸尘器递给我”中的“递”是什么意思？",
+      "options": [
+        "扔掉",
+        "传递、交给",
+        "打扫",
+        "贴上"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“吸尘器”是什么？",
+      "options": [
+        "扫帚",
+        "窗帘",
+        "吸尘器",
+        "桌布"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "屋子太乱了，我们一起___一下吧。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "把 / 放在 / 桌子上 / 书",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：他们把纸剪成了小花，又把小花贴在墙上。问：纸变成了什么？",
+      "options": [
+        "小花",
+        "书本",
+        "照片",
+        "花瓶"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：玛丽说：“屋子太乱了，我们先收拾一下吧。”问：玛丽想做什么？",
+      "options": [
+        "做饭",
+        "整理房间",
+        "去旅行",
+        "开会"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“布置教室”中的“布置”是什么意思？",
+      "options": [
+        "检查",
+        "装饰、安排",
+        "打碎",
+        "借用"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把桌子擦干净”正确表达什么？",
+      "options": [
+        "擦桌子的结果",
+        "桌子的颜色",
+        "擦桌子的时间",
+        "桌子的主人"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "把 / 送给 / 这份礼物 / 老师",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "order",
+      "question": "请 / 递给我 / 把 / 吸尘器",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“贴”常用于哪个动作？",
+      "options": [
+        "贴窗花",
+        "开电视",
+        "喝牛奶",
+        "跑步"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把这幅画___在墙上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“收拾好”中的“好”表示什么？",
+      "options": [
+        "结果完成",
+        "方向",
+        "地点",
+        "人物"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把吸尘器___给我。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“吉祥”最接近什么含义？",
+      "options": [
+        "幸运、吉利",
+        "悲伤",
+        "复杂",
+        "危险"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“乱七八糟”最接近哪个意思？",
+      "options": [
+        "很整齐",
+        "很安静",
+        "乱得没有条理",
+        "非常幸福"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：山本把窗花贴在窗户上，又把一幅画挂在墙上。问：画在哪里？",
+      "options": [
+        "窗户上",
+        "地上",
+        "墙上",
+        "桌子上"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“扔”是什么意思？",
+      "options": [
+        "拿来",
+        "丢、扔",
+        "擦干",
+        "借给"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "他们正在___拾房间。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "我们 / 把 / 教室 / 布置得很漂亮",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "新年到了，大家希望生活幸___。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“收拾房间”的意思是什么？",
+      "options": [
+        "整理房间",
+        "租房间",
+        "离开房间",
+        "打开房间"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "这幅画挂在墙___。",
+      "tag": "Điền từ"
+    }
+  ]
+}

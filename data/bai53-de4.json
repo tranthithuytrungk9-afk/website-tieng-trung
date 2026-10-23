@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 53",
+  "set": 4,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“就”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "vẫn",
+        "thì, liền",
+        "đã",
+        "đang"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "请问，去火车站怎么走？问：说话人想知道什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "票价",
+        "路线",
+        "天气",
+        "时间"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“警察”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "học sinh",
+        "y tá",
+        "cảnh sát",
+        "đầu bếp"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "如果 / 迷路了 / 就 / 问路",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“耐心”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "kiên nhẫn",
+        "sợ hãi",
+        "vội vàng",
+        "tức giận"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请你___这件事解释清楚。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "这件事终于解___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“终于”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "đột nhiên",
+        "cuối cùng",
+        "ban đầu",
+        "thường xuyên"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“先”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ngày mai",
+        "trước tiên",
+        "hôm qua",
+        "sau cùng"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "请 / 往前走 / 先",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“往”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "cùng",
+        "hướng về",
+        "vì",
+        "từ"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“丢失”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mua được",
+        "đọc xong",
+        "nhặt được",
+        "thất lạc, đánh mất"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "有困难 / 找 / 就 / 民警",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "民警很有耐___地解释。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“求助”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "từ chối",
+        "quên",
+        "nhờ giúp đỡ",
+        "chê bai"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "民警热情地帮助了外国朋友。问：民警的态度怎么样？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "冷淡",
+        "热情",
+        "生气",
+        "害怕"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“拐”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "rẽ",
+        "đọc",
+        "ngủ",
+        "viết"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“如果”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mặc dù",
+        "nếu",
+        "nhưng",
+        "bởi vì"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "他把地址写在纸上，交给了民警。问：他写了什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "名字",
+        "地址",
+        "电话号码",
+        "作业"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他不知道怎么走，就去___路。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "他___于找到了护照。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "小王找不到护照，心里很着急。问：小王丢了什么？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "雨伞",
+        "护照",
+        "书包",
+        "钱包"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "如果遇到困难，可以向别人求___。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“热情”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "lo lắng",
+        "nhiệt tình",
+        "mệt mỏi",
+        "lạnh lùng"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "向右拐 / 再 / 往前走",
+      "tag": "Sắp xếp câu"
+    }
+  ]
+}

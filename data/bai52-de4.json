@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 52",
+  "set": 4,
+  "questions": [
+    {
+      "type": "order",
+      "question": "他 / 送到医院 / 被 / 了",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "雨太大了，他的衣服都淋湿了。问：衣服怎么样了？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "干了",
+        "湿了",
+        "丢了",
+        "破了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“血”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "hoa",
+        "mưa",
+        "máu",
+        "sách"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“湿”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "nặng",
+        "ướt",
+        "khô",
+        "cao"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "钱包 / 小偷 / 偷走了 / 被",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "他的钱包被人偷了，所以很着急。问：他为什么着急？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "钱包丢了",
+        "考试通过了",
+        "买到书了",
+        "下雨了"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他___车撞伤了腿。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "他摔倒以后，朋友马上送他去医院。问：朋友送他去哪儿？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "学校",
+        "商店",
+        "医院",
+        "车站"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“向”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "vì",
+        "hướng về, đối với",
+        "nhưng",
+        "từ"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“钱包”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ví tiền",
+        "vé máy bay",
+        "hộ chiếu",
+        "bình hoa"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "他的手指被刀划破了。问：什么东西划破了手指？",
+      "tag": "Đọc hiểu",
+      "options": [
+        "刀",
+        "书",
+        "水",
+        "车"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "被 / 衣服 / 淋湿了 / 雨",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“问”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "ngủ",
+        "nghe",
+        "hỏi",
+        "ăn"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "她的钱包被人___走了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“出租车”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "máy bay",
+        "xe taxi",
+        "tàu hỏa",
+        "xe đạp"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他___倒以后，马上站起来。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "这件事不太___重。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“小偷”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "tài xế",
+        "kẻ trộm",
+        "bác sĩ",
+        "giáo viên"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“骨头”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "tóc",
+        "da",
+        "xương",
+        "mắt"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "“偷”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "trộm",
+        "tặng",
+        "viết",
+        "đọc"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "孩子被雨淋得全身都___了。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "被 / 我的腿 / 自行车 / 撞伤了",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“淋”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mở",
+        "treo",
+        "ướt mưa",
+        "rửa"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "他受___了，需要休息。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“丢”的意思是什么？",
+      "tag": "Từ vựng",
+      "options": [
+        "mất, đánh rơi",
+        "đưa",
+        "cất",
+        "nhặt"
+      ]
+    }
+  ]
+}

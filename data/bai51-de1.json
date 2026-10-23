@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 51",
+  "set": 1,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“吸尘器”是什么？",
+      "options": [
+        "扫帚",
+        "窗帘",
+        "吸尘器",
+        "桌布"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "把 / 放在 / 桌子上 / 书",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“把吸尘器递给我”中的“递”是什么意思？",
+      "options": [
+        "扔掉",
+        "传递、交给",
+        "打扫",
+        "贴上"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "请 / 挂在墙上 / 把 / 这幅画",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“请把这张画挂在墙上”强调什么？",
+      "options": [
+        "画的价格",
+        "动作及画最后的位置",
+        "说话人的年龄",
+        "房间的大小"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "妈妈 / 把 / 花 / 插在花瓶里",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "把没用的纸___掉吧。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：王老师让学生把教室布置得热闹一些。问：学生要做什么？",
+      "options": [
+        "装饰教室",
+        "打电话",
+        "买机票",
+        "写作业"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "“贴”常用于哪个动作？",
+      "options": [
+        "贴窗花",
+        "开电视",
+        "喝牛奶",
+        "跑步"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：山本把窗花贴在窗户上，又把一幅画挂在墙上。问：画在哪里？",
+      "options": [
+        "窗户上",
+        "地上",
+        "墙上",
+        "桌子上"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "fill",
+      "question": "妈妈把鲜花插___花瓶里。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“挂”常用于哪个动作？",
+      "options": [
+        "挂画",
+        "吃饭",
+        "写信",
+        "洗澡"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“扔”是什么意思？",
+      "options": [
+        "拿来",
+        "丢、扔",
+        "擦干",
+        "借给"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把这幅画___在墙上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“乱七八糟”最接近哪个意思？",
+      "options": [
+        "很整齐",
+        "很安静",
+        "乱得没有条理",
+        "非常幸福"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "屋子太乱了，我们一起___一下吧。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“收拾房间”的意思是什么？",
+      "options": [
+        "整理房间",
+        "租房间",
+        "离开房间",
+        "打开房间"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：玛丽说：“屋子太乱了，我们先收拾一下吧。”问：玛丽想做什么？",
+      "options": [
+        "做饭",
+        "整理房间",
+        "去旅行",
+        "开会"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "哪一句“把”字句正确？",
+      "options": [
+        "我把很高兴。",
+        "请把书放在桌子上。",
+        "他把在学校。",
+        "我们把喜欢茶。"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把窗花___在窗户上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“布置教室”中的“布置”是什么意思？",
+      "options": [
+        "检查",
+        "装饰、安排",
+        "打碎",
+        "借用"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把吸尘器___给我。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“请把杯子递给妈妈”中的“给妈妈”表示什么？",
+      "options": [
+        "动作发生的时间",
+        "动作的对象",
+        "动作的原因",
+        "动作的数量"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：老师说：“把这些书放到书架上，再把桌子擦干净。”问：先做什么？",
+      "options": [
+        "擦桌子",
+        "放书",
+        "洗衣服",
+        "开窗"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "order",
+      "question": "请 / 递给我 / 把 / 吸尘器",
+      "tag": "Sắp xếp câu"
+    }
+  ]
+}

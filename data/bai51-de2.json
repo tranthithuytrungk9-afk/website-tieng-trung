@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 51",
+  "set": 2,
+  "questions": [
+    {
+      "type": "mc",
+      "question": "“开会”是什么意思？",
+      "options": [
+        "开窗户",
+        "举行会议",
+        "开汽车",
+        "开门"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“窗台”在哪里？",
+      "options": [
+        "窗户旁的台面",
+        "地板下面",
+        "门外的马路",
+        "房顶上"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把书放___书架上。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：麦克把花插在花瓶里，然后把花瓶放在窗台上。问：花瓶最后在哪里？",
+      "options": [
+        "窗台上",
+        "门外",
+        "地板上",
+        "书包里"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "fill",
+      "question": "我们把教室___置得很漂亮。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：大家把房间收拾好以后，才开始准备晚会。问：什么时候准备晚会？",
+      "options": [
+        "收拾前",
+        "收拾后",
+        "明天早上",
+        "上课时"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "order",
+      "question": "我们 / 房间 / 收拾好了 / 把",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“把这些旧东西扔掉吧”中的“掉”表示什么？",
+      "options": [
+        "动作结果",
+        "动作次数",
+        "动作对象",
+        "动作时间"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "他把那张纸剪___了一朵花。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“热闹”通常形容什么？",
+      "options": [
+        "气氛活跃",
+        "房间很小",
+        "天气很冷",
+        "东西很贵"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "把 / 请 / 窗花 / 贴在窗户上",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“礼物”指什么？",
+      "options": [
+        "礼品",
+        "衣柜",
+        "作业",
+        "书架"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把礼物送___老师。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "“把纸剪成小花”中的“成”表示什么？",
+      "options": [
+        "地点",
+        "变成的结果",
+        "时间",
+        "原因"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把新买的画挂在墙上”中，画最后在哪里？",
+      "options": [
+        "地上",
+        "墙上",
+        "桌子下",
+        "门外"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“把屋子打扫干净”中的“干净”表示什么？",
+      "options": [
+        "动作结果",
+        "动作时间",
+        "动作对象",
+        "动作地点"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "fill",
+      "question": "请把桌子擦___净。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "屋子里乱___八糟的。",
+      "tag": "Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "把 / 没用的东西 / 扔掉 / 请",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "“幸福”最接近哪个意思？",
+      "options": [
+        "伤心",
+        "忙碌",
+        "快乐美满",
+        "危险"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "mc",
+      "question": "“花瓶”用来做什么？",
+      "options": [
+        "装花",
+        "煮饭",
+        "写字",
+        "扫地"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    },
+    {
+      "type": "order",
+      "question": "把 / 他 / 剪成了 / 纸 / 小花",
+      "tag": "Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：玛丽把礼物递给老师，老师高兴地说：“谢谢！”问：谁收到了礼物？",
+      "options": [
+        "玛丽",
+        "老师",
+        "山本",
+        "妈妈"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：妈妈说：“把不用的东西扔掉，留下有用的。”问：妈妈要扔掉什么？",
+      "options": [
+        "有用的东西",
+        "不用的东西",
+        "所有的礼物",
+        "新买的书"
+      ],
+      "tag": "Đọc hiểu"
+    },
+    {
+      "type": "mc",
+      "question": "哪一句表达“把书放到书架上”？",
+      "options": [
+        "把书放在书架上。",
+        "把书很书架。",
+        "把书喜欢书架。",
+        "把书从书架。"
+      ],
+      "tag": "Từ vựng và ngữ pháp"
+    }
+  ]
+}
