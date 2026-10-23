@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "不严重：không nghiêm trọng."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "休息几天：nghỉ vài ngày."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "问：hỏi。"
+  },
+  {
+    "type": "fill",
+    "answer": "被|让|叫",
+    "explain": "Câu bị động."
+  },
+  {
+    "type": "order",
+    "answer": "他的手指被刀划破了。",
+    "explain": "被刀划破了."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "丢：mất, đánh rơi。"
+  },
+  {
+    "type": "fill",
+    "answer": "偷|拿",
+    "explain": "偷走/拿走: trộm/lấy đi."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "湿：ướt。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "被偷了：bị trộm."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "拉：kéo。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "手指：ngón tay。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "刀：dao。"
+  },
+  {
+    "type": "order",
+    "answer": "他昨天受伤了。",
+    "explain": "Thời gian trước động từ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "偷：trộm。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "淋湿：ướt do mưa."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "小偷：kẻ trộm。"
+  },
+  {
+    "type": "fill",
+    "answer": "摔",
+    "explain": "摔倒: ngã."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "淋：ướt mưa。"
+  },
+  {
+    "type": "order",
+    "answer": "他被自行车撞倒了。",
+    "explain": "被自行车撞倒了."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "钱包：ví tiền。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "向：hướng về, đối với。"
+  },
+  {
+    "type": "fill",
+    "answer": "伤",
+    "explain": "受伤: bị thương."
+  },
+  {
+    "type": "fill",
+    "answer": "严",
+    "explain": "严重: nghiêm trọng."
+  },
+  {
+    "type": "fill",
+    "answer": "湿",
+    "explain": "湿: ướt."
+  },
+  {
+    "type": "order",
+    "answer": "我的钱包丢了。",
+    "explain": "我的钱包丢了."
+  }
+]

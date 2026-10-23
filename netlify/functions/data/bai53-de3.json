@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "找到丢失的东西：tìm được đồ thất lạc."
+  },
+  {
+    "type": "fill",
+    "answer": "址",
+    "explain": "地址: địa chỉ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "困难：khó khăn。"
+  },
+  {
+    "type": "fill",
+    "answer": "再",
+    "explain": "先…再…"
+  },
+  {
+    "type": "order",
+    "answer": "我找不到路了。",
+    "explain": "找不到: không tìm thấy."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "帮助：giúp đỡ。"
+  },
+  {
+    "type": "fill",
+    "answer": "往",
+    "explain": "往前走: đi thẳng."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "安全：an toàn。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "找：tìm, nhờ gặp。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "迷路：lạc đường."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "护照：hộ chiếu。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "民警：cảnh sát."
+  },
+  {
+    "type": "order",
+    "answer": "遇到困难可以向民警求助。",
+    "explain": "向…求助."
+  },
+  {
+    "type": "order",
+    "answer": "如果不明白，就再问一次。",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "fill",
+    "answer": "如果|要是",
+    "explain": "Nếu gặp khó khăn thì tìm cảnh sát."
+  },
+  {
+    "type": "order",
+    "answer": "他给我解释了这件事。",
+    "explain": "给某人解释."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "再向右拐：sau đó rẽ phải."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "解决：giải quyết。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "问路：hỏi đường。"
+  },
+  {
+    "type": "fill",
+    "answer": "就",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "外国人：người nước ngoài。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "民警：cảnh sát nhân dân。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "迷路：lạc đường。"
+  },
+  {
+    "type": "fill",
+    "answer": "忙",
+    "explain": "帮忙: giúp đỡ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "地址：địa chỉ。"
+  }
+]

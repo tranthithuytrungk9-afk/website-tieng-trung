@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "护照：hộ chiếu。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "热情：nhiệt tình。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "帮助：giúp đỡ。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "民警：cảnh sát nhân dân。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "护照：hộ chiếu."
+  },
+  {
+    "type": "order",
+    "answer": "如果迷路了，就问路。",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "fill",
+    "answer": "如果|要是",
+    "explain": "Nếu gặp khó khăn thì tìm cảnh sát."
+  },
+  {
+    "type": "order",
+    "answer": "有困难就找民警。",
+    "explain": "有困难就…"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "求助：nhờ giúp đỡ。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "迷路：lạc đường。"
+  },
+  {
+    "type": "fill",
+    "answer": "址",
+    "explain": "地址: địa chỉ."
+  },
+  {
+    "type": "fill",
+    "answer": "再",
+    "explain": "先…再…"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "迷路：lạc đường."
+  },
+  {
+    "type": "order",
+    "answer": "请先往前走。",
+    "explain": "先: trước tiên."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "耐心：kiên nhẫn。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "问路：hỏi đường。"
+  },
+  {
+    "type": "fill",
+    "answer": "就",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "困难：khó khăn。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "地址：địa chỉ。"
+  },
+  {
+    "type": "order",
+    "answer": "往前走，再向右拐。",
+    "explain": "再: sau đó."
+  },
+  {
+    "type": "fill",
+    "answer": "往",
+    "explain": "往前走: đi thẳng."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "热情：nhiệt tình."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "找：tìm, nhờ gặp。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "民警：cảnh sát."
+  },
+  {
+    "type": "fill",
+    "answer": "忙",
+    "explain": "帮忙: giúp đỡ."
+  }
+]

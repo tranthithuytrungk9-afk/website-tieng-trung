@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "求助：cầu cứu, nhờ giúp đỡ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "事情：sự việc。"
+  },
+  {
+    "type": "fill",
+    "answer": "助",
+    "explain": "求助: nhờ giúp."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "怎么走：đi đường nào."
+  },
+  {
+    "type": "fill",
+    "answer": "终",
+    "explain": "终于: cuối cùng."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "往：hướng về。"
+  },
+  {
+    "type": "order",
+    "answer": "民警很热情。",
+    "explain": "热情: nhiệt tình."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "拐：rẽ。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "解释：giải thích。"
+  },
+  {
+    "type": "order",
+    "answer": "他终于找到了护照。",
+    "explain": "终于: cuối cùng."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "警察：cảnh sát。"
+  },
+  {
+    "type": "fill",
+    "answer": "把",
+    "explain": "把 + tân ngữ + động từ + kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "心",
+    "explain": "耐心: kiên nhẫn."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "终于：cuối cùng。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "丢失：thất lạc, đánh mất。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "先：trước tiên。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "如果：nếu。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "再：sau đó。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "就：thì, liền。"
+  },
+  {
+    "type": "fill",
+    "answer": "决",
+    "explain": "解决: giải quyết."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "地址：địa chỉ."
+  },
+  {
+    "type": "order",
+    "answer": "请把地址写在纸上。",
+    "explain": "把 + 地址 + 写在纸上."
+  },
+  {
+    "type": "fill",
+    "answer": "问",
+    "explain": "问路: hỏi đường."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "耐心：kiên nhẫn."
+  },
+  {
+    "type": "order",
+    "answer": "我想找民警帮忙。",
+    "explain": "想找…帮忙."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "干干净净: rất sạch sẽ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "挂画：treo tranh."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "递给某人：đưa/chuyển cho ai."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "吸尘器：máy hút bụi."
+  },
+  {
+    "type": "fill",
+    "answer": "收拾",
+    "explain": "收拾屋子：dọn dẹp phòng."
+  },
+  {
+    "type": "order",
+    "answer": "把书放在桌子上。",
+    "explain": "放在桌子上 là kết quả vị trí."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "剪成小花: cắt thành hoa nhỏ."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "收拾一下：dọn dẹp một chút."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "布置：bố trí, trang trí."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "擦干净：lau sạch."
+  },
+  {
+    "type": "order",
+    "answer": "把这份礼物送给老师。",
+    "explain": "送给老师: tặng thầy cô."
+  },
+  {
+    "type": "order",
+    "answer": "请把吸尘器递给我。",
+    "explain": "把 + 吸尘器 + 递给我."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "贴：dán."
+  },
+  {
+    "type": "fill",
+    "answer": "挂",
+    "explain": "挂在墙上：treo lên tường."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "好 là bổ ngữ kết quả, chỉ hoàn tất."
+  },
+  {
+    "type": "fill",
+    "answer": "递",
+    "explain": "递给我：đưa cho tôi."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "吉祥：cát tường, may mắn."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "乱七八糟：bừa bộn, lộn xộn."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "画挂在墙上."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "扔：ném, vứt."
+  },
+  {
+    "type": "fill",
+    "answer": "收",
+    "explain": "收拾：dọn dẹp."
+  },
+  {
+    "type": "order",
+    "answer": "我们把教室布置得很漂亮。",
+    "explain": "布置得很漂亮: trang trí rất đẹp."
+  },
+  {
+    "type": "fill",
+    "answer": "福",
+    "explain": "幸福：hạnh phúc."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "收拾：thu dọn, sắp xếp."
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "墙上：trên tường."
+  }
+]

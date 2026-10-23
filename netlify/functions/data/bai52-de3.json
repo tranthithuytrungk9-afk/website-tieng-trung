@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "严重：nghiêm trọng。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "生气：tức giận。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "腿：chân."
+  },
+  {
+    "type": "order",
+    "answer": "警察帮助了他。",
+    "explain": "帮助: giúp đỡ."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "破：rách, vỡ。"
+  },
+  {
+    "type": "order",
+    "answer": "小偷把钱包偷走了。",
+    "explain": "Câu chữ 把."
+  },
+  {
+    "type": "fill",
+    "answer": "被|让|叫",
+    "explain": "Bị lấy ví: 被/让/叫."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "伤：bị thương。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "要紧：nghiêm trọng, quan trọng。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "腿：chân。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "被：bị (cấu trúc bị động)。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "钱包：ví tiền."
+  },
+  {
+    "type": "fill",
+    "answer": "湿",
+    "explain": "淋湿: bị mưa làm ướt."
+  },
+  {
+    "type": "fill",
+    "answer": "丢",
+    "explain": "丢钱包: mất ví."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "倒：ngã, đổ。"
+  },
+  {
+    "type": "fill",
+    "answer": "倒",
+    "explain": "撞倒: đâm ngã."
+  },
+  {
+    "type": "fill",
+    "answer": "被",
+    "explain": "被 + tác nhân + động từ + kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "破",
+    "explain": "划破: rạch rách."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "撞伤：đâm bị thương."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "撞：đâm, va。"
+  },
+  {
+    "type": "order",
+    "answer": "雨把衣服淋湿了。",
+    "explain": "Câu chữ 把."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "流：chảy。"
+  },
+  {
+    "type": "order",
+    "answer": "伤不太严重。",
+    "explain": "不太严重."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "上街：ra phố。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "警察：cảnh sát."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "倒：ngã, đổ。"
+  },
+  {
+    "type": "order",
+    "answer": "他被自行车撞倒了。",
+    "explain": "被自行车撞倒了."
+  },
+  {
+    "type": "fill",
+    "answer": "湿",
+    "explain": "淋湿: bị mưa làm ướt."
+  },
+  {
+    "type": "order",
+    "answer": "他昨天受伤了。",
+    "explain": "Thời gian trước động từ."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "撞伤：đâm bị thương."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "生气：tức giận。"
+  },
+  {
+    "type": "fill",
+    "answer": "破",
+    "explain": "划破: rạch rách."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "上街：ra phố。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "休息几天：nghỉ vài ngày."
+  },
+  {
+    "type": "fill",
+    "answer": "被",
+    "explain": "被 + tác nhân + động từ + kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "不严重：không nghiêm trọng."
+  },
+  {
+    "type": "order",
+    "answer": "我的钱包丢了。",
+    "explain": "我的钱包丢了."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "严重：nghiêm trọng。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "被：bị (cấu trúc bị động)。"
+  },
+  {
+    "type": "fill",
+    "answer": "倒",
+    "explain": "撞倒: đâm ngã."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "撞：đâm, va。"
+  },
+  {
+    "type": "fill",
+    "answer": "被|让|叫",
+    "explain": "Bị lấy ví: 被/让/叫."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "腿：chân。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "警察：cảnh sát."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "拉：kéo。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "破：rách, vỡ。"
+  },
+  {
+    "type": "fill",
+    "answer": "丢",
+    "explain": "丢钱包: mất ví."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "手指：ngón tay。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "刀：dao。"
+  },
+  {
+    "type": "order",
+    "answer": "他的手指被刀划破了。",
+    "explain": "被刀划破了."
+  }
+]

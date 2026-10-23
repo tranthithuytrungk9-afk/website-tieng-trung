@@ -1,0 +1,127 @@
+[
+  {
+    "type": "fill",
+    "answer": "七",
+    "explain": "乱七八糟：bừa bộn."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "乱七八糟：bừa bộn, lộn xộn."
+  },
+  {
+    "type": "order",
+    "answer": "我们把教室布置得很漂亮。",
+    "explain": "布置得很漂亮: trang trí rất đẹp."
+  },
+  {
+    "type": "fill",
+    "answer": "福",
+    "explain": "幸福：hạnh phúc."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "扔掉：vứt bỏ."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "挂在墙上：treo lên tường."
+  },
+  {
+    "type": "fill",
+    "answer": "收",
+    "explain": "收拾：dọn dẹp."
+  },
+  {
+    "type": "order",
+    "answer": "他把纸剪成了小花。",
+    "explain": "剪成了小花: cắt thành bông hoa."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "干干净净: rất sạch sẽ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "收拾：thu dọn, sắp xếp."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "布置：bố trí, trang trí."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "花瓶：bình hoa."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "剪成小花: cắt thành hoa nhỏ."
+  },
+  {
+    "type": "fill",
+    "answer": "布",
+    "explain": "布置：trang trí."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "好 là bổ ngữ kết quả, chỉ hoàn tất."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "吉祥：cát tường, may mắn."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "礼物递给老师: thầy cô nhận quà."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "擦干净：lau sạch."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "递给某人：đưa/chuyển cho ai."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "以后：sau khi."
+  },
+  {
+    "type": "fill",
+    "answer": "在|到",
+    "explain": "放在/到书架上：đặt lên giá sách."
+  },
+  {
+    "type": "order",
+    "answer": "请把没用的东西扔掉。",
+    "explain": "扔掉: vứt bỏ."
+  },
+  {
+    "type": "fill",
+    "answer": "上",
+    "explain": "墙上：trên tường."
+  },
+  {
+    "type": "order",
+    "answer": "把这份礼物送给老师。",
+    "explain": "送给老师: tặng thầy cô."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "吸尘器：máy hút bụi."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "就：thì, liền。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "怎么走：đi đường nào."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "警察：cảnh sát。"
+  },
+  {
+    "type": "order",
+    "answer": "如果迷路了，就问路。",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "耐心：kiên nhẫn。"
+  },
+  {
+    "type": "fill",
+    "answer": "把",
+    "explain": "把 + tân ngữ + động từ + kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "决",
+    "explain": "解决: giải quyết."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "终于：cuối cùng。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "先：trước tiên。"
+  },
+  {
+    "type": "order",
+    "answer": "请先往前走。",
+    "explain": "先: trước tiên."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "往：hướng về。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "丢失：thất lạc, đánh mất。"
+  },
+  {
+    "type": "order",
+    "answer": "有困难就找民警。",
+    "explain": "有困难就…"
+  },
+  {
+    "type": "fill",
+    "answer": "心",
+    "explain": "耐心: kiên nhẫn."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "求助：nhờ giúp đỡ。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "热情：nhiệt tình."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "拐：rẽ。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "如果：nếu。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "地址：địa chỉ."
+  },
+  {
+    "type": "fill",
+    "answer": "问",
+    "explain": "问路: hỏi đường."
+  },
+  {
+    "type": "fill",
+    "answer": "终",
+    "explain": "终于: cuối cùng."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "护照：hộ chiếu."
+  },
+  {
+    "type": "fill",
+    "answer": "助",
+    "explain": "求助: nhờ giúp."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "热情：nhiệt tình。"
+  },
+  {
+    "type": "order",
+    "answer": "往前走，再向右拐。",
+    "explain": "再: sau đó."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "order",
+    "answer": "请把这幅画挂在墙上。",
+    "explain": "把 + tân ngữ + 挂在墙上."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "幸福：hạnh phúc."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "布置教室：trang trí lớp."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "先放书，再擦桌子."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "挂在墙上 diễn tả vị trí kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "不用的东西: đồ không dùng."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "窗台：bệ cửa sổ."
+  },
+  {
+    "type": "fill",
+    "answer": "干",
+    "explain": "擦干净：lau sạch."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "成：biến thành hình dạng/kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "放在书架上 diễn tả vị trí đặt sách."
+  },
+  {
+    "type": "order",
+    "answer": "我们把房间收拾好了。",
+    "explain": "收拾好了 diễn tả hoàn tất."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "开会：họp."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "把 + tân ngữ + động từ + thành phần kết quả/vị trí."
+  },
+  {
+    "type": "order",
+    "answer": "请把窗花贴在窗户上。",
+    "explain": "贴在窗户上: dán lên cửa sổ."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "给妈妈：cho mẹ, đối tượng tiếp nhận."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "热闹：náo nhiệt."
+  },
+  {
+    "type": "order",
+    "answer": "妈妈把花插在花瓶里。",
+    "explain": "插在花瓶里 là vị trí sau hành động."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "花瓶最后放在窗台上."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "礼物：quà tặng."
+  },
+  {
+    "type": "fill",
+    "answer": "给",
+    "explain": "送给：tặng cho."
+  },
+  {
+    "type": "fill",
+    "answer": "在|进|到",
+    "explain": "插在/进/到花瓶里: cắm vào bình hoa."
+  },
+  {
+    "type": "fill",
+    "answer": "扔",
+    "explain": "扔掉：vứt bỏ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "干净 là bổ ngữ kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "贴",
+    "explain": "贴在窗户上：dán lên cửa sổ."
+  },
+  {
+    "type": "fill",
+    "answer": "成",
+    "explain": "剪成：cắt thành."
+  }
+]

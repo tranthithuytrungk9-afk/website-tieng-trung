@@ -1,0 +1,127 @@
+[
+  {
+    "type": "order",
+    "answer": "民警很热情。",
+    "explain": "热情: nhiệt tình."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "帮助：giúp đỡ。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "安全：an toàn。"
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "解决：giải quyết。"
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "问路：hỏi đường。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "事情：sự việc。"
+  },
+  {
+    "type": "order",
+    "answer": "他终于找到了护照。",
+    "explain": "终于: cuối cùng."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "困难：khó khăn。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "外国人：người nước ngoài。"
+  },
+  {
+    "type": "fill",
+    "answer": "址",
+    "explain": "地址: địa chỉ."
+  },
+  {
+    "type": "fill",
+    "answer": "再",
+    "explain": "先…再…"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "再：sau đó。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "求助：cầu cứu, nhờ giúp đỡ."
+  },
+  {
+    "type": "fill",
+    "answer": "忙",
+    "explain": "帮忙: giúp đỡ."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "找到丢失的东西：tìm được đồ thất lạc."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "解释：giải thích。"
+  },
+  {
+    "type": "fill",
+    "answer": "往",
+    "explain": "往前走: đi thẳng."
+  },
+  {
+    "type": "order",
+    "answer": "我想找民警帮忙。",
+    "explain": "想找…帮忙."
+  },
+  {
+    "type": "fill",
+    "answer": "如果|要是",
+    "explain": "Nếu gặp khó khăn thì tìm cảnh sát."
+  },
+  {
+    "type": "order",
+    "answer": "请把地址写在纸上。",
+    "explain": "把 + 地址 + 写在纸上."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "耐心：kiên nhẫn."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "民警：cảnh sát nhân dân。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "找：tìm, nhờ gặp。"
+  },
+  {
+    "type": "fill",
+    "answer": "就",
+    "explain": "如果…就…"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "再向右拐：sau đó rẽ phải."
+  }
+]

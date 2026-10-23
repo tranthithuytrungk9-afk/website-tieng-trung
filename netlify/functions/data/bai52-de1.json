@@ -1,0 +1,127 @@
+[
+  {
+    "type": "fill",
+    "answer": "破",
+    "explain": "划破: rạch rách."
+  },
+  {
+    "type": "order",
+    "answer": "他被送到医院了。",
+    "explain": "被送到医院."
+  },
+  {
+    "type": "fill",
+    "answer": "倒",
+    "explain": "撞倒: đâm ngã."
+  },
+  {
+    "type": "fill",
+    "answer": "丢",
+    "explain": "丢钱包: mất ví."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "骨头：xương。"
+  },
+  {
+    "type": "fill",
+    "answer": "被|让|叫",
+    "explain": "Bị lấy ví: 被/让/叫."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "撞：đâm, va。"
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "上街：ra phố。"
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "医院：bệnh viện."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "伤：bị thương。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "腿：chân。"
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "要紧：nghiêm trọng, quan trọng。"
+  },
+  {
+    "type": "order",
+    "answer": "我的腿被自行车撞伤了。",
+    "explain": "Câu bị động 被."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "倒：ngã, đổ。"
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "钱包：ví tiền."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "被：bị (cấu trúc bị động)。"
+  },
+  {
+    "type": "fill",
+    "answer": "被",
+    "explain": "被 + tác nhân + động từ + kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "腿：chân."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "流：chảy。"
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "刀：dao."
+  },
+  {
+    "type": "order",
+    "answer": "衣服被雨淋湿了。",
+    "explain": "被雨淋湿了."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "出租车：xe taxi。"
+  },
+  {
+    "type": "fill",
+    "answer": "湿",
+    "explain": "淋湿: bị mưa làm ướt."
+  },
+  {
+    "type": "order",
+    "answer": "钱包被小偷偷走了。",
+    "explain": "被小偷偷走了."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "血：máu。"
+  }
+]
