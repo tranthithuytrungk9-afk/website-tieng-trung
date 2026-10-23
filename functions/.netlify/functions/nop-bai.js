@@ -131,7 +131,7 @@ export async function onRequestPost({ request, env }) {
 
     if (!result.ok) {
     console.error("Supabase error", result.status, await result.text());
-      return json(502, {error:"Không lưu được điểm vào Supabase."});
+      return json(502, {error:"Supabase báo lỗi " + result.status + ": " + (await result.text()).slice(0, 500)});
     }
 
     const saved = await result.json();
