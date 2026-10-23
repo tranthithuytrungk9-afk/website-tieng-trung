@@ -1,0 +1,127 @@
+[
+  {
+    "type": "order",
+    "answer": "小王把书放在桌子上。",
+    "explain": "把 + đối tượng xác định + động từ + bổ ngữ vị trí."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "把 + tân ngữ + 放在 + vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "把 đặt trước đối tượng; vị ngữ thường có bổ ngữ/kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "拿出来 là tổ hợp động từ + bổ ngữ."
+  },
+  {
+    "type": "order",
+    "answer": "小李把钥匙放在抽屉里。",
+    "explain": "把 + đối tượng xác định + động từ + bổ ngữ vị trí."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "把 + tân ngữ + 放在 + vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "把 đặt trước đối tượng; vị ngữ thường có bổ ngữ/kết quả."
+  },
+  {
+    "type": "order",
+    "answer": "妈妈把衣服放在柜子里。",
+    "explain": "把 + đối tượng xác định + động từ + bổ ngữ vị trí."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "被字句 thường đưa đối tượng chịu tác động lên trước."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "听懂 là tổ hợp động từ + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "把 đặt trước đối tượng; vị ngữ thường có bổ ngữ/kết quả."
+  },
+  {
+    "type": "order",
+    "answer": "老师把作业放在桌子上。",
+    "explain": "把 + đối tượng xác định + động từ + bổ ngữ vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "把 đặt trước đối tượng; vị ngữ thường có bổ ngữ/kết quả."
+  },
+  {
+    "type": "order",
+    "answer": "爸爸把行李放在车上。",
+    "explain": "把 + đối tượng xác định + động từ + bổ ngữ vị trí."
+  },
+  {
+    "type": "fill",
+    "answer": "懂",
+    "explain": "Bổ ngữ bổ sung kết quả hoặc hướng của động từ."
+  },
+  {
+    "type": "reading",
+    "answer": "d",
+    "explain": "被字句 thường đưa đối tượng chịu tác động lên trước."
+  },
+  {
+    "type": "fill",
+    "answer": "见",
+    "explain": "Bổ ngữ bổ sung kết quả hoặc hướng của động từ."
+  },
+  {
+    "type": "fill",
+    "answer": "进去",
+    "explain": "Bổ ngữ bổ sung kết quả hoặc hướng của động từ."
+  },
+  {
+    "type": "fill",
+    "answer": "完",
+    "explain": "Bổ ngữ bổ sung kết quả hoặc hướng của động từ."
+  },
+  {
+    "type": "mc",
+    "answer": "c",
+    "explain": "写完 là tổ hợp động từ + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "把 đặt trước đối tượng; vị ngữ thường có bổ ngữ/kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "被字句 thường đưa đối tượng chịu tác động lên trước."
+  },
+  {
+    "type": "fill",
+    "answer": "在",
+    "explain": "把 + tân ngữ + 放在 + vị trí."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "看见 là tổ hợp động từ + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "找到 là tổ hợp động từ + bổ ngữ."
+  }
+]

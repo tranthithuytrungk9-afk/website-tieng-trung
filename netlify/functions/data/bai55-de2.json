@@ -1,0 +1,127 @@
+[
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "V + 得 + bổ ngữ: có thể đạt được kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "V + 得 + bổ ngữ: có thể đạt được kết quả."
+  },
+  {
+    "type": "order",
+    "answer": "我听不懂他的意思。",
+    "explain": "Bổ ngữ khả năng gắn liền động từ trước tân ngữ."
+  },
+  {
+    "type": "order",
+    "answer": "我听不懂老师说的话。",
+    "explain": "Bổ ngữ khả năng gắn liền động từ trước tân ngữ."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "V + 不 + bổ ngữ: không đạt được kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "V + 不 + bổ ngữ: không đạt được kết quả."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "V + 得 + bổ ngữ: có thể đạt được kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "a",
+    "explain": "不置于动词和结果补语之间，表示不能实现结果."
+  },
+  {
+    "type": "order",
+    "answer": "我听不懂这段录音。",
+    "explain": "Bổ ngữ khả năng gắn liền động từ trước tân ngữ."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "不置于动词和结果补语之间，表示不能实现结果."
+  },
+  {
+    "type": "order",
+    "answer": "我看不懂这个问题。",
+    "explain": "Bổ ngữ khả năng gắn liền động từ trước tân ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "V + 得 + bổ ngữ: có thể đạt được kết quả."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng dạng phủ định: V + 不 + C."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "V + 不 + bổ ngữ: không đạt được kết quả."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "不置于动词和结果补语之间，表示不能实现结果."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng dạng phủ định: V + 不 + C."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng dạng phủ định: V + 不 + C."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "V + 得 + bổ ngữ: có thể đạt được kết quả."
+  },
+  {
+    "type": "order",
+    "answer": "我看不懂那本书。",
+    "explain": "Bổ ngữ khả năng gắn liền động từ trước tân ngữ."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng dạng phủ định: V + 不 + C."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ."
+  }
+]

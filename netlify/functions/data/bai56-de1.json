@@ -1,0 +1,127 @@
+[
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "V + 不 + C diễn tả khả năng không thực hiện được."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ xu hướng."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "V + 不 + bổ ngữ xu hướng: không thể thực hiện theo hướng đó."
+  },
+  {
+    "type": "order",
+    "answer": "这座山他爬不上去。",
+    "explain": "Bổ ngữ khả năng theo sau động từ; lưu ý vị trí tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Đổi 不 thành 得 ở giữa động từ và bổ ngữ."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ xu hướng."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ xu hướng."
+  },
+  {
+    "type": "order",
+    "answer": "那边她跑不过去。",
+    "explain": "Bổ ngữ khả năng theo sau động từ; lưu ý vị trí tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "V + 不 + bổ ngữ xu hướng: không thể thực hiện theo hướng đó."
+  },
+  {
+    "type": "order",
+    "answer": "桌子他们搬不上来。",
+    "explain": "Bổ ngữ khả năng theo sau động từ; lưu ý vị trí tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "V + 不 + C diễn tả khả năng không thực hiện được."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "Đổi 不 thành 得 ở giữa động từ và bổ ngữ."
+  },
+  {
+    "type": "reading",
+    "answer": "c",
+    "explain": "V + 不 + C diễn tả khả năng không thực hiện được."
+  },
+  {
+    "type": "order",
+    "answer": "房间孩子走不进去。",
+    "explain": "Bổ ngữ khả năng theo sau động từ; lưu ý vị trí tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "mc",
+    "answer": "b",
+    "explain": "Đổi 不 thành 得 ở giữa động từ và bổ ngữ."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ xu hướng."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "V + 不 + C diễn tả khả năng không thực hiện được."
+  },
+  {
+    "type": "reading",
+    "answer": "b",
+    "explain": "V + 不 + C diễn tả khả năng không thực hiện được."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "V + 不 + bổ ngữ xu hướng: không thể thực hiện theo hướng đó."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Đổi 不 thành 得 ở giữa động từ và bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "Đổi 不 thành 得 ở giữa động từ và bổ ngữ."
+  },
+  {
+    "type": "mc",
+    "answer": "d",
+    "explain": "V + 不 + bổ ngữ xu hướng: không thể thực hiện theo hướng đó."
+  },
+  {
+    "type": "fill",
+    "answer": "不",
+    "explain": "Bổ ngữ khả năng: V + 不 + bổ ngữ xu hướng."
+  },
+  {
+    "type": "order",
+    "answer": "这本书我拿不出来。",
+    "explain": "Bổ ngữ khả năng theo sau động từ; lưu ý vị trí tân ngữ trong ngữ cảnh."
+  },
+  {
+    "type": "mc",
+    "answer": "a",
+    "explain": "V + 不 + bổ ngữ xu hướng: không thể thực hiện theo hướng đó."
+  }
+]
