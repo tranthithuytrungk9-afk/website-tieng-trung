@@ -40,13 +40,32 @@ import bai60de2 from "../../../netlify/functions/data/bai60-de2.json";
 import bai60de3 from "../../../netlify/functions/data/bai60-de3.json";
 import bai60de4 from "../../../netlify/functions/data/bai60-de4.json";
 import bai60de5 from "../../../netlify/functions/data/bai60-de5.json";
+import bai51de1 from "../../../netlify/functions/data/bai51-de1.json";
+import bai51de2 from "../../../netlify/functions/data/bai51-de2.json";
+import bai51de3 from "../../../netlify/functions/data/bai51-de3.json";
+import bai51de4 from "../../../netlify/functions/data/bai51-de4.json";
+import bai51de5 from "../../../netlify/functions/data/bai51-de5.json";
 
+import bai52de1 from "../../../netlify/functions/data/bai52-de1.json";
+import bai52de2 from "../../../netlify/functions/data/bai52-de2.json";
+import bai52de3 from "../../../netlify/functions/data/bai52-de3.json";
+import bai52de4 from "../../../netlify/functions/data/bai52-de4.json";
+import bai52de5 from "../../../netlify/functions/data/bai52-de5.json";
+
+import bai53de1 from "../../../netlify/functions/data/bai53-de1.json";
+import bai53de2 from "../../../netlify/functions/data/bai53-de2.json";
+import bai53de3 from "../../../netlify/functions/data/bai53-de3.json";
+import bai53de4 from "../../../netlify/functions/data/bai53-de4.json";
+import bai53de5 from "../../../netlify/functions/data/bai53-de5.json";
 const sets = {
   "Bài 46": [bai46de1,bai46de2,bai46de3,bai46de4,bai46de5],
   "Bài 47": [bai47de1,bai47de2,bai47de3,bai47de4,bai47de5],
   "Bài 48": [bai48de1,bai48de2,bai48de3,bai48de4,bai48de5],
   "Bài 49": [bai49de1,bai49de2,bai49de3,bai49de4,bai49de5],
   "Bài 50": [bai50de1,bai50de2,bai50de3,bai50de4,bai50de5],
+  "Bài 51": [bai51de1,bai51de2,bai51de3,bai51de4,bai51de5],
+"Bài 52": [bai52de1,bai52de2,bai52de3,bai52de4,bai52de5],
+"Bài 53": [bai53de1,bai53de2,bai53de3,bai53de4,bai53de5],
   "Bài 59": [bai59de1,bai59de2,bai59de3,bai59de4,bai59de5],
   "Bài 60": [bai60de1,bai60de2,bai60de3,bai60de4,bai60de5]
 };
