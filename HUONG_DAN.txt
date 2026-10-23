@@ -14,3 +14,4 @@ GIỮ NGUYÊN 2 BIẾN MÔI TRƯỜNG NETLIFY: SUPABASE_URL, SUPABASE_SERVICE_RO
 SUPABASE: ket_qua_hoc_sinh có cột so_de kiểu int4 cho Bài 59; Bài 58 cũ giữ so_de = NULL.
 
 LƯU Ý: Các đề là bản soạn luyện tập và cần giáo viên rà soát trước khi đưa vào sử dụng chính thức. Đọc hiểu có nội dung bổ sung.
+Cập nhật kết nối Supabase ngày 23/10/2026
