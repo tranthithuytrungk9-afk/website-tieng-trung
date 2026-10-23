@@ -2,7 +2,13 @@ const bai58Answers = [{"type": "mc", "answer": "b", "explain": "麦克 nói: 我
 const sets59 = {1: require('./data/bai59-de1.json'),2: require('./data/bai59-de2.json'),3: require('./data/bai59-de3.json'),4: require('./data/bai59-de4.json'),5: require('./data/bai59-de5.json')};
 const sets46 = {1: require('./data/bai46-de1.json'),2: require('./data/bai46-de2.json'),3: require('./data/bai46-de3.json'),4: require('./data/bai46-de4.json'),5: require('./data/bai46-de5.json')};
 const sets47 = {1: require('./data/bai47-de1.json'),2: require('./data/bai47-de2.json'),3: require('./data/bai47-de3.json'),4: require('./data/bai47-de4.json'),5: require('./data/bai47-de5.json')};
-const sets48 = Object.fromEntries([1,2,3,4,5].map(n => [n, require('./data/bai48-de'+n+'.json')]));
+const sets48 = {
+  1: require('./data/bai48-de1.json'),
+  2: require('./data/bai48-de2.json'),
+  3: require('./data/bai48-de3.json'),
+  4: require('./data/bai48-de4.json'),
+  5: require('./data/bai48-de5.json')
+};
 const sets49 = Object.fromEntries([1,2,3,4,5].map(n => [n, require('./data/bai49-de'+n+'.json')]));
 const sets50 = Object.fromEntries([1,2,3,4,5].map(n => [n, require('./data/bai50-de'+n+'.json')]));
 const sets60 = {
