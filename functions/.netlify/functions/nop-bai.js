@@ -130,7 +130,7 @@ export async function onRequestPost({ request, env }) {
     );
 
     if (!result.ok) {
-    console.error("Supabase error", result.status, await result.text());
+   console.error("Supabase error", result.status);
       return json(502, {error:"Supabase báo lỗi " + result.status + ": " + (await result.text()).slice(0, 500)});
     }
 
