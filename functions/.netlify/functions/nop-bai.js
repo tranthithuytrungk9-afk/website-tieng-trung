@@ -130,7 +130,7 @@ export async function onRequestPost({ request, env }) {
     );
 
     if (!result.ok) {
-      console.error("Supabase error", result.status);
+    console.error("Supabase error", result.status, await result.text());
       return json(502, {error:"Không lưu được điểm vào Supabase."});
     }
 
