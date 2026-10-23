@@ -1,0 +1,209 @@
+{
+  "lesson": "Bài 55",
+  "set": 1,
+  "questions": [
+    {
+      "type": "fill",
+      "question": "请问，“买不到”中表示否定可能性的字是___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "请问，“看不清楚”中表示否定可能性的字是___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu diễn đạt “không 完” với 做.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "做完不",
+        "做不完",
+        "完不做",
+        "不做完"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn dạng khẳng định của bổ ngữ khả năng từ “做完”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "做完得",
+        "做得完",
+        "做完了",
+        "得做完"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu diễn đạt “không 懂” với 看.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "懂不看",
+        "看不懂",
+        "看懂不",
+        "不看懂"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn dạng khẳng định của bổ ngữ khả năng từ “记住”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "记得住",
+        "记住了",
+        "得记住",
+        "记住得"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：今天买不到票。 问：哪一结构表示无法实现结果？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "买完",
+        "买得到",
+        "买得起",
+        "买不到"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu diễn đạt “không 会” với 学.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "学不会",
+        "学会不",
+        "会不学",
+        "不学会"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请问，“记不住”中表示否定可能性的字是___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn dạng khẳng định của bổ ngữ khả năng từ “听懂”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "听得懂",
+        "听懂得",
+        "得听懂",
+        "听懂了"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 看不懂 / 这个问题",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：老师说得太快了，我听不懂。 问：哪一结构表示无法实现结果？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "听不懂",
+        "听完了",
+        "听得懂",
+        "听过了"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 听不懂 / 他的意思",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "order",
+      "question": "我 / 看不懂 / 那本书",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：这个名字太难，我记不住。 问：哪一结构表示无法实现结果？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "记过了",
+        "记完了",
+        "记得住",
+        "记不住"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "太快了，我做___完。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn dạng khẳng định của bổ ngữ khả năng từ “买到”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "买到得",
+        "得买到",
+        "买得到",
+        "买到了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu diễn đạt “không 住” với 记.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "不记住",
+        "记不住",
+        "住不记",
+        "记住不"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 听不懂 / 老师说的话",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn dạng khẳng định của bổ ngữ khả năng từ “看清楚”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "看得清楚",
+        "看清楚了",
+        "得看清楚",
+        "看清楚得"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请问，“听不懂”中表示否定可能性的字是___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "我 / 听不懂 / 这段录音",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "请问，“做不完”中表示否定可能性的字是___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu diễn đạt “không 懂” với 听.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "不听懂",
+        "听懂不",
+        "听不懂",
+        "懂不听"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "太快了，我买___到。",
+      "tag": "Ngữ pháp · Điền từ"
+    }
+  ]
+}

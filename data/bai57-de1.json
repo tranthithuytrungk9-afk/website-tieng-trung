@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 57",
+  "set": 1,
+  "questions": [
+    {
+      "type": "reading",
+      "question": "阅读：请把电话号码记下来。 问：Bổ ngữ trong câu thể hiện ý nghĩa nào?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "Nói ra",
+        "Quên đi",
+        "Xóa đi",
+        "Ghi lại"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn vị trí bổ ngữ đúng cho “记…下来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "下来记",
+        "记了下来",
+        "记下来",
+        "下来得记"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn vị trí bổ ngữ đúng cho “坚持…下去”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "下去坚持",
+        "坚持了下去",
+        "下去得坚持",
+        "坚持下去"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "你能说___这个词的意思吗？",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：我终于想起来了。 问：Bổ ngữ trong câu thể hiện ý nghĩa nào?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "Đang nghĩ",
+        "Không biết",
+        "Sẽ quên",
+        "Nhớ ra"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách kết hợp đúng của “说” và “出来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "说出来",
+        "说得出来",
+        "不出来说",
+        "出来说"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "听到这首歌，我记___小时候的事。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách kết hợp đúng của “想” và “起来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "想得起来",
+        "想起来",
+        "起来想",
+        "不起来想"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách kết hợp đúng của “看” và “出来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "看出来",
+        "看得出来",
+        "不出来看",
+        "出来看"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn vị trí bổ ngữ đúng cho “说…出来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "说了出来",
+        "出来说",
+        "说出来",
+        "出来得说"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 看出来 / 他的心情",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：她突然笑起来了。 问：Bổ ngữ trong câu thể hiện ý nghĩa nào?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "Cười xong",
+        "Không cười",
+        "Bắt đầu cười",
+        "Cười mãi"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "我终于想___他的名字了。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách kết hợp đúng của “坚持” và “下去”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "坚持得下去",
+        "坚持下去",
+        "不下去坚持",
+        "下去坚持"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách kết hợp đúng của “记” và “起来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "不起来记",
+        "记起来",
+        "记得起来",
+        "起来记"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 记起来 / 这件事",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "我一下子认___他了。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "我 / 想起来 / 他的名字",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn vị trí bổ ngữ đúng cho “想…起来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "起来想",
+        "起来得想",
+        "想起来",
+        "想了起来"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn vị trí bổ ngữ đúng cho “听…出来”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "听了出来",
+        "出来得听",
+        "听出来",
+        "出来听"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 写下来 / 电话号码",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "虽然很累，但我们要坚持___。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：我们继续学下去吧。 问：Bổ ngữ trong câu thể hiện ý nghĩa nào?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "Bắt đầu lại",
+        "Tiếp tục",
+        "Đi lên",
+        "Dừng lại"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：我看出来他不高兴。 问：Bổ ngữ trong câu thể hiện ý nghĩa nào?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "Nhận ra",
+        "Không nhìn",
+        "Nhìn xuống",
+        "Nhìn lên"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "我 / 说出来 / 你的想法",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    }
+  ]
+}

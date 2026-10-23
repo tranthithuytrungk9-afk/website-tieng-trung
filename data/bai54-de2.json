@@ -1,0 +1,209 @@
+{
+  "lesson": "Bài 54",
+  "set": 2,
+  "questions": [
+    {
+      "type": "reading",
+      "question": "阅读：我的自行车被弟弟骑走了。 问：什么东西受到动作的影响？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "车站",
+        "我",
+        "自行车",
+        "弟弟"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu 把 đúng với “名字 / 写错”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "他把名字写错了。",
+        "把他名字写错了。",
+        "他名字把写错了。",
+        "他把写错名字了。"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "老师 / 把 / 作业 / 放在桌子上",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "请把花放___花瓶里。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "请把句子补充完整：我跑___了。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "他已经看___了。Chọn bổ ngữ thích hợp.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "见",
+        "着",
+        "了",
+        "得"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "小王 / 把 / 书 / 放在桌子上",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "他已经写___了。Chọn bổ ngữ thích hợp.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "着",
+        "完",
+        "起来",
+        "过"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请把句子补充完整：我看___了。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "妈妈 / 把 / 衣服 / 放在柜子里",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "order",
+      "question": "小李 / 把 / 钥匙 / 放在抽屉里",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "请把句子补充完整：我走___了。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu 把 đúng với “书 / 拿走”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "他书把拿走了。",
+        "他把拿走书了。",
+        "把他书拿走了。",
+        "他把书拿走了。"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：门被风吹开了。 问：什么东西受到动作的影响？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "门",
+        "路",
+        "风",
+        "窗户"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu 把 đúng với “窗户 / 关上”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "把他窗户关上了。",
+        "他把窗户关上了。",
+        "他窗户把关上了。",
+        "他把关上窗户了。"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "爸爸 / 把 / 行李 / 放在车上",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "请把书放___书包里。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "他已经拿___了。Chọn bổ ngữ thích hợp.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "过",
+        "出来",
+        "着",
+        "完"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "他已经找___了。Chọn bổ ngữ thích hợp.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "着",
+        "过",
+        "得",
+        "到"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu 把 đúng với “房间 / 打扫干净”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "他房间把打扫干净了。",
+        "把他房间打扫干净了。",
+        "他把房间打扫干净了。",
+        "他把打扫干净房间了。"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "他已经听___了。Chọn bổ ngữ thích hợp.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "懂",
+        "上",
+        "到",
+        "过"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn câu 把 đúng với “作业 / 做完”.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "他把做完作业了。",
+        "他作业把做完了。",
+        "他把作业做完了。",
+        "把他作业做完了。"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请把照片放___墙上。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：杯子被小猫打破了。 问：什么东西受到动作的影响？",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "小猫",
+        "我",
+        "桌子",
+        "杯子"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "请把句子补充完整：我写___了。",
+      "tag": "Ngữ pháp · Điền từ"
+    }
+  ]
+}

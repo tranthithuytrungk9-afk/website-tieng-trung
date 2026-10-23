@@ -1,0 +1,221 @@
+{
+  "lesson": "Bài 56",
+  "set": 2,
+  "questions": [
+    {
+      "type": "fill",
+      "question": "这个太难了，我走___进去。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "mc",
+      "question": "Đổi “走不进去” sang dạng có khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "不走进去",
+        "得走进去",
+        "走进去得",
+        "走得进去"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "这个太难了，我跑___过去。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "order",
+      "question": "那边 / 她 / 跑不过去",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách nói “không thể 爬上去” theo bổ ngữ khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "爬上去不",
+        "不爬上去",
+        "爬得不上去",
+        "爬不上去"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách nói “không thể 搬上去” theo bổ ngữ khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "搬不上去",
+        "搬得不上去",
+        "搬上去不",
+        "不搬上去"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：山太高了，我爬不上去。 问：哪一部分表示不能 đạt kết quả/hướng?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "爬过了",
+        "爬得上去",
+        "爬上去了",
+        "爬不上去"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：东西太多，我拿不下来。 问：哪一部分表示不能 đạt kết quả/hướng?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "拿不下来",
+        "拿下来了",
+        "拿得下来",
+        "拿下来过"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách nói “không thể 跑出来” theo bổ ngữ khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "跑出来不",
+        "跑得不出来",
+        "不跑出来",
+        "跑不出来"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "这本书 / 我 / 拿不出来",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "Đổi “搬不起来” sang dạng có khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "搬起来得",
+        "得搬起来",
+        "搬得起来",
+        "不搬起来"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Đổi “爬不上去” sang dạng có khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "爬得上去",
+        "不爬上去",
+        "爬上去得",
+        "得爬上去"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách nói “không thể 拿下来” theo bổ ngữ khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "不拿下来",
+        "拿不下来",
+        "拿下来不",
+        "拿得不下来"
+      ]
+    },
+    {
+      "type": "reading",
+      "question": "阅读：门锁着，我进不去。 问：哪一部分表示不能 đạt kết quả/hướng?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "进去了",
+        "进去过",
+        "进不去",
+        "进得去"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "桌子 / 他们 / 搬不上来",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "order",
+      "question": "房间 / 孩子 / 走不进去",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "mc",
+      "question": "Đổi “听不见” sang dạng có khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "听得见",
+        "不听见",
+        "听见得",
+        "得听见"
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "这个太难了，我搬___上来。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "fill",
+      "question": "这个太难了，我爬___上去。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：箱子太重，我搬不动。 问：哪一部分表示不能 đạt kết quả/hướng?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "搬起来了",
+        "搬完了",
+        "搬不动",
+        "搬得动"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "这座山 / 他 / 爬不上去",
+      "tag": "Ngữ pháp · Sắp xếp câu"
+    },
+    {
+      "type": "fill",
+      "question": "这个太难了，我拿___出来。",
+      "tag": "Ngữ pháp · Điền từ"
+    },
+    {
+      "type": "reading",
+      "question": "阅读：声音太小，我听不见。 问：哪一部分表示不能 đạt kết quả/hướng?",
+      "tag": "Vận dụng · Đọc hiểu",
+      "options": [
+        "听得见",
+        "听过",
+        "听不见",
+        "听到了"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Chọn cách nói “không thể 走进去” theo bổ ngữ khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "走进去不",
+        "走得不进去",
+        "走不进去",
+        "不走进去"
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Đổi “拿不出来” sang dạng có khả năng.",
+      "tag": "Ngữ pháp · Chọn đáp án",
+      "options": [
+        "拿出来得",
+        "不拿出来",
+        "得拿出来",
+        "拿得出来"
+      ]
+    }
+  ]
+}
