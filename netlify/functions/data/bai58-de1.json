@@ -1,0 +1,167 @@
+[
+  {
+    "type": "mc",
+    "question": "麦克 nói “我有点儿饿了” có nghĩa là gì?",
+    "tag": "Hiểu nội dung",
+    "options": [
+      "A. Tôi hơi khát.",
+      "B. Tôi hơi đói rồi.",
+      "C. Tôi hơi mệt.",
+      "D. Tôi hơi buồn ngủ."
+    ],
+    "answer": "b",
+    "explain": "有点儿饿了: hơi đói rồi."
+  },
+  {
+    "type": "mc",
+    "question": "“我又饿又渴” nghĩa là gì?",
+    "tag": "Từ vựng",
+    "options": [
+      "A. Tôi vừa mệt vừa bận.",
+      "B. Tôi vừa vui vừa đói.",
+      "C. Tôi vừa đói vừa khát.",
+      "D. Tôi không đói cũng không khát."
+    ],
+    "answer": "c",
+    "explain": "又……又…… diễn tả đồng thời hai trạng thái: vừa đói vừa khát."
+  },
+  {
+    "type": "mc",
+    "question": "“什么都可以” trong ngữ cảnh gọi món có nghĩa là gì?",
+    "tag": "Hiểu mẫu câu",
+    "options": [
+      "A. Món gì cũng được.",
+      "B. Không món nào được.",
+      "C. Chỉ ăn một món.",
+      "D. Món nào cũng không ngon."
+    ],
+    "answer": "a",
+    "explain": "什么都可以: món nào cũng được."
+  },
+  {
+    "type": "mc",
+    "question": "麦克 muốn nhân viên phục vụ mang món gì?",
+    "tag": "Đọc hiểu",
+    "options": [
+      "A. Hai cốc nước.",
+      "B. Mỗi món một phần.",
+      "C. Món rẻ nhất.",
+      "D. Hai phần món ngon nhất."
+    ],
+    "answer": "b",
+    "explain": "每样来一份: mỗi món một phần."
+  },
+  {
+    "type": "mc",
+    "question": "Nhân viên phục vụ gợi ý hai món nào?",
+    "tag": "Đọc hiểu",
+    "options": [
+      "A. 饺子和面条",
+      "B. 麻婆豆腐和糖醋鱼",
+      "C. 米饭和鸡蛋",
+      "D. 火锅和烤鸭"
+    ],
+    "answer": "b",
+    "explain": "Hai món được gợi ý: 麻婆豆腐 và 糖醋鱼."
+  },
+  {
+    "type": "mc",
+    "question": "山田 không muốn đi du lịch bằng phương tiện nào?",
+    "tag": "Đọc hiểu",
+    "options": [
+      "A. 火车",
+      "B. 飞机",
+      "C. 自行车",
+      "D. 轮船"
+    ],
+    "answer": "c",
+    "explain": "山田 không muốn đi bằng xe đạp."
+  },
+  {
+    "type": "mc",
+    "question": "Nếu không mua được vé tàu, 山田 sẽ làm gì?",
+    "tag": "Quan hệ điều kiện",
+    "options": [
+      "A. 坐飞机去",
+      "B. 不去了",
+      "C. 骑自行车去",
+      "D. 坐公共汽车回家"
+    ],
+    "answer": "a",
+    "explain": "Nếu không mua được vé tàu thì đi máy bay."
+  },
+  {
+    "type": "mc",
+    "question": "山田 dự định đến 西安 để tham quan những nơi nào?",
+    "tag": "Đọc chi tiết",
+    "options": [
+      "A. 长江三峡和苏州",
+      "B. 桂林和云南",
+      "C. 西湖和白天",
+      "D. 碑林和兵马俑"
+    ],
+    "answer": "d",
+    "explain": "西安 có 碑林 và 兵马俑."
+  },
+  {
+    "type": "mc",
+    "question": "“游览长江三峡” nghĩa là gì?",
+    "tag": "Từ vựng trong ngữ cảnh",
+    "options": [
+      "A. Leo núi Trường Giang.",
+      "B. Tham quan Tam Hiệp Trường Giang.",
+      "C. Học tiếng Trung ở Trùng Khánh.",
+      "D. Đi xe đạp quanh thành phố."
+    ],
+    "answer": "b",
+    "explain": "游览 nghĩa là tham quan."
+  },
+  {
+    "type": "mc",
+    "question": "Câu “上有天堂，下有苏杭” nhắc đến hai thành phố nào?",
+    "tag": "Thành ngữ / văn hóa",
+    "options": [
+      "A. 西安和重庆",
+      "B. 桂林和云南",
+      "C. 苏州和杭州",
+      "D. 北京和上海"
+    ],
+    "answer": "c",
+    "explain": "苏杭 là 苏州 và 杭州."
+  },
+  {
+    "type": "fill",
+    "question": "Điền từ còn thiếu: “____。你想喝什么就喝什么吧。”",
+    "tag": "Điền từ",
+    "answer": "随便|都行",
+    "explain": "随便 hoặc 都行: tùy ý, đều được."
+  },
+  {
+    "type": "fill",
+    "question": "Điền từ: “____买不到火车票，就坐飞机去。”",
+    "tag": "Điền từ",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu…thì…"
+  },
+  {
+    "type": "fill",
+    "question": "Điền từ: “____骑自行车以外，怎么去都行。”",
+    "tag": "Điền từ",
+    "answer": "除了",
+    "explain": "除了……以外: ngoại trừ…"
+  },
+  {
+    "type": "order",
+    "question": "Sắp xếp thành câu đúng. 看看碑林和兵马俑 / 我 / 先 / 去西安",
+    "tag": "Sắp xếp câu",
+    "answer": "我先去西安看看碑林和兵马俑",
+    "explain": "我先去西安看看碑林和兵马俑: tôi đến Tây An trước để xem Bia Lâm và đội quân đất nung."
+  },
+  {
+    "type": "order",
+    "question": "Sắp xếp thành câu hoàn chỉnh. 就 / 你想喝什么 / 喝什么吧",
+    "tag": "Sắp xếp câu",
+    "answer": "你想喝什么就喝什么吧",
+    "explain": "你想喝什么就喝什么吧: muốn uống gì thì uống nấy."
+  }
+]

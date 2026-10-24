@@ -1,0 +1,257 @@
+[
+  {
+    "type": "mc",
+    "question": "Đoàn đã dự định 参观故宫, đồng thời muốn 爬长城. Chọn câu diễn đạt đúng ý “ngoài… còn…”.",
+    "options": [
+      "A. 除了参观故宫以外，我们不想爬长城。",
+      "B. 除了参观故宫以外，我们还想爬长城。",
+      "C. 除了参观故宫以外，我们都想爬长城。",
+      "D. 除了参观故宫以外，我们只想爬长城。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "b",
+    "explain": "除了 A 以外，还 B: ngoài A ra còn B; không dùng 都 để diễn đạt ý bổ sung ở câu này."
+  },
+  {
+    "type": "mc",
+    "question": "“Ngoại trừ 北京, mọi người đều đã từng đến những nơi này.” Chọn câu phù hợp nhất.",
+    "options": [
+      "A. 除了北京以外，大家也去过这些地方。",
+      "B. 除了北京以外，大家正在去过这些地方。",
+      "C. 除了北京以外，大家都去过这些地方。",
+      "D. 除了北京以外，大家还去过这些地方。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "c",
+    "explain": "除了……以外，都…… nhấn mạnh ngoại lệ so với tất cả các trường hợp còn lại."
+  },
+  {
+    "type": "fill",
+    "question": "___明天能买到去北京的火车票，我们就坐火车去。",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu mua được vé thì đi tàu."
+  },
+  {
+    "type": "order",
+    "question": "请把词语排成完整句子：你 / 想 / 去哪儿 / 就 / 去哪儿 / 吧",
+    "answer": "你想去哪儿就去哪儿吧",
+    "explain": "疑问词 + 就 + 同一疑问词: muốn đi đâu thì đi đó."
+  },
+  {
+    "type": "mc",
+    "question": "Chọn câu thể hiện trình tự: trước tiên 参观故宫, sau đó 爬长城.",
+    "options": [
+      "A. 我们先参观故宫，然后爬长城。",
+      "B. 我们虽然参观故宫，但是爬长城。",
+      "C. 我们不但参观故宫，而且不爬长城。",
+      "D. 我们因为参观故宫，所以不爬长城。"
+    ],
+    "tag": "Vận dụng · Lập kế hoạch",
+    "answer": "a",
+    "explain": "先……然后……: trước tiên… sau đó…"
+  },
+  {
+    "type": "mc",
+    "question": "Đoàn đã dự định 参观博物馆, đồng thời muốn 游览外滩. Chọn câu diễn đạt đúng ý “ngoài… còn…”.",
+    "options": [
+      "A. 除了参观博物馆以外，我们还想游览外滩。",
+      "B. 除了参观博物馆以外，我们都想游览外滩。",
+      "C. 除了参观博物馆以外，我们只想游览外滩。",
+      "D. 除了参观博物馆以外，我们不想游览外滩。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "a",
+    "explain": "除了 A 以外，还 B: ngoài A ra còn B; không dùng 都 để diễn đạt ý bổ sung ở câu này."
+  },
+  {
+    "type": "mc",
+    "question": "“Ngoại trừ 上海, mọi người đều đã từng đến những nơi này.” Chọn câu phù hợp nhất.",
+    "options": [
+      "A. 除了上海以外，大家正在去过这些地方。",
+      "B. 除了上海以外，大家都去过这些地方。",
+      "C. 除了上海以外，大家还去过这些地方。",
+      "D. 除了上海以外，大家也去过这些地方。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "b",
+    "explain": "除了……以外，都…… nhấn mạnh ngoại lệ so với tất cả các trường hợp còn lại."
+  },
+  {
+    "type": "fill",
+    "question": "___明天能买到去上海的火车票，我们就坐火车去。",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu mua được vé thì đi tàu."
+  },
+  {
+    "type": "order",
+    "question": "请把词语排成完整句子：你 / 想 / 去哪儿 / 就 / 去哪儿 / 吧",
+    "answer": "你想去哪儿就去哪儿吧",
+    "explain": "疑问词 + 就 + 同一疑问词: muốn đi đâu thì đi đó."
+  },
+  {
+    "type": "mc",
+    "question": "Chọn câu thể hiện trình tự: trước tiên 参观博物馆, sau đó 游览外滩.",
+    "options": [
+      "A. 我们虽然参观博物馆，但是游览外滩。",
+      "B. 我们不但参观博物馆，而且不游览外滩。",
+      "C. 我们因为参观博物馆，所以不游览外滩。",
+      "D. 我们先参观博物馆，然后游览外滩。"
+    ],
+    "tag": "Vận dụng · Lập kế hoạch",
+    "answer": "d",
+    "explain": "先……然后……: trước tiên… sau đó…"
+  },
+  {
+    "type": "mc",
+    "question": "Đoàn đã dự định 看大熊猫, đồng thời muốn 品尝川菜. Chọn câu diễn đạt đúng ý “ngoài… còn…”.",
+    "options": [
+      "A. 除了看大熊猫以外，我们都想品尝川菜。",
+      "B. 除了看大熊猫以外，我们只想品尝川菜。",
+      "C. 除了看大熊猫以外，我们不想品尝川菜。",
+      "D. 除了看大熊猫以外，我们还想品尝川菜。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "d",
+    "explain": "除了 A 以外，还 B: ngoài A ra còn B; không dùng 都 để diễn đạt ý bổ sung ở câu này."
+  },
+  {
+    "type": "mc",
+    "question": "“Ngoại trừ 成都, mọi người đều đã từng đến những nơi này.” Chọn câu phù hợp nhất.",
+    "options": [
+      "A. 除了成都以外，大家都去过这些地方。",
+      "B. 除了成都以外，大家还去过这些地方。",
+      "C. 除了成都以外，大家也去过这些地方。",
+      "D. 除了成都以外，大家正在去过这些地方。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "a",
+    "explain": "除了……以外，都…… nhấn mạnh ngoại lệ so với tất cả các trường hợp còn lại."
+  },
+  {
+    "type": "fill",
+    "question": "___明天能买到去成都的火车票，我们就坐火车去。",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu mua được vé thì đi tàu."
+  },
+  {
+    "type": "order",
+    "question": "请把词语排成完整句子：你 / 想 / 去哪儿 / 就 / 去哪儿 / 吧",
+    "answer": "你想去哪儿就去哪儿吧",
+    "explain": "疑问词 + 就 + 同一疑问词: muốn đi đâu thì đi đó."
+  },
+  {
+    "type": "mc",
+    "question": "Chọn câu thể hiện trình tự: trước tiên 看大熊猫, sau đó 品尝川菜.",
+    "options": [
+      "A. 我们不但看大熊猫，而且不品尝川菜。",
+      "B. 我们因为看大熊猫，所以不品尝川菜。",
+      "C. 我们先看大熊猫，然后品尝川菜。",
+      "D. 我们虽然看大熊猫，但是品尝川菜。"
+    ],
+    "tag": "Vận dụng · Lập kế hoạch",
+    "answer": "c",
+    "explain": "先……然后……: trước tiên… sau đó…"
+  },
+  {
+    "type": "mc",
+    "question": "Đoàn đã dự định 参观历史遗迹, đồng thời muốn 了解当地文化. Chọn câu diễn đạt đúng ý “ngoài… còn…”.",
+    "options": [
+      "A. 除了参观历史遗迹以外，我们只想了解当地文化。",
+      "B. 除了参观历史遗迹以外，我们不想了解当地文化。",
+      "C. 除了参观历史遗迹以外，我们还想了解当地文化。",
+      "D. 除了参观历史遗迹以外，我们都想了解当地文化。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "c",
+    "explain": "除了 A 以外，还 B: ngoài A ra còn B; không dùng 都 để diễn đạt ý bổ sung ở câu này."
+  },
+  {
+    "type": "mc",
+    "question": "“Ngoại trừ 南京, mọi người đều đã từng đến những nơi này.” Chọn câu phù hợp nhất.",
+    "options": [
+      "A. 除了南京以外，大家还去过这些地方。",
+      "B. 除了南京以外，大家也去过这些地方。",
+      "C. 除了南京以外，大家正在去过这些地方。",
+      "D. 除了南京以外，大家都去过这些地方。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "d",
+    "explain": "除了……以外，都…… nhấn mạnh ngoại lệ so với tất cả các trường hợp còn lại."
+  },
+  {
+    "type": "fill",
+    "question": "___明天能买到去南京的火车票，我们就坐火车去。",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu mua được vé thì đi tàu."
+  },
+  {
+    "type": "order",
+    "question": "请把词语排成完整句子：你 / 想 / 去哪儿 / 就 / 去哪儿 / 吧",
+    "answer": "你想去哪儿就去哪儿吧",
+    "explain": "疑问词 + 就 + 同一疑问词: muốn đi đâu thì đi đó."
+  },
+  {
+    "type": "mc",
+    "question": "Chọn câu thể hiện trình tự: trước tiên 参观历史遗迹, sau đó 了解当地文化.",
+    "options": [
+      "A. 我们因为参观历史遗迹，所以不了解当地文化。",
+      "B. 我们先参观历史遗迹，然后了解当地文化。",
+      "C. 我们虽然参观历史遗迹，但是了解当地文化。",
+      "D. 我们不但参观历史遗迹，而且不了解当地文化。"
+    ],
+    "tag": "Vận dụng · Lập kế hoạch",
+    "answer": "b",
+    "explain": "先……然后……: trước tiên… sau đó…"
+  },
+  {
+    "type": "mc",
+    "question": "Đoàn đã dự định 欣赏风景, đồng thời muốn 体验民族文化. Chọn câu diễn đạt đúng ý “ngoài… còn…”.",
+    "options": [
+      "A. 除了欣赏风景以外，我们不想体验民族文化。",
+      "B. 除了欣赏风景以外，我们还想体验民族文化。",
+      "C. 除了欣赏风景以外，我们都想体验民族文化。",
+      "D. 除了欣赏风景以外，我们只想体验民族文化。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "b",
+    "explain": "除了 A 以外，还 B: ngoài A ra còn B; không dùng 都 để diễn đạt ý bổ sung ở câu này."
+  },
+  {
+    "type": "mc",
+    "question": "“Ngoại trừ 昆明, mọi người đều đã từng đến những nơi này.” Chọn câu phù hợp nhất.",
+    "options": [
+      "A. 除了昆明以外，大家也去过这些地方。",
+      "B. 除了昆明以外，大家正在去过这些地方。",
+      "C. 除了昆明以外，大家都去过这些地方。",
+      "D. 除了昆明以外，大家还去过这些地方。"
+    ],
+    "tag": "Ngữ pháp · HSK4–5",
+    "answer": "c",
+    "explain": "除了……以外，都…… nhấn mạnh ngoại lệ so với tất cả các trường hợp còn lại."
+  },
+  {
+    "type": "fill",
+    "question": "___明天能买到去昆明的火车票，我们就坐火车去。",
+    "answer": "如果|要是",
+    "explain": "如果/要是……就……: nếu mua được vé thì đi tàu."
+  },
+  {
+    "type": "order",
+    "question": "请把词语排成完整句子：你 / 想 / 去哪儿 / 就 / 去哪儿 / 吧",
+    "answer": "你想去哪儿就去哪儿吧",
+    "explain": "疑问词 + 就 + 同一疑问词: muốn đi đâu thì đi đó."
+  },
+  {
+    "type": "mc",
+    "question": "Chọn câu thể hiện trình tự: trước tiên 欣赏风景, sau đó 体验民族文化.",
+    "options": [
+      "A. 我们先欣赏风景，然后体验民族文化。",
+      "B. 我们虽然欣赏风景，但是体验民族文化。",
+      "C. 我们不但欣赏风景，而且不体验民族文化。",
+      "D. 我们因为欣赏风景，所以不体验民族文化。"
+    ],
+    "tag": "Vận dụng · Lập kế hoạch",
+    "answer": "a",
+    "explain": "先……然后……: trước tiên… sau đó…"
+  }
+]
