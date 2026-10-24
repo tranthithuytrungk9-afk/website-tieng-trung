@@ -81,7 +81,11 @@ import bai57de2 from "../../../netlify/functions/data/bai57-de2.json";
 import bai57de3 from "../../../netlify/functions/data/bai57-de3.json";
 import bai57de4 from "../../../netlify/functions/data/bai57-de4.json";
 import bai57de5 from "../../../netlify/functions/data/bai57-de5.json";
-
+import bai58de1 from "../../../netlify/functions/data/bai58-de1.json";
+import bai58de2 from "../../../netlify/functions/data/bai58-de2.json";
+import bai58de3 from "../../../netlify/functions/data/bai58-de3.json";
+import bai58de4 from "../../../netlify/functions/data/bai58-de4.json";
+import bai58de5 from "../../../netlify/functions/data/bai58-de5.json";
 const sets = {
   "Bài 46": [bai46de1,bai46de2,bai46de3,bai46de4,bai46de5],
   "Bài 47": [bai47de1,bai47de2,bai47de3,bai47de4,bai47de5],
@@ -95,6 +99,7 @@ const sets = {
 "Bài 55": [bai55de1,bai55de2,bai55de3,bai55de4,bai55de5],
 "Bài 56": [bai56de1,bai56de2,bai56de3,bai56de4,bai56de5],
 "Bài 57": [bai57de1,bai57de2,bai57de3,bai57de4,bai57de5],
+"Bài 58": [bai58de1,bai58de2,bai58de3,bai58de4,bai58de5],
   "Bài 59": [bai59de1,bai59de2,bai59de3,bai59de4,bai59de5],
   "Bài 60": [bai60de1,bai60de2,bai60de3,bai60de4,bai60de5]
 };
