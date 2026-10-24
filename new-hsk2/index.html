@@ -26,4 +26,48 @@ function renderReview(){
 }
 $('reviewArea').onclick=e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.rword!==undefined){speak(D.words[+b.dataset.rword].hanzi);return}if(b.dataset.raudio!==undefined){speak(D.questions[+b.dataset.raudio].audio);return}if(b.dataset.rq!==undefined){let i=+b.dataset.rq,j=+b.dataset.ropt,q=D.questions[i];reviewAnswers[i]=j;let ok=j===q.answer;b.parentElement.querySelectorAll('[data-rq]').forEach(x=>x.classList.toggle('selected',x===b));$('rr'+i).innerHTML='<div class="result '+(ok?'':'bad')+'">'+(ok?'✓ Đúng!':'✗ Chưa đúng')+' · Đáp án: '+safe(q.options[q.answer])+'<p>'+safe(q.explain)+'</p></div>';}};
 renderReview();
+
+/* Bổ sung bài tập từ vựng và luyện nghe theo ba mức, không sửa dữ liệu cũ. */
+(function(){
+ const vocabPanel=document.getElementById('vocab');
+ const practice=document.createElement('div');practice.className='card';practice.id='vocabLevels';
+ practice.innerHTML='<h2>🎯 Luyện từ vựng theo 3 mức</h2><p class="muted">Chọn mức học và trả lời; hệ thống sẽ phản hồi ngay.</p><div class="grid"><button data-vlevel="1">Mức 1 · Nhận mặt chữ</button><button data-vlevel="2">Mức 2 · Nhớ nghĩa</button><button data-vlevel="3">Mức 3 · Dùng trong câu</button></div><div id="vLevelArea"></div>';
+ vocabPanel.appendChild(practice);
+ const drills=[
+ {word:'机场',ask:'Chọn chữ Hán có nghĩa là “sân bay”.',options:['机场','老师','意思','烤鸭'],correct:0,explain:'机场 (jīchǎng) = sân bay.'},
+ {word:'介绍',ask:'Chọn chữ Hán có nghĩa là “giới thiệu”.',options:['旅游','介绍','接','懂'],correct:1,explain:'介绍 (jièshào) = giới thiệu.'},
+ {word:'烤鸭',ask:'Chọn chữ Hán có nghĩa là “vịt quay”.',options:['家','请','烤鸭','学生'],correct:2,explain:'烤鸭 (kǎoyā) = vịt quay.'}
+ ];
+ const meaningDrills=[
+ {ask:'请 nghĩa là gì?',options:['mời; xin','đón','hiểu','du lịch'],correct:0,explain:'请 (qǐng) = mời, xin.'},
+ {ask:'有时 nghĩa là gì?',options:['luôn luôn','đôi khi','ngày mai','bây giờ'],correct:1,explain:'有时 (yǒushí) = đôi khi.'},
+ {ask:'接 nghĩa là gì trong “接朋友”?',options:['đợi','tiễn','đón','gặp'],correct:2,explain:'接朋友 = đón bạn.'}
+ ];
+ const sentenceDrills=[
+ {ask:'Điền vào câu: 我去机场___你。',options:['吃','接','旅游','意思'],correct:1,explain:'我去机场接你。 = Tôi đến sân bay đón bạn.'},
+ {ask:'Điền vào câu: 我来___一下。',options:['介绍','机场','烤鸭','家'],correct:0,explain:'我来介绍一下。 = Để tôi giới thiệu một chút.'},
+ {ask:'Chọn câu tự nhiên để mời người khác ngồi.',options:['请吃机场。','你老师请。','请坐。','坐请你。'],correct:2,explain:'请坐。 = Mời ngồi.'}
+ ];
+ const area=document.getElementById('vLevelArea');
+ function showVocabLevel(level){
+ const data=level===1?drills:level===2?meaningDrills:sentenceDrills;
+ area.innerHTML='<h3>Mức '+level+' · '+(level===1?'Nhận diện chữ Hán':level===2?'Hiểu nghĩa từ':'Vận dụng trong câu')+'</h3>'+data.map((q,i)=>'<div class="card"><b>Câu '+(i+1)+'. '+safe(q.ask)+'</b>'+q.options.map((v,j)=>'<button class="option" data-vq="'+i+'" data-vo="'+j+'">'+safe(v)+'</button>').join('')+'<div id="vfb'+i+'" aria-live="polite"></div></div>').join('');
+ area.dataset.level=level;
+ }
+ practice.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.vlevel){showVocabLevel(+b.dataset.vlevel);return}if(b.dataset.vq!==undefined){const i=+b.dataset.vq,j=+b.dataset.vo,level=+area.dataset.level;const q=(level===1?drills:level===2?meaningDrills:sentenceDrills)[i];b.parentElement.querySelectorAll('[data-vq]').forEach(x=>x.classList.toggle('selected',x===b));document.getElementById('vfb'+i).innerHTML='<div class="result '+(j===q.correct?'':'bad')+'">'+(j===q.correct?'✓ Chính xác!':'✗ Chưa đúng. ')+' '+safe(q.explain)+'</div>';}});
+ showVocabLevel(1);
+ const listenPanel=document.getElementById('listen');
+ const more=document.createElement('div');more.className='card';more.id='listenLevels';
+ more.innerHTML='<h2>🎧 Luyện nghe theo 3 mức</h2><p class="muted">Bấm loa, nghe trước khi xem các lựa chọn. Có thể nghe lại nhiều lần.</p><div class="grid"><button data-llevel="1">Mức 1 · Nghe từ</button><button data-llevel="2">Mức 2 · Nghe câu</button><button data-llevel="3">Mức 3 · Hội thoại</button></div><div id="lLevelArea"></div>';
+ listenPanel.appendChild(more);
+ const listeningDrills={
+ 1:[{audio:'机场',ask:'Bạn nghe thấy từ nào?',options:['老师','机场','烤鸭','意思'],correct:1,explain:'机场 = sân bay.'},{audio:'旅游',ask:'Bạn nghe thấy từ nào?',options:['旅游','接','老师','家'],correct:0,explain:'旅游 = du lịch.'},{audio:'介绍',ask:'Bạn nghe thấy từ nào?',options:['机场','请','介绍','有时'],correct:2,explain:'介绍 = giới thiệu.'}],
+ 2:[{audio:'我去机场接你。',ask:'Người nói sẽ làm gì?',options:['Đi du lịch','Đến sân bay đón bạn','Mời giáo viên ăn','Về nhà'],correct:1,explain:'我去机场接你。 = Tôi đến sân bay đón bạn.'},{audio:'我想去北京旅游。',ask:'Người nói muốn đi đâu?',options:['Bắc Kinh','Trường học','Sân bay','Nhà bạn'],correct:0,explain:'我想去北京旅游。 = Tôi muốn đến Bắc Kinh du lịch.'},{audio:'她请我们吃了北京烤鸭。',ask:'Cô ấy mời mọi người ăn gì?',options:['Mì','Cơm','Vịt quay Bắc Kinh','Bánh bao'],correct:2,explain:'北京烤鸭 = vịt quay Bắc Kinh.'}],
+ 3:[{audio:'甲：谁来机场接你？乙：王老师来接我。',ask:'Ai sẽ đến sân bay đón người nói?',options:['Học sinh','Cô/thầy Vương','Bạn của người nói','Không ai'],correct:1,explain:'王老师来接我。 = Thầy/cô Vương đến đón tôi.'},{audio:'甲：你想去哪里旅游？乙：我想去北京。',ask:'Người trả lời muốn đi du lịch ở đâu?',options:['Bắc Kinh','Thượng Hải','Ở nhà','Trường học'],correct:0,explain:'我想去北京。 = Tôi muốn đến Bắc Kinh.'},{audio:'甲：北京烤鸭好吃吗？乙：很好吃！',ask:'Người trả lời đánh giá món ăn thế nào?',options:['Không thích','Chưa ăn','Rất ngon','Quá đắt'],correct:2,explain:'很好吃！ = Rất ngon!'}]
+ };
+ const lArea=document.getElementById('lLevelArea');
+ function showListenLevel(level){lArea.dataset.level=level;lArea.innerHTML='<h3>Mức '+level+' · '+(level===1?'Nghe từ đơn':level===2?'Nghe hiểu câu':'Nghe hội thoại ngắn')+'</h3>'+listeningDrills[level].map((q,i)=>'<div class="card"><b>Câu '+(i+1)+'. '+safe(q.ask)+'</b><p><button data-lplay="'+i+'">🔊 Nghe / Nghe lại</button></p>'+q.options.map((v,j)=>'<button class="option" data-lq="'+i+'" data-lo="'+j+'">'+safe(v)+'</button>').join('')+'<div id="lfb'+i+'" aria-live="polite"></div></div>').join('');}
+ more.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.llevel){showListenLevel(+b.dataset.llevel);return}const level=+lArea.dataset.level;if(b.dataset.lplay!==undefined){speak(listeningDrills[level][+b.dataset.lplay].audio);return}if(b.dataset.lq!==undefined){const i=+b.dataset.lq,j=+b.dataset.lo,q=listeningDrills[level][i];b.parentElement.querySelectorAll('[data-lq]').forEach(x=>x.classList.toggle('selected',x===b));document.getElementById('lfb'+i).innerHTML='<div class="result '+(j===q.correct?'':'bad')+'">'+(j===q.correct?'✓ Chính xác!':'✗ Chưa đúng, hãy nghe lại.')+' '+safe(q.explain)+'</div>';}});
+ showListenLevel(1);
+})();
 </script></body></html>
