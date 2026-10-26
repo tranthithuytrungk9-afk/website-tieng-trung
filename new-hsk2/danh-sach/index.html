@@ -6,10 +6,23 @@
 <title>Danh sách bài học • NEW HSK 2 (3.0)</title>
 <style>
 :root{font-family:system-ui,'Microsoft YaHei',sans-serif;color:#18313d;background:#f5f9f8}*{box-sizing:border-box}body{margin:0}.shell{max-width:1000px;margin:auto;padding:22px}header{background:#e1f3ed;border-radius:20px;padding:28px}h1{font-size:clamp(27px,5vw,40px);margin:8px 0}p{line-height:1.65}.muted{color:#526b71}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:22px 0}.card{background:white;border:1px solid #dce9e5;border-radius:16px;padding:20px;box-shadow:0 2px 8px #18313d08;display:flex;flex-direction:column;gap:10px}.number{color:#177b69;font-size:14px;font-weight:700}.card h2{font-size:22px;margin:0}.card p{margin:0;flex:1}.button{display:inline-block;text-align:center;background:#177b69;color:white;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:700}.button:focus-visible{outline:3px solid #edaa3d}.button:hover{background:#0e6254}.notice{background:#fff;border:1px solid #dce9e5;border-radius:14px;padding:18px}footer{color:#526b71;font-size:14px;margin:30px 0}@media(max-width:500px){.shell{padding:12px}header{padding:20px}}
+
+.zalo-guide{display:none;background:#fff8e6;border:2px solid #e7ae39;border-radius:16px;padding:18px;margin:18px 0;color:#4c391c}
+.zalo-guide h2{font-size:22px;margin:0 0 8px}.zalo-guide p{margin:8px 0}
+.zalo-guide button{border:0;background:#177b69;color:white;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
+.zalo-guide .result{font-weight:600;min-height:1.5em}
 </style>
 </head>
 <body><div class="shell">
 <header><div>GIÁO TRÌNH TIẾNG TRUNG • NEW HSK 2 (3.0)</div><h1>Chọn bài học</h1><p>Học từ vựng, nhận diện chữ Hán, luyện nghe – nói, ngữ pháp, kiểm tra và ôn tập.</p><p class="muted">Bài 1–15 • Chọn bài bên dưới để bắt đầu học.</p></header>
+<aside id="zaloGuide" class="zalo-guide" role="note" aria-live="polite">
+<h2>🔊 Mở bằng Chrome để nghe tiếng Trung</h2>
+<p>Bạn đang mở bài học trong Zalo. Trình duyệt trong Zalo có thể không hỗ trợ giọng đọc tiếng Trung.</p>
+<p><strong>Cách 1:</strong> Nhấn dấu ⋮ ở góc trên của Zalo → chọn <strong>Mở bằng trình duyệt</strong> hoặc <strong>Mở bằng Chrome</strong> (nếu có).</p>
+<p><strong>Cách 2:</strong> Nhấn nút bên dưới, sau đó mở ứng dụng <strong>Chrome</strong> và dán liên kết vào thanh địa chỉ.</p>
+<button type="button" id="copyChromeLink">📋 Sao chép liên kết để mở bằng Chrome</button>
+<p class="result" id="copyChromeResult" aria-live="polite"></p>
+</aside>
 <main><div class="grid">
 <article class="card"><div class="number">BÀI 01</div><h2>她请我们吃了北京烤鸭</h2><p class="muted">Chị ấy đã mời chúng em ăn vịt quay Bắc Kinh</p><a class="button" href="../">Vào học Bài 1 →</a></article>
 <article class="card"><div class="number">BÀI 02</div><h2>NEW HSK 2 • Bài 2</h2><p class="muted">Từ vựng • Nghe • Nói • Ngữ pháp • Kiểm tra</p><a class="button" href="../bai-2/">Vào học Bài 2 →</a></article>
@@ -27,4 +40,28 @@
 <article class="card"><div class="number">BÀI 14</div><h2>一个人过年多没意思啊</h2><p class="muted">Đón Tết một mình thật chẳng thú vị chút nào</p><a class="button" href="../bai-14/">Vào học Bài 14 →</a></article>
 <article class="card"><div class="number">BÀI 15</div><h2>我想再去一次中国</h2><p class="muted">Tôi muốn đến Trung Quốc thêm một lần nữa</p><a class="button" href="../bai-15/">Vào học Bài 15 →</a></article>
 </div><div class="notice"><strong>Ghi chú:</strong> Tiến độ học hiện được lưu trên trình duyệt của từng thiết bị; chưa đồng bộ tài khoản học sinh. Đã hiển thị đầy đủ 15 bài học.</div></main>
-<footer>NEW HSK 2 (3.0) • Trang chọn bài học</footer></div></body></html>
+<footer>NEW HSK 2 (3.0) • Trang chọn bài học</footer></div>
+<script>
+(function(){
+  var ua=navigator.userAgent||'';
+  var inZalo=/\bZalo\b|Zalo\//i.test(ua);
+  var guide=document.getElementById('zaloGuide');
+  if(inZalo&&guide)guide.style.display='block';
+  var button=document.getElementById('copyChromeLink');
+  var result=document.getElementById('copyChromeResult');
+  if(!button)return;
+  button.addEventListener('click',async function(){
+    var link=window.location.href;
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(link)}
+      else{
+        var input=document.createElement('textarea');input.value=link;input.style.position='fixed';input.style.opacity='0';document.body.appendChild(input);input.focus();input.select();
+        var ok=document.execCommand('copy');input.remove();if(!ok)throw Error('copy failed');
+      }
+      result.textContent='✓ Đã sao chép! Mở Chrome → chạm thanh địa chỉ → Dán → Đi.';
+    }catch(e){
+      result.textContent='Không thể sao chép tự động. Hãy nhấn giữ thanh địa chỉ để sao chép liên kết, rồi dán vào Chrome.';
+    }
+  });
+})();
+</script></body></html>
