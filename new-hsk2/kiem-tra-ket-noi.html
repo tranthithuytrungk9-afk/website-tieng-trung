@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiểm tra kết nối NEW HSK 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f7f4;
+      padding: 25px;
+      max-width: 520px;
+      margin: 30px auto;
+    }
+
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px #00000012;
+    }
+
+    h2 {
+      color: #16734a;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 24px;
+      border: none;
+      border-radius: 8px;
+      background: #16734a;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+    }
+
+    #ketqua {
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f5f5f5;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>KIỂM TRA KẾT NỐI SUPABASE</h2>
+
+    <p>Trang thử nghiệm dành cho giáo viên NEW HSK 2.</p>
+
+    <label for="hoten">Họ tên thử nghiệm</label>
+    <input
+      id="hoten"
+      type="text"
+      value="Hoc Sinh Kiem Tra"
+      maxlength="100"
+    >
+
+    <label for="lop">Lớp thử nghiệm</label>
+    <input
+      id="lop"
+      type="text"
+      value="LOP-TEST"
+      maxlength="60"
+    >
+
+    <button id="nutluu" onclick="luuThu()">
+      Lưu thử vào Supabase
+    </button>
+
+    <div id="ketqua">
+      Chưa thực hiện kiểm tra.
+    </div>
+  </div>
+
+  <script>
+    async function luuThu() {
+      const hoten = document.getElementById("hoten").value.trim();
+      const lop = document.getElementById("lop").value.trim();
+      const ketqua = document.getElementById("ketqua");
+      const nut = document.getElementById("nutluu");
+
+      if (hoten.length < 2 || !lop) {
+        ketqua.textContent = "Vui lòng nhập đủ họ tên và lớp.";
+        return;
+      }
+
+      nut.disabled = true;
+      ketqua.textContent = "Đang kiểm tra kết nối...";
+
+      try {
+        const response = await fetch("/api/new-hsk2", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            action: "student",
+            ho_ten: hoten,
+            lop: lop
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.ok && data.hoc_sinh_id) {
+          ketqua.textContent =
+            "THÀNH CÔNG!\n\n" +
+            "Supabase đã tiếp nhận thông tin học sinh thử nghiệm.\n\n" +
+            "Bạn có thể mở Supabase để kiểm tra bảng " +
+            "new_hsk2_hoc_sinh.\n\n" +
+            "Mã học sinh: " + data.hoc_sinh_id;
+          ketqua.style.background = "#dcfce7";
+        } else {
+          ketqua.textContent =
+            "CHƯA THÀNH CÔNG\n\n" +
+            (data.error || "Máy chủ không lưu được dữ liệu.");
+          ketqua.style.background = "#fee2e2";
+        }
+      } catch (error) {
+        ketqua.textContent =
+          "LỖI KẾT NỐI\n\n" + error.message;
+        ketqua.style.background = "#fee2e2";
+      } finally {
+        nut.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>
