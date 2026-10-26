@@ -1,0 +1,72 @@
+name: Them nut Ve trang chu
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-home-button:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Lay ma website
+        uses: actions/checkout@v4
+
+      - name: Them nut vao cac trang HTML
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          script = '<script src="/ve-trang-chu.js"></script>'
+          count = 0
+
+          for file in Path(".").rglob("*.html"):
+              if ".git" in file.parts:
+                  continue
+
+              if file == Path("index.html"):
+                  continue
+
+              content = file.read_text(encoding="utf-8")
+
+              if script in content:
+                  continue
+
+              matches = list(re.finditer(
+                  r"</body\s*>", content, flags=re.I
+              ))
+
+              if not matches:
+                  print("Bo qua:", file)
+                  continue
+
+              match = matches[-1]
+
+              content = (
+                  content[:match.start()]
+                  + script + "\n"
+                  + content[match.start():]
+              )
+
+              file.write_text(content, encoding="utf-8")
+              count += 1
+              print("Da cap nhat:", file)
+
+          print("Tong so trang:", count)
+          PY
+
+      - name: Luu thay doi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.html'
+
+          if git diff --cached --quiet; then
+            echo "Khong co thay doi"
+          else
+            git commit -m "Them nut Ve trang chu vao cac trang"
+            git push
+          fi
