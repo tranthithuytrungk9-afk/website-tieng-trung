@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>NEW HSK 3 – Bài 1–8</title>
+        <style>
+            :root {
+                font-family: system-ui,"Microsoft YaHei",sans-serif;
+                color: #18313d;
+                background: #f5f9f8
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                margin: 0
+            }
+
+            .shell {
+                max-width: 960px;
+                margin: auto;
+                padding: 20px
+            }
+
+            header {
+                background: #e1f3ed;
+                padding: 20px;
+                border-radius: 18px
+            }
+
+            h1 {
+                font-size: clamp(23px,4vw,34px);
+                margin: 4px 0
+            }
+
+            h2 {
+                font-size: 22px
+            }
+
+            p {
+                line-height: 1.6
+            }
+
+            .muted {
+                color: #526b71
+            }
+
+            .tabs {
+                display: flex;
+                gap: 7px;
+                flex-wrap: wrap;
+                margin: 20px 0
+            }
+
+            .tabs button {
+                border: 1px solid #b5d4c9;
+                background: white;
+                color: #184e43
+            }
+
+            .tabs button.active,.primary {
+                background: #177b69!important;
+                color: white!important
+            }
+
+            button {
+                cursor: pointer;
+                padding: 11px 14px;
+                border-radius: 10px;
+                border: 1px solid #b7d6ce;
+                font: inherit
+            }
+
+            button:focus-visible {
+                outline: 3px solid #edaa3d
+            }
+
+            .panel {
+                display: none
+            }
+
+            .panel.active {
+                display: block
+            }
+
+            .card {
+                background: white;
+                border: 1px solid #dce9e5;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 12px 0;
+                box-shadow: 0 2px 8px #18313d08
+            }
+
+            .hanzi {
+                font-size: 64px;
+                font-weight: 650;
+                text-align: center
+            }
+
+            .pinyin {
+                text-align: center;
+                color: #177b69;
+                font-size: 22px
+            }
+
+            .meaning {
+                text-align: center;
+                font-size: 21px
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+                gap: 10px
+            }
+
+            .option {
+                display: block;
+                width: 100%;
+                text-align: left;
+                margin: 7px 0;
+                background: #fff
+            }
+
+            .option.selected {
+                border: 2px solid #177b69;
+                background: #e1f3ed
+            }
+
+            .result {
+                padding: 12px;
+                border-radius: 10px;
+                background: #eef8f5;
+                margin: 8px 0
+            }
+
+            .bad {
+                background: #fff0ed
+            }
+
+            .hidden {
+                display: none
+            }
+
+            .small {
+                font-size: 13px
+            }
+
+            progress {
+                width: 100%
+            }
+
+            footer {
+                margin: 30px 0;
+                color: #526b71
+            }
+
+            input {
+                padding: 11px;
+                border: 1px solid #b7d6ce;
+                border-radius: 8px;
+                max-width: 100%
+            }
+
+            @media(max-width: 500px) {
+                .shell {
+                    padding:10px
+                }
+
+                .card {
+                    padding: 14px
+                }
+
+                .hanzi {
+                    font-size: 54px
+                }
+            }
+
+            .lesson-picker {
+                display: flex;
+                gap: 9px;
+                flex-wrap: wrap;
+                margin: 15px 0
+            }
+
+            .lesson-picker button.active {
+                background: #177b69;
+                color: white
+            }
+
+            .flipcard {
+                cursor: pointer;
+                min-height: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #b7d6ce;
+                background: linear-gradient(145deg,#fff,#eef8f5)
+            }
+
+            .flipcard:focus {
+                outline: 3px solid orange
+            }
+
+            .flipcard .hanzi {
+                font-size: 72px
+            }
+
+            .hint {
+                font-size: 14px;
+                color: #526b71
+            }
+
+            .field {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #b7d6ce;
+                border-radius: 8px;
+                margin: 6px 0
+            }
+
+            .practice-box {
+                border: 1px solid #dce9e5;
+                padding: 14px;
+                border-radius: 12px;
+                margin: 12px 0
+            }
+
+            .selected {
+                border: 2px solid #177b69!important;
+                background: #e1f3ed!important
+            }
+
+            .ok {
+                color: #086b38
+            }
+
+            .err {
+                color: #ad2929
+            }
+
+            .writebox {
+                width: 220px;
+                height: 220px;
+                border: 1px solid #b5d4c9;
+                background: linear-gradient(transparent 49.8%,#e3e8e5 50%,transparent 50.2%),linear-gradient(90deg,transparent 49.8%,#e3e8e5 50%,transparent 50.2%);
+                touch-action: none
+            }
+
+            .reading {
+                font-size: 23px;
+                line-height: 2.0
+            }
+
+            .controls {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap
+            }
+
+            .card h3 {
+                margin-top: 0
+            }
+
+            .panel {
+                min-height: 150px
+            }
+
+            .badge {
+                display: inline-block;
+                background: #e1f3ed;
+                padding: 5px 9px;
+                border-radius: 12px
+            }
+
+            .stroke-panel {
+                background: #f4faf8;
+                border: 1px solid #b7d6ce;
+                border-radius: 14px;
+                padding: 15px;
+                margin: 12px 0
+            }
+
+            .stroke-stage {
+                min-height: 220px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                border: 1px solid #dce9e5;
+                border-radius: 12px;
+                margin: 12px 0
+            }
+
+            .stroke-stage svg {
+                max-width: 100%
+            }
+
+            .stroke-picker {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 10px 0
+            }
+
+            .stroke-picker button.active {
+                background: #177b69;
+                color: white
+            }
+
+            .statusline {
+                color: #526b71;
+                font-size: 14px
+            }
+
+            .tabs {
+                position: sticky;
+                top: 0;
+                background: #f5f9f8;
+                padding: 10px 0;
+                z-index: 3
+            }
+
+            .panel.active {
+                display: block!important
+            }
+        </style>
+        <style>
+            .hsk3-writing {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(235px,1fr));
+                gap: 12px
+            }
+
+            .hsk3-square {
+                width: 180px;
+                height: 180px;
+                margin: 10px auto;
+                border: 2px solid #aacdbf;
+                background: linear-gradient(90deg,transparent 49.7%,#d8e9e2 50%,transparent 50.3%),linear-gradient(transparent 49.7%,#d8e9e2 50%,transparent 50.3%),white;
+                touch-action: none
+            }
+
+            .hsk3-writing .card {
+                margin: 0
+            }
+
+            .hsk3-writing button {
+                margin: 3px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="shell">
+            <header>
+                <div>NEW HSK 3 (3.0) · Bản thử nghiệm 8 bài</div>
+                <h1 id="lessonTitle"></h1>
+                <div id="lessonVi"></div>
+                <p class="muted">Giao diện và cơ chế flashcard dựa trên tệp NEW HSK 2 bạn gửi • Bài 4–8 · nội dung luyện tập biên soạn (cần đối chiếu sách gốc)</p>
+            </header>
+            <div class="lesson-picker" id="lessons"></div>
+            <nav class="tabs" id="tabs"></nav>
+            <main>
+                <section class="panel active" id="vocab">
+                    <h2>1. Thẻ từ vựng</h2>
+                    <p>
+                        Nhìn chữ Hán và đoán nghĩa trước khi lật thẻ. Bấm trực tiếp vào thẻ hoặc nút <b>Lật thẻ</b>
+                        .
+                    </p>
+                    <label>
+                        <input type="checkbox" id="hidePinyin">Ẩn pinyin
+                    </label>
+                    <div class="card flipcard" id="flipCard" role="button" tabindex="0" aria-label="Lật thẻ từ vựng">
+                        <div id="cardCount" class="muted"></div>
+                        <div id="wordHanzi" class="hanzi"></div>
+                        <div id="wordPinyin" class="pinyin"></div>
+                        <div id="wordMeaning" class="meaning hidden"></div>
+                        <div id="wordExample" class="hidden"></div>
+                        <div id="wordTranslation" class="hidden muted"></div>
+                        <div class="hint" id="flipHint">Nhấn để xem nghĩa và ví dụ</div>
+                    </div>
+                    <div class="grid">
+                        <button id="playWord">🔊 Nghe từ</button>
+                        <button id="flip">🔄 Lật thẻ / Xem nghĩa</button>
+                        <button id="prev">← Trước</button>
+                        <button id="next">Tiếp →</button>
+                        <button id="mark">☆ Đánh dấu chưa thuộc</button>
+                    </div>
+                    <p id="weakCount" class="muted"></p>
+                    <button id="weakOnly">Ôn từ chưa thuộc</button>
+                    <button id="allWords">Xem tất cả từ</button>
+                    <div class="card">
+                        <h3>✍️ Thứ tự nét viết ngay trong bài học</h3>
+                        <p class="muted">
+                            Chọn một chữ trong thẻ rồi bấm <b>Xem thứ tự nét</b>
+                            . Hoạt ảnh hiển thị bên dưới, không chuyển sang trang khác.
+                        </p>
+                        <div id="vocabStroke" class="stroke-panel"></div>
+                    </div>
+                    <div id="wordList"></div>
+                </section>
+                <section class="panel" id="hanzi">
+                    <h2>2. Chữ Hán · Luyện viết · Nhận diện</h2>
+                    <div id="hanziArea"></div>
+                </section>
+                <section class="panel" id="grammar">
+                    <h2>3. Ngữ pháp và vận dụng</h2>
+                    <div id="grammarArea"></div>
+                </section>
+                <section class="panel" id="reading">
+                    <h2>4. Luyện đọc hiểu</h2>
+                    <div id="readingArea"></div>
+                </section>
+                <section class="panel" id="translate">
+                    <h2>5. Luyện dịch hai chiều</h2>
+                    <div id="translateArea"></div>
+                </section>
+                <section class="panel" id="test">
+                    <h2>6. Kiểm tra cuối bài</h2>
+                    <p>Bài kiểm tra · Chấm điểm /100 · Xem đáp án và giải thích. Chấm bài và chuẩn bị lưu điểm cho giáo viên.</p>
+                    <div id="testArea"></div>
+                    <button class="primary" id="submit">Nộp bài và chấm điểm</button>
+                    <div id="score"></div>
+                    <div class="card">
+                        <h3>Thông tin học sinh để lưu điểm</h3>
+                        <label>
+                            Họ và tên <input id="studentName" class="field" autocomplete="name" placeholder="Họ và tên học sinh">
+                        </label>
+                        <label>
+                            Lớp <input id="studentClass" class="field" placeholder="Tên lớp">
+                        </label>
+                        <p class="muted">Để gửi điểm về trang giáo viên hiện tại, cần cấu hình đúng API của website. Chưa kết nối sẽ không báo lưu thành công.</p>
+                        <div id="syncStatus" role="status" aria-live="polite"></div>
+                        <button id="syncScore" type="button" disabled>Gửi điểm về giáo viên (chưa cấu hình)</button>
+                    </div>
+                </section>
+            </main>
+            <footer>Bản tích hợp API NEW HSK 3; sử dụng API và bảng điểm đã cấu hình trên Cloudflare Preview. Một số câu ví dụ và bài tập là nội dung minh họa, không phải trích nguyên văn sách.</footer>
+        </div>
+        <script>
+            'use strict';
+            const DATA = [{"title":"我们去机场接你们","vi":"Anh chị sẽ đến sân bay đón các em","topic":"Sân bay và đón bạn","v":[["机场","jīchǎng","sân bay","我去机场接朋友。","Ví dụ minh họa luyện tập."],["行李","xíngli","hành lý","请你在出口等我。","Ví dụ minh họa luyện tập."],["箱子","xiāngzi","va li, thùng","这个箱子看起来很重。","Ví dụ minh họa luyện tập."],["发现","fāxiàn","phát hiện","你什么时候发现行李不见了？","Ví dụ minh họa luyện tập."],["以为","yǐwéi","cứ tưởng","别着急，我来帮助你。","Ví dụ minh họa luyện tập."],["帮助","bāngzhù","giúp đỡ","我去机场接朋友。","Ví dụ minh họa luyện tập."],["出口","chūkǒu","lối ra","请你在出口等我。","Ví dụ minh họa luyện tập."],["接","jiē","đón","这个箱子看起来很重。","Ví dụ minh họa luyện tập."],["等","děng","đợi","你什么时候发现行李不见了？","Ví dụ minh họa luyện tập."],["着急","zháojí","lo lắng","别着急，我来帮助你。","Ví dụ minh họa luyện tập."],["中间","zhōngjiān","ở giữa","我去机场接朋友。","Ví dụ minh họa luyện tập."],["年轻","niánqīng","trẻ tuổi","请你在出口等我。","Ví dụ minh họa luyện tập."]],"grammar":[["看上去 / 看起来","Diễn tả ấn tượng, vẻ bề ngoài","这个箱子看起来很重。","Chiếc va li này trông có vẻ nặng."],["疑问代词的灵活用法","Dùng đại từ nghi vấn để chỉ đối tượng không xác định","你想坐哪儿就坐哪儿。","Bạn muốn ngồi đâu thì ngồi đó."],["多项定语","Nhiều thành phần định ngữ bổ nghĩa cho danh từ","那位穿蓝衣服的年轻老师是我朋友。","Giáo viên trẻ mặc áo xanh ấy là bạn tôi."]],"read":[["基础阅读","明天下午，我的两个朋友要来北京。他们第一次来中国，不太熟悉机场。我准备去接他们。飞机到了以后，他们要先拿行李，再到出口等我。如果找不到我，就给我打电话。我希望他们一路顺利。"],["情境阅读","昨天晚上，安娜给我发消息，说她的飞机今天上午十点到。可是我看错了时间，以为是十一点。我到机场的时候，她已经等了半个小时。她没有生气，还笑着说：“没关系，我刚好在机场买了一杯咖啡。”我帮她拿箱子，我们一起坐地铁回学校。"],["挑战阅读","第一次到一个陌生的城市，有的人会觉得很兴奋，也有的人会有一点儿紧张。我的朋友从国外来北京以前，已经在网上查了机场到市中心的交通信息。可是到了机场以后，她发现手机没有网络，也不知道应该在哪儿买车票。幸好一位工作人员主动帮助了她。后来她告诉我：出门以前做好准备很重要，但是遇到问题时，主动向别人求助也很重要。"]],"sent":["我去机场接朋友。","请你在出口等我。","这个箱子看起来很重。","你什么时候发现行李不见了？","别着急，我来帮助你。"],"transvi":["Ngày mai tôi sẽ đến sân bay đón bạn.","Bạn hãy đợi tôi ở lối ra.","Chiếc va li này trông có vẻ rất nặng.","Đừng lo, tôi sẽ giúp bạn.","Tôi cứ tưởng bạn đã đến Bắc Kinh rồi."],"transzh":["我明天去机场接你。","请你在出口等我。","这个箱子看起来很重。","别着急，我来帮你。","我以为你已经到北京了。"],"quiz":[{"q":"“机场” có nghĩa là gì?","opts":["sân bay","phát hiện","lối ra","lo lắng"],"answer":0,"explain":"机场 (jīchǎng) = sân bay."},{"q":"“行李” có nghĩa là gì?","opts":["cứ tưởng","đón","ở giữa","hành lý"],"answer":3,"explain":"行李 (xíngli) = hành lý."},{"q":"“箱子” có nghĩa là gì?","opts":["đợi","trẻ tuổi","va li, thùng","giúp đỡ"],"answer":2,"explain":"箱子 (xiāngzi) = va li, thùng."},{"q":"“发现” có nghĩa là gì?","opts":["sân bay","phát hiện","lối ra","lo lắng"],"answer":1,"explain":"发现 (fāxiàn) = phát hiện."},{"q":"“以为” có nghĩa là gì?","opts":["cứ tưởng","đón","ở giữa","hành lý"],"answer":0,"explain":"以为 (yǐwéi) = cứ tưởng."},{"q":"“帮助” có nghĩa là gì?","opts":["đợi","trẻ tuổi","va li, thùng","giúp đỡ"],"answer":3,"explain":"帮助 (bāngzhù) = giúp đỡ."},{"q":"“出口” có nghĩa là gì?","opts":["sân bay","phát hiện","lối ra","lo lắng"],"answer":2,"explain":"出口 (chūkǒu) = lối ra."},{"q":"“接” có nghĩa là gì?","opts":["cứ tưởng","đón","ở giữa","hành lý"],"answer":1,"explain":"接 (jiē) = đón."},{"q":"“等” có nghĩa là gì?","opts":["đợi","trẻ tuổi","va li, thùng","giúp đỡ"],"answer":0,"explain":"等 (děng) = đợi."},{"q":"“着急” có nghĩa là gì?","opts":["sân bay","phát hiện","lối ra","lo lắng"],"answer":3,"explain":"着急 (zháojí) = lo lắng."},{"q":"“中间” có nghĩa là gì?","opts":["cứ tưởng","đón","ở giữa","hành lý"],"answer":2,"explain":"中间 (zhōngjiān) = ở giữa."},{"q":"“年轻” có nghĩa là gì?","opts":["đợi","trẻ tuổi","va li, thùng","giúp đỡ"],"answer":1,"explain":"年轻 (niánqīng) = trẻ tuổi."},{"q":"Chọn câu tiếng Trung phù hợp: Ngày mai tôi sẽ đến sân bay đón bạn.","opts":["我去机场接朋友。","请你在出口等我。","这个箱子看起来很重。","你什么时候发现行李不见了？"],"answer":0,"explain":"我去机场接朋友。"},{"q":"Chọn câu tiếng Trung phù hợp: Bạn hãy đợi tôi ở lối ra.","opts":["请你在出口等我。","这个箱子看起来很重。","你什么时候发现行李不见了？","别着急，我来帮助你。"],"answer":0,"explain":"请你在出口等我。"},{"q":"Chọn câu tiếng Trung phù hợp: Chiếc va li này trông có vẻ rất nặng.","opts":["这个箱子看起来很重。","你什么时候发现行李不见了？","别着急，我来帮助你。","我去机场接朋友。"],"answer":0,"explain":"这个箱子看起来很重。"},{"q":"Chọn câu tiếng Trung phù hợp: Đừng lo, tôi sẽ giúp bạn.","opts":["你什么时候发现行李不见了？","别着急，我来帮助你。","我去机场接朋友。","请你在出口等我。"],"answer":0,"explain":"你什么时候发现行李不见了？"},{"q":"Chọn câu tiếng Trung phù hợp: Tôi cứ tưởng bạn đã đến Bắc Kinh rồi.","opts":["别着急，我来帮助你。","我去机场接朋友。","请你在出口等我。","这个箱子看起来很重。"],"answer":0,"explain":"别着急，我来帮助你。"},{"q":"Cấu trúc “看上去 / 看起来” được dùng như thế nào?","opts":["Diễn tả ấn tượng, vẻ bề ngoài","Dùng đại từ nghi vấn để chỉ đối tượng không xác định","Nhiều thành phần định ngữ bổ nghĩa cho danh từ"],"answer":0,"explain":"这个箱子看起来很重。 — Chiếc va li này trông có vẻ nặng."},{"q":"Cấu trúc “疑问代词的灵活用法” được dùng như thế nào?","opts":["Dùng đại từ nghi vấn để chỉ đối tượng không xác định","Nhiều thành phần định ngữ bổ nghĩa cho danh từ","Diễn tả ấn tượng, vẻ bề ngoài"],"answer":0,"explain":"你想坐哪儿就坐哪儿。 — Bạn muốn ngồi đâu thì ngồi đó."},{"q":"Cấu trúc “多项定语” được dùng như thế nào?","opts":["Nhiều thành phần định ngữ bổ nghĩa cho danh từ","Diễn tả ấn tượng, vẻ bề ngoài","Dùng đại từ nghi vấn để chỉ đối tượng không xác định"],"answer":0,"explain":"那位穿蓝衣服的年轻老师是我朋友。 — Giáo viên trẻ mặc áo xanh ấy là bạn tôi."}]},{"title":"你们想吃什么就点什么","vi":"Các em muốn ăn món gì thì gọi món đó","topic":"Ăn uống và gọi món","v":[["菜单","càidān","thực đơn","你们想吃什么就点什么。","Ví dụ minh họa luyện tập."],["点菜","diǎncài","gọi món","这道菜又便宜又好吃。","Ví dụ minh họa luyện tập."],["服务员","fúwùyuán","nhân viên phục vụ","请给我一双筷子。","Ví dụ minh họa luyện tập."],["味道","wèidào","mùi vị","这个汤有一点儿辣。","Ví dụ minh họa luyện tập."],["双","shuāng","đôi","服务员，请给我们看看菜单。","Ví dụ minh họa luyện tập."],["筷子","kuàizi","đũa","你们想吃什么就点什么。","Ví dụ minh họa luyện tập."],["勺子","sháozi","thìa","这道菜又便宜又好吃。","Ví dụ minh họa luyện tập."],["碗","wǎn","bát","请给我一双筷子。","Ví dụ minh họa luyện tập."],["甜","tián","ngọt","这个汤有一点儿辣。","Ví dụ minh họa luyện tập."],["辣","là","cay","服务员，请给我们看看菜单。","Ví dụ minh họa luyện tập."],["饱","bǎo","no","你们想吃什么就点什么。","Ví dụ minh họa luyện tập."],["饮料","yǐnliào","đồ uống","这道菜又便宜又好吃。","Ví dụ minh họa luyện tập."]],"grammar":[["又……又……","Hai đặc điểm cùng tồn tại","这道菜又便宜又好吃。","Món này vừa rẻ vừa ngon."],["疑问代词的灵活用法","Muốn gì thì chọn nấy","你想吃什么就点什么。","Bạn muốn ăn gì thì gọi món đó."],["方位词","Từ chỉ vị trí","筷子在碗的旁边。","Đũa ở bên cạnh bát."]],"read":[["基础阅读","今天晚上，我们去一家中国饭馆吃饭。服务员给我们拿来了菜单。我想吃米饭和鸡肉，朋友想喝果汁。我们点了三道菜。菜的味道很好，就是有一点儿辣。"],["情境阅读","周末，我带两个外国朋友去吃中国菜。他们以前没有用过筷子，所以一开始吃得很慢。服务员看见了，就给他们拿来了勺子。我告诉朋友，不用着急，想用什么就用什么。后来他们学会了用筷子，还说下次要自己点菜。"],["挑战阅读","每个人的饮食习惯都不一样。有些人喜欢吃辣的，有些人更喜欢清淡的食物。和朋友一起吃饭的时候，最好先问一问大家有没有不吃的东西。上周我们班聚餐，有一位同学不吃肉，还有一位同学不能吃太辣的菜。大家一起看菜单，最后点了几道不同口味的菜。虽然选择花了一点时间，但是每个人都吃得很开心。"]],"sent":["你们想吃什么就点什么。","这道菜又便宜又好吃。","请给我一双筷子。","这个汤有一点儿辣。","服务员，请给我们看看菜单。"],"transvi":["Bạn muốn ăn gì thì gọi món đó.","Món ăn này vừa ngon vừa rẻ.","Xin cho tôi một đôi đũa.","Món canh này hơi cay.","Chúng tôi muốn xem thực đơn."],"transzh":["你想吃什么就点什么。","这道菜又好吃又便宜。","请给我一双筷子。","这个汤有一点儿辣。","我们想看看菜单。"],"quiz":[{"q":"“菜单” có nghĩa là gì?","opts":["thực đơn","mùi vị","thìa","cay"],"answer":0,"explain":"菜单 (càidān) = thực đơn."},{"q":"“点菜” có nghĩa là gì?","opts":["đôi","bát","no","gọi món"],"answer":3,"explain":"点菜 (diǎncài) = gọi món."},{"q":"“服务员” có nghĩa là gì?","opts":["ngọt","đồ uống","nhân viên phục vụ","đũa"],"answer":2,"explain":"服务员 (fúwùyuán) = nhân viên phục vụ."},{"q":"“味道” có nghĩa là gì?","opts":["thực đơn","mùi vị","thìa","cay"],"answer":1,"explain":"味道 (wèidào) = mùi vị."},{"q":"“双” có nghĩa là gì?","opts":["đôi","bát","no","gọi món"],"answer":0,"explain":"双 (shuāng) = đôi."},{"q":"“筷子” có nghĩa là gì?","opts":["ngọt","đồ uống","nhân viên phục vụ","đũa"],"answer":3,"explain":"筷子 (kuàizi) = đũa."},{"q":"“勺子” có nghĩa là gì?","opts":["thực đơn","mùi vị","thìa","cay"],"answer":2,"explain":"勺子 (sháozi) = thìa."},{"q":"“碗” có nghĩa là gì?","opts":["đôi","bát","no","gọi món"],"answer":1,"explain":"碗 (wǎn) = bát."},{"q":"“甜” có nghĩa là gì?","opts":["ngọt","đồ uống","nhân viên phục vụ","đũa"],"answer":0,"explain":"甜 (tián) = ngọt."},{"q":"“辣” có nghĩa là gì?","opts":["thực đơn","mùi vị","thìa","cay"],"answer":3,"explain":"辣 (là) = cay."},{"q":"“饱” có nghĩa là gì?","opts":["đôi","bát","no","gọi món"],"answer":2,"explain":"饱 (bǎo) = no."},{"q":"“饮料” có nghĩa là gì?","opts":["ngọt","đồ uống","nhân viên phục vụ","đũa"],"answer":1,"explain":"饮料 (yǐnliào) = đồ uống."},{"q":"Chọn câu tiếng Trung phù hợp: Bạn muốn ăn gì thì gọi món đó.","opts":["你们想吃什么就点什么。","这道菜又便宜又好吃。","请给我一双筷子。","这个汤有一点儿辣。"],"answer":0,"explain":"你们想吃什么就点什么。"},{"q":"Chọn câu tiếng Trung phù hợp: Món ăn này vừa ngon vừa rẻ.","opts":["这道菜又便宜又好吃。","请给我一双筷子。","这个汤有一点儿辣。","服务员，请给我们看看菜单。"],"answer":0,"explain":"这道菜又便宜又好吃。"},{"q":"Chọn câu tiếng Trung phù hợp: Xin cho tôi một đôi đũa.","opts":["请给我一双筷子。","这个汤有一点儿辣。","服务员，请给我们看看菜单。","你们想吃什么就点什么。"],"answer":0,"explain":"请给我一双筷子。"},{"q":"Chọn câu tiếng Trung phù hợp: Món canh này hơi cay.","opts":["这个汤有一点儿辣。","服务员，请给我们看看菜单。","你们想吃什么就点什么。","这道菜又便宜又好吃。"],"answer":0,"explain":"这个汤有一点儿辣。"},{"q":"Chọn câu tiếng Trung phù hợp: Chúng tôi muốn xem thực đơn.","opts":["服务员，请给我们看看菜单。","你们想吃什么就点什么。","这道菜又便宜又好吃。","请给我一双筷子。"],"answer":0,"explain":"服务员，请给我们看看菜单。"},{"q":"Cấu trúc “又……又……” được dùng như thế nào?","opts":["Hai đặc điểm cùng tồn tại","Muốn gì thì chọn nấy","Từ chỉ vị trí"],"answer":0,"explain":"这道菜又便宜又好吃。 — Món này vừa rẻ vừa ngon."},{"q":"Cấu trúc “疑问代词的灵活用法” được dùng như thế nào?","opts":["Muốn gì thì chọn nấy","Từ chỉ vị trí","Hai đặc điểm cùng tồn tại"],"answer":0,"explain":"你想吃什么就点什么。 — Bạn muốn ăn gì thì gọi món đó."},{"q":"Cấu trúc “方位词” được dùng như thế nào?","opts":["Từ chỉ vị trí","Hai đặc điểm cùng tồn tại","Muốn gì thì chọn nấy"],"answer":0,"explain":"筷子在碗的旁边。 — Đũa ở bên cạnh bát."}]},{"title":"这个小区挺好的","vi":"Khu dân cư này khá tốt","topic":"Nhà ở và môi trường sống","v":[["小区","xiǎoqū","khu dân cư","这个小区挺好的。","Ví dụ minh họa luyện tập."],["环境","huánjìng","môi trường","我家附近有一个公园。","Ví dụ minh họa luyện tập."],["房子","fángzi","căn nhà","房间里有空调。","Ví dụ minh họa luyện tập."],["厨房","chúfáng","nhà bếp","这套房子太小了。","Ví dụ minh họa luyện tập."],["客厅","kètīng","phòng khách","我们下个月准备搬家。","Ví dụ minh họa luyện tập."],["空调","kōngtiáo","máy điều hòa","这个小区挺好的。","Ví dụ minh họa luyện tập."],["花园","huāyuán","vườn hoa","我家附近有一个公园。","Ví dụ minh họa luyện tập."],["搬家","bānjiā","chuyển nhà","房间里有空调。","Ví dụ minh họa luyện tập."],["附近","fùjìn","gần đây","这套房子太小了。","Ví dụ minh họa luyện tập."],["方便","fāngbiàn","thuận tiện","我们下个月准备搬家。","Ví dụ minh họa luyện tập."],["安静","ānjìng","yên tĩnh","这个小区挺好的。","Ví dụ minh họa luyện tập."],["干净","gānjìng","sạch sẽ","我家附近有一个公园。","Ví dụ minh họa luyện tập."]],"grammar":[["挺……的","Nhấn mạnh mức độ khá","这个小区挺安静的。","Khu dân cư này khá yên tĩnh."],["程度副词 太","Phó từ chỉ mức độ quá","这个房间太小了。","Căn phòng này quá nhỏ."],["就 / 才","Phân biệt sớm và muộn so với kỳ vọng","他八点就到了，我十点才到。","Anh ấy đã đến từ 8 giờ, tôi mãi 10 giờ mới đến."]],"read":[["基础阅读","我最近搬家了。新家在学校附近，走路十分钟就能到。小区很安静，环境也不错。房子里有两个卧室、一个客厅和一个厨房。我很喜欢这个地方。"],["情境阅读","昨天，我和朋友一起去看房子。第一套房子很大，但是离地铁站太远。第二套房子虽然小一点儿，可是附近有超市、医院和公园，生活很方便。朋友觉得第二套更适合我。我也觉得那里的环境挺好的，所以决定再去看看。"],["挑战阅读","选择住在哪儿，并不只是看房子的大小和价格。对学生来说，离学校近不近、附近有没有公共交通，都很重要。对有孩子的家庭来说，周围的环境、学校和医院也需要考虑。我以前住在市中心，购物很方便，但是晚上有点儿吵。现在搬到一个比较安静的小区，虽然去商场需要坐车，却有更多时间在楼下散步。我慢慢发现，适合自己的生活方式比别人认为的“好房子”更重要。"]],"sent":["这个小区挺好的。","我家附近有一个公园。","房间里有空调。","这套房子太小了。","我们下个月准备搬家。"],"transvi":["Khu dân cư này khá yên tĩnh.","Gần nhà tôi có một công viên.","Trong phòng có máy điều hòa.","Căn nhà này quá nhỏ.","Tháng sau chúng tôi định chuyển nhà."],"transzh":["这个小区挺安静的。","我家附近有一个公园。","房间里有空调。","这套房子太小了。","我们下个月打算搬家。"],"quiz":[{"q":"“小区” có nghĩa là gì?","opts":["khu dân cư","nhà bếp","vườn hoa","thuận tiện"],"answer":0,"explain":"小区 (xiǎoqū) = khu dân cư."},{"q":"“环境” có nghĩa là gì?","opts":["phòng khách","chuyển nhà","yên tĩnh","môi trường"],"answer":3,"explain":"环境 (huánjìng) = môi trường."},{"q":"“房子” có nghĩa là gì?","opts":["gần đây","sạch sẽ","căn nhà","máy điều hòa"],"answer":2,"explain":"房子 (fángzi) = căn nhà."},{"q":"“厨房” có nghĩa là gì?","opts":["khu dân cư","nhà bếp","vườn hoa","thuận tiện"],"answer":1,"explain":"厨房 (chúfáng) = nhà bếp."},{"q":"“客厅” có nghĩa là gì?","opts":["phòng khách","chuyển nhà","yên tĩnh","môi trường"],"answer":0,"explain":"客厅 (kètīng) = phòng khách."},{"q":"“空调” có nghĩa là gì?","opts":["gần đây","sạch sẽ","căn nhà","máy điều hòa"],"answer":3,"explain":"空调 (kōngtiáo) = máy điều hòa."},{"q":"“花园” có nghĩa là gì?","opts":["khu dân cư","nhà bếp","vườn hoa","thuận tiện"],"answer":2,"explain":"花园 (huāyuán) = vườn hoa."},{"q":"“搬家” có nghĩa là gì?","opts":["phòng khách","chuyển nhà","yên tĩnh","môi trường"],"answer":1,"explain":"搬家 (bānjiā) = chuyển nhà."},{"q":"“附近” có nghĩa là gì?","opts":["gần đây","sạch sẽ","căn nhà","máy điều hòa"],"answer":0,"explain":"附近 (fùjìn) = gần đây."},{"q":"“方便” có nghĩa là gì?","opts":["khu dân cư","nhà bếp","vườn hoa","thuận tiện"],"answer":3,"explain":"方便 (fāngbiàn) = thuận tiện."},{"q":"“安静” có nghĩa là gì?","opts":["phòng khách","chuyển nhà","yên tĩnh","môi trường"],"answer":2,"explain":"安静 (ānjìng) = yên tĩnh."},{"q":"“干净” có nghĩa là gì?","opts":["gần đây","sạch sẽ","căn nhà","máy điều hòa"],"answer":1,"explain":"干净 (gānjìng) = sạch sẽ."},{"q":"Chọn câu tiếng Trung phù hợp: Khu dân cư này khá yên tĩnh.","opts":["这个小区挺好的。","我家附近有一个公园。","房间里有空调。","这套房子太小了。"],"answer":0,"explain":"这个小区挺好的。"},{"q":"Chọn câu tiếng Trung phù hợp: Gần nhà tôi có một công viên.","opts":["我家附近有一个公园。","房间里有空调。","这套房子太小了。","我们下个月准备搬家。"],"answer":0,"explain":"我家附近有一个公园。"},{"q":"Chọn câu tiếng Trung phù hợp: Trong phòng có máy điều hòa.","opts":["房间里有空调。","这套房子太小了。","我们下个月准备搬家。","这个小区挺好的。"],"answer":0,"explain":"房间里有空调。"},{"q":"Chọn câu tiếng Trung phù hợp: Căn nhà này quá nhỏ.","opts":["这套房子太小了。","我们下个月准备搬家。","这个小区挺好的。","我家附近有一个公园。"],"answer":0,"explain":"这套房子太小了。"},{"q":"Chọn câu tiếng Trung phù hợp: Tháng sau chúng tôi định chuyển nhà.","opts":["我们下个月准备搬家。","这个小区挺好的。","我家附近有一个公园。","房间里有空调。"],"answer":0,"explain":"我们下个月准备搬家。"},{"q":"Cấu trúc “挺……的” được dùng như thế nào?","opts":["Nhấn mạnh mức độ khá","Phó từ chỉ mức độ quá","Phân biệt sớm và muộn so với kỳ vọng"],"answer":0,"explain":"这个小区挺安静的。 — Khu dân cư này khá yên tĩnh."},{"q":"Cấu trúc “程度副词 太” được dùng như thế nào?","opts":["Phó từ chỉ mức độ quá","Phân biệt sớm và muộn so với kỳ vọng","Nhấn mạnh mức độ khá"],"answer":0,"explain":"这个房间太小了。 — Căn phòng này quá nhỏ."},{"q":"Cấu trúc “就 / 才” được dùng như thế nào?","opts":["Phân biệt sớm và muộn so với kỳ vọng","Nhấn mạnh mức độ khá","Phó từ chỉ mức độ quá"],"answer":0,"explain":"他八点就到了，我十点才到。 — Anh ấy đã đến từ 8 giờ, tôi mãi 10 giờ mới đến."}]},{"title":"这家宾馆跟别的都不一样","vi":"Khách sạn này không giống những khách sạn khác","topic":"Du lịch, khách sạn, phong cảnh","v":[["假期","jiàqī","kỳ nghỉ","我正在学习“假期”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["海","hǎi","biển","我正在学习“海”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["草原","cǎoyuán","thảo nguyên","我正在学习“草原”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["主要","zhǔyào","chủ yếu","我正在学习“主要”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["骑","qí","cưỡi","我正在学习“骑”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["马","mǎ","ngựa","我正在学习“马”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["月亮","yuèliang","mặt trăng","我正在学习“月亮”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["一边","yìbiān","vừa… vừa…","我正在学习“一边”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["刻","kè","khắc, 15 phút","我正在学习“刻”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["起飞","qǐfēi","cất cánh","我正在学习“起飞”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["宾馆","bīnguǎn","khách sạn","我正在学习“宾馆”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["特别","tèbié","đặc biệt","我正在学习“特别”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["一样","yíyàng","giống nhau","我正在学习“一样”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["欢迎","huānyíng","hoan nghênh","我正在学习“欢迎”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["司机","sījī","tài xế","我正在学习“司机”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["除了","chúle","ngoài… ra","我正在学习“除了”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["一直","yìzhí","liên tục","我正在学习“一直”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["干净","gānjìng","sạch sẽ","我正在学习“干净”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["满意","mǎnyì","hài lòng","我正在学习“满意”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."]],"grammar":[["一……也/都……不/没……","Phủ định hoàn toàn: một… cũng không","我一点儿也不累。","Tôi không mệt chút nào."],["跟……一样 / 不一样","So sánh giống hoặc khác nhau","这家宾馆跟那家不一样。","Khách sạn này khác khách sạn kia."],["除了……以外……","Ngoài… ra còn…","除了北京以外，我还去过上海。","Ngoài Bắc Kinh, tôi còn từng đến Thượng Hải."]],"fill":[["这家宾馆跟那家不___。","一样","跟…不一样: không giống."],["我一点儿___不累。","也","一…也不: phủ định hoàn toàn."],["___北京以外，我还去过上海。","除了","除了…以外: ngoài… ra."],["飞机马上要___了。","起飞","起飞: cất cánh."]],"fix":[["这家宾馆跟那家一样不。","这家宾馆跟那家不一样。","不一样 đặt sau đối tượng so sánh."],["我一点儿累也不。","我一点儿也不累。","一…也不…"],["除了北京我以外去过上海。","除了北京以外，我还去过上海。","除了…以外…"],["飞机起飞快要了。","飞机快要起飞了。","快要 + động từ + 了."]],"order":[["跟 / 这家宾馆 / 不一样 / 那家","这家宾馆跟那家不一样。"],["一点儿 / 我 / 也 / 不累","我一点儿也不累。"]],"sent":["这家宾馆跟那家不一样。","我们打算假期去草原骑马。","除了海边以外，我还想去山里。","飞机马上要起飞了。","这个房间很干净，我很满意。"],"read":[["第一次住山里的宾馆","上个星期六，我和姐姐去山里旅行。我们在网上找了很久，最后选择了一家离湖不远的宾馆。到那儿以后，我们发现这家宾馆跟城市里的宾馆很不一样。房间不大，但是窗外就是一片树林，早上还能听见鸟叫。服务员告诉我们，晚上八点以后最好不要一个人去湖边，因为山路没有灯。姐姐本来想晚上去拍照，听了以后决定第二天早起。第二天早上，天气很好，我们一边散步一边拍照，还认识了一位从上海来的游客。回家以后，姐姐说这次旅行最难忘的不是风景，而是那种安静的感觉。"],["一次计划之外的改变","小李和朋友原来打算星期五坐飞机去海边玩三天。他们已经订好了宾馆，也准备好了行李。可是星期四晚上，朋友突然发烧了，医生建议他在家休息。小李虽然有点失望，但没有责怪朋友。他先给宾馆打电话，问能不能把入住时间改到下个星期。工作人员查了以后说可以，不过需要提前确认。后来，小李又把机票改了日期。等朋友身体好了，他们终于出发了。到了海边，正好赶上晴天，游客也没有上个星期那么多。朋友说，旅行虽然晚了一周，却比原来想的更轻松。"],["旅途中的选择","王老师带学生去参观一个有名的古镇。出发前，他让大家自己查路线，并告诉大家不要只看照片就决定去哪儿。到了古镇以后，一些学生想坐车直接到最热闹的街道，另一些学生希望沿着河慢慢走。王老师建议先一起参观历史展览，再自由活动。展览里介绍了当地人以前怎样生活，也解释了为什么老房子要建在河边。参观以后，大家发现那些看起来普通的建筑其实很有意思。下午下雨了，学生们没有继续拍照，而是在茶馆里整理笔记。回学校后，他们写了一篇旅行报告，比较了出发前的想象和实际看到的古镇。"]],"transzh":["这家宾馆跟那家不一样。","我们打算假期去草原骑马。","除了海边以外，我还想去山里。","飞机马上要起飞了。","这个房间很干净，我很满意。"],"transvi":["Khách sạn này không giống khách sạn kia.","Chúng tôi dự định nghỉ lễ đi thảo nguyên cưỡi ngựa.","Ngoài bờ biển, tôi còn muốn lên núi.","Máy bay sắp cất cánh.","Phòng này sạch sẽ, tôi rất hài lòng."],"quiz":[{"q":"“假期” có nghĩa là gì?","opts":["kỳ nghỉ","biển","thảo nguyên","chủ yếu"],"answer":0,"explain":"假期 (jiàqī) = kỳ nghỉ."},{"q":"“海” có nghĩa là gì?","opts":["thảo nguyên","chủ yếu","cưỡi","biển"],"answer":3,"explain":"海 (hǎi) = biển."},{"q":"“草原” có nghĩa là gì?","opts":["cưỡi","ngựa","thảo nguyên","chủ yếu"],"answer":2,"explain":"草原 (cǎoyuán) = thảo nguyên."},{"q":"“主要” có nghĩa là gì?","opts":["mặt trăng","chủ yếu","cưỡi","ngựa"],"answer":1,"explain":"主要 (zhǔyào) = chủ yếu."},{"q":"“骑” có nghĩa là gì?","opts":["cưỡi","ngựa","mặt trăng","vừa… vừa…"],"answer":0,"explain":"骑 (qí) = cưỡi."},{"q":"“马” có nghĩa là gì?","opts":["mặt trăng","vừa… vừa…","khắc, 15 phút","ngựa"],"answer":3,"explain":"马 (mǎ) = ngựa."},{"q":"“月亮” có nghĩa là gì?","opts":["khắc, 15 phút","cất cánh","mặt trăng","vừa… vừa…"],"answer":2,"explain":"月亮 (yuèliang) = mặt trăng."},{"q":"“一边” có nghĩa là gì?","opts":["khách sạn","vừa… vừa…","khắc, 15 phút","cất cánh"],"answer":1,"explain":"一边 (yìbiān) = vừa… vừa…."},{"q":"“刻” có nghĩa là gì?","opts":["khắc, 15 phút","cất cánh","khách sạn","đặc biệt"],"answer":0,"explain":"刻 (kè) = khắc, 15 phút."},{"q":"“起飞” có nghĩa là gì?","opts":["khách sạn","đặc biệt","giống nhau","cất cánh"],"answer":3,"explain":"起飞 (qǐfēi) = cất cánh."}]},{"title":"这样的照片才好看","vi":"Những bức ảnh như thế này mới đẹp","topic":"Chụp ảnh, sở thích và cảm nhận","v":[["总是","zǒngshì","luôn luôn","我正在学习“总是”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["终于","zhōngyú","cuối cùng","我正在学习“终于”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["爬","pá","leo, trèo","我正在学习“爬”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["山","shān","núi","我正在学习“山”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["锻炼","duànliàn","tập luyện","我正在学习“锻炼”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["照","zhào","chụp (ảnh)","我正在学习“照”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["相片","xiàngpiàn","bức ảnh","我正在学习“相片”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["拍照","pāizhào","chụp ảnh","我正在学习“拍照”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["感兴趣","gǎn xìngqù","có hứng thú","我正在学习“感兴趣”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["照相机","zhàoxiàngjī","máy ảnh","我正在学习“照相机”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["比较","bǐjiào","tương đối; so sánh","我正在学习“比较”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["树","shù","cây","我正在学习“树”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["鸟","niǎo","chim","我正在学习“鸟”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["太阳","tàiyáng","mặt trời","我正在学习“太阳”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["手机","shǒujī","điện thoại","我正在学习“手机”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["收到","shōudào","nhận được","我正在学习“收到”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["难过","nánguò","buồn","我正在学习“难过”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["音乐","yīnyuè","âm nhạc","我正在学习“音乐”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["举行","jǔxíng","tổ chức","我正在学习“举行”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["结束","jiéshù","kết thúc","我正在学习“结束”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."]],"grammar":[["得（程度补语）","Bổ ngữ trình độ sau động từ","他跑得很快。","Anh ấy chạy rất nhanh."],["量词重叠","Lặp lượng từ nhấn mạnh từng đối tượng","这些照片张张都好看。","Những bức ảnh này tấm nào cũng đẹp."],["存现句","Câu biểu thị sự tồn tại hoặc xuất hiện","树上有几只鸟。","Trên cây có vài con chim."],["一……了，就……","Vừa… là… ngay","我一到家就给你打电话。","Tôi vừa về nhà sẽ gọi cho bạn ngay."]],"fill":[["他跑___很快。","得","Động từ + 得 + bổ ngữ."],["这些照片___张都好看。","张","Lặp lượng từ 张张."],["树上___几只鸟。","有","Câu tồn tại dùng 有."],["我一到家___给你打电话。","就","一…就…"]],"fix":[["他跑很快得。","他跑得很快。","得 đứng sau động từ."],["这些照片都张张好看。","这些照片张张都好看。","张张都…"],["树上几只鸟有。","树上有几只鸟。","Địa điểm + 有 + sự vật."],["我一到家给你就打电话。","我一到家就给你打电话。","就 đặt trước động từ."]],"order":[["跑 / 得 / 他 / 很快","他跑得很快。"],["有 / 树上 / 几只鸟","树上有几只鸟。"]],"sent":["这样的照片才好看。","他跑得很快。","这些照片张张都好看。","树上有几只鸟。","我一到家就给你打电话。"],"read":[["一张不一样的照片","小雨很喜欢拍照，每次和朋友出去，她都要拍很多张照片。上个月，她参加了学校的摄影活动，准备选一张照片交给老师。她先选了一张颜色很漂亮的风景照，可是老师看了以后问她：“这张照片想告诉别人什么？”小雨想了半天，也说不清楚。后来，她在手机里找到一张奶奶在厨房做饭的照片。照片里的光线不太好，奶奶也没有看镜头，但是小雨一看到它，就想起小时候和奶奶一起吃饭的日子。老师说，这张照片虽然不完美，却有故事。最后，小雨决定用它参加活动。"],["给朋友拍毕业照","毕业前一天，小林答应给三个朋友拍合照。大家本来约好下午三点在操场见面，可是小林到的时候，太阳太亮，照片里每个人都睁不开眼睛。他建议大家先去图书馆旁边的树下等一等。过了一会儿，光线变柔和了，大家开始拍照。小林发现朋友们一直站得很整齐，却笑得不自然。于是他让大家聊一聊第一次见面的事情。听到一个有趣的故事，大家都笑了起来。小林马上按下快门。后来，朋友们一致认为，最好看的不是站得最整齐的那张，而是大家真正开心的那张。"],["照片背后的信息","学校准备举办一次“我的城市”摄影展。班长让每个人交两张照片，还要写一小段说明。小周选了新开的商场，小陈却拍了一条旧街道。有人觉得旧街道不够漂亮，不适合参加展览。小陈解释说，街道上的店虽然小，却已经开了几十年，附近的老人常常在那里聊天。为了写好说明，他还采访了一位卖书的爷爷，了解这条街以前的样子。展览那天，很多同学在小陈的照片前停了很久。大家发现，一张好照片不仅要好看，还能帮助别人认识一个地方。"]],"transzh":["这样的照片才好看。","他跑得很快。","这些照片张张都好看。","树上有几只鸟。","我一到家就给你打电话。"],"transvi":["Những bức ảnh như thế này mới đẹp.","Anh ấy chạy rất nhanh.","Những bức ảnh này tấm nào cũng đẹp.","Trên cây có vài con chim.","Vừa về đến nhà tôi sẽ gọi điện cho bạn."],"quiz":[{"q":"“总是” có nghĩa là gì?","opts":["luôn luôn","cuối cùng","leo, trèo","núi"],"answer":0,"explain":"总是 (zǒngshì) = luôn luôn."},{"q":"“终于” có nghĩa là gì?","opts":["leo, trèo","núi","tập luyện","cuối cùng"],"answer":3,"explain":"终于 (zhōngyú) = cuối cùng."},{"q":"“爬” có nghĩa là gì?","opts":["tập luyện","chụp (ảnh)","leo, trèo","núi"],"answer":2,"explain":"爬 (pá) = leo, trèo."},{"q":"“山” có nghĩa là gì?","opts":["bức ảnh","núi","tập luyện","chụp (ảnh)"],"answer":1,"explain":"山 (shān) = núi."},{"q":"“锻炼” có nghĩa là gì?","opts":["tập luyện","chụp (ảnh)","bức ảnh","chụp ảnh"],"answer":0,"explain":"锻炼 (duànliàn) = tập luyện."},{"q":"“照” có nghĩa là gì?","opts":["bức ảnh","chụp ảnh","có hứng thú","chụp (ảnh)"],"answer":3,"explain":"照 (zhào) = chụp (ảnh)."},{"q":"“相片” có nghĩa là gì?","opts":["có hứng thú","máy ảnh","bức ảnh","chụp ảnh"],"answer":2,"explain":"相片 (xiàngpiàn) = bức ảnh."},{"q":"“拍照” có nghĩa là gì?","opts":["tương đối; so sánh","chụp ảnh","có hứng thú","máy ảnh"],"answer":1,"explain":"拍照 (pāizhào) = chụp ảnh."},{"q":"“感兴趣” có nghĩa là gì?","opts":["có hứng thú","máy ảnh","tương đối; so sánh","cây"],"answer":0,"explain":"感兴趣 (gǎn xìngqù) = có hứng thú."},{"q":"“照相机” có nghĩa là gì?","opts":["tương đối; so sánh","cây","chim","máy ảnh"],"answer":3,"explain":"照相机 (zhàoxiàngjī) = máy ảnh."}]},{"title":"高铁上还可以点外卖","vi":"Trên tàu cao tốc vẫn có thể đặt đồ ăn giao tận nơi","topic":"Đi tàu cao tốc và gọi đồ ăn","v":[["高铁","gāotiě","tàu cao tốc","我正在学习“高铁”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["票","piào","vé","我正在学习“票”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["赶","gǎn","vội, kịp","我正在学习“赶”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["打算","dǎsuàn","dự định","我正在学习“打算”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["高铁票","gāotiěpiào","vé tàu cao tốc","我正在学习“高铁票”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["行","xíng","được, ổn","我正在学习“行”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["路口","lùkǒu","ngã đường","我正在学习“路口”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["小心","xiǎoxīn","cẩn thận","我正在学习“小心”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["迟到","chídào","đến muộn","我正在学习“迟到”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["红绿灯","hónglǜdēng","đèn giao thông","我正在学习“红绿灯”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["后来","hòulái","sau đó","我正在学习“后来”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["急","jí","vội","我正在学习“急”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["如果","rúguǒ","nếu","我正在学习“如果”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["以前","yǐqián","trước đây","我正在学习“以前”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["耳机","ěrjī","tai nghe","我正在学习“耳机”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["充电宝","chōngdiànbǎo","sạc dự phòng","我正在学习“充电宝”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["常用","chángyòng","thường dùng","我正在学习“常用”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["检","jiǎn","kiểm tra","我正在学习“检”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["检查","jiǎnchá","kiểm tra","我正在学习“检查”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["旅游","lǚyóu","du lịch","我正在学习“旅游”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["沙发","shāfā","ghế sofa","我正在学习“沙发”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["选择","xuǎnzé","lựa chọn","我正在学习“选择”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["必须","bìxū","nhất định phải","我正在学习“必须”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."]],"grammar":[["该……了","Đã đến lúc cần làm việc gì","我们该出发了。","Chúng ta nên xuất phát rồi."],["如果……就……","Điều kiện: nếu… thì…","如果不堵车，我们就不会迟到。","Nếu không tắc đường, chúng ta sẽ không đến muộn."],["越来越……","Mức độ ngày càng tăng","坐高铁越来越方便。","Đi tàu cao tốc ngày càng thuận tiện."],["越来越……","Xu hướng tăng theo thời gian","天气越来越热了。","Thời tiết ngày càng nóng."]],"fill":[["我们___出发了。","该","该…了: đến lúc."],["___不堵车，我们就不会迟到。","如果","如果…就…"],["坐高铁越来___方便。","越","越来越…"],["上车前___检查车票。","必须","必须: nhất định phải."]],"fix":[["我们出发该了。","我们该出发了。","该 + động từ + 了."],["如果不堵车，就我们不会迟到。","如果不堵车，我们就不会迟到。","Chủ ngữ đứng trước 就."],["坐高铁越方便来越。","坐高铁越来越方便。","越来越 + tính từ."],["上车前检查必须车票。","上车前必须检查车票。","必须 đứng trước động từ."]],"order":[["该 / 我们 / 出发 / 了","我们该出发了。"],["越来越 / 坐高铁 / 方便","坐高铁越来越方便。"]],"sent":["高铁上还可以点外卖。","我们该出发了。","如果不堵车，我们就不会迟到。","坐高铁越来越方便。","上车前必须检查车票。"],"read":[["高铁上的午饭","星期天，小王坐高铁去南京看朋友。因为早上起得太晚，他只喝了一杯牛奶就出门了。上车以后，他发现自己越来越饿，可是又不想离开座位去找吃的。这时，他看到座位前面有一张介绍订餐服务的卡片。按照卡片上的说明，他用手机选了一份米饭和一杯茶，并填写了车厢和座位号。半个小时后，工作人员把午饭送到了他的座位。坐在旁边的阿姨觉得很方便，也想试一试。小王告诉她，最好提前下单，因为有些餐点很快就卖完了。"],["错过的一班车","周五下午，陈明准备坐高铁回家。他提前买好了车票，以为从公司到车站只需要二十分钟，所以没有太早出门。没想到路上堵车，到车站时离发车只有十分钟了。工作人员告诉他，检票已经结束，不能再上车。陈明有些着急，但很快打开手机查看下一班车。他发现晚上还有一班，不过需要等两个小时。于是他先给家人打电话说明情况，又在车站附近吃了晚饭。这次经历让他明白，买好车票并不代表一定能准时上车，以后要给路上的交通留出更多时间。"],["旅行中的帮助","李阿姨第一次一个人坐高铁去看女儿。她提前到了车站，却不知道应该在哪个检票口等车。她看见旁边有一位年轻人，就拿出车票请他帮忙。年轻人先看了车次和时间，再带她去电子屏幕前确认检票口。上车后，李阿姨发现自己的行李太重，放不到行李架上。旁边的乘客主动帮她放好，还提醒她贵重物品要随身带着。到站前，李阿姨提前整理好东西，避免下车时太匆忙。她给女儿发消息说，虽然第一次独自旅行有点紧张，但一路上遇到了很多热心人。"]],"transzh":["高铁上还可以点外卖。","我们该出发了。","如果不堵车，我们就不会迟到。","坐高铁越来越方便。","上车前必须检查车票。"],"transvi":["Trên tàu cao tốc vẫn có thể đặt đồ ăn giao tận nơi.","Chúng ta nên xuất phát rồi.","Nếu không tắc đường, chúng ta sẽ không đến muộn.","Đi tàu cao tốc ngày càng thuận tiện.","Trước khi lên tàu nhất định phải kiểm tra vé."],"quiz":[{"q":"“高铁” có nghĩa là gì?","opts":["tàu cao tốc","vé","vội, kịp","dự định"],"answer":0,"explain":"高铁 (gāotiě) = tàu cao tốc."},{"q":"“票” có nghĩa là gì?","opts":["vội, kịp","dự định","vé tàu cao tốc","vé"],"answer":3,"explain":"票 (piào) = vé."},{"q":"“赶” có nghĩa là gì?","opts":["vé tàu cao tốc","được, ổn","vội, kịp","dự định"],"answer":2,"explain":"赶 (gǎn) = vội, kịp."},{"q":"“打算” có nghĩa là gì?","opts":["ngã đường","dự định","vé tàu cao tốc","được, ổn"],"answer":1,"explain":"打算 (dǎsuàn) = dự định."},{"q":"“高铁票” có nghĩa là gì?","opts":["vé tàu cao tốc","được, ổn","ngã đường","cẩn thận"],"answer":0,"explain":"高铁票 (gāotiěpiào) = vé tàu cao tốc."},{"q":"“行” có nghĩa là gì?","opts":["ngã đường","cẩn thận","đến muộn","được, ổn"],"answer":3,"explain":"行 (xíng) = được, ổn."},{"q":"“路口” có nghĩa là gì?","opts":["đến muộn","đèn giao thông","ngã đường","cẩn thận"],"answer":2,"explain":"路口 (lùkǒu) = ngã đường."},{"q":"“小心” có nghĩa là gì?","opts":["sau đó","cẩn thận","đến muộn","đèn giao thông"],"answer":1,"explain":"小心 (xiǎoxīn) = cẩn thận."},{"q":"“迟到” có nghĩa là gì?","opts":["đến muộn","đèn giao thông","sau đó","vội"],"answer":0,"explain":"迟到 (chídào) = đến muộn."},{"q":"“红绿灯” có nghĩa là gì?","opts":["sau đó","vội","nếu","đèn giao thông"],"answer":3,"explain":"红绿灯 (hónglǜdēng) = đèn giao thông."}]},{"title":"那条裙子比这件更好看","vi":"Chiếc váy kia đẹp hơn chiếc này","topic":"Quần áo và mua sắm","v":[["裙子","qúnzi","váy","我正在学习“裙子”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["裤子","kùzi","quần","我正在学习“裤子”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["衬衫","chènshān","áo sơ mi","我正在学习“衬衫”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["颜色","yánsè","màu sắc","我正在学习“颜色”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["合适","héshì","phù hợp","我正在学习“合适”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["试","shì","thử","我正在学习“试”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["试衣间","shìyījiān","phòng thử đồ","我正在学习“试衣间”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["打折","dǎzhé","giảm giá","我正在学习“打折”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["价格","jiàgé","giá cả","我正在学习“价格”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["贵","guì","đắt","我正在学习“贵”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["便宜","piányi","rẻ","我正在学习“便宜”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["更","gèng","hơn nữa","我正在学习“更”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["比较","bǐjiào","khá, so sánh","我正在学习“比较”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["大小","dàxiǎo","kích cỡ","我正在学习“大小”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["舒服","shūfu","thoải mái","我正在学习“舒服”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."]],"grammar":[["比……更……","So sánh hơn","这条裙子比那条更漂亮。","Chiếc váy này đẹp hơn chiếc kia."],["跟……一样","So sánh bằng","这件衣服跟那件一样贵。","Áo này đắt như áo kia."],["又……又……","Hai tính chất cùng tồn tại","这件衣服又便宜又舒服。","Áo này vừa rẻ vừa thoải mái."]],"fill":[["这条裙子___那条更漂亮。","比","比…更…"],["这件衣服又便宜___舒服。","又","又…又…"],["我想___一下这条裙子。","试","试一下: thử."],["这个颜色不太___我。","适合","适合: phù hợp."]],"fix":[["这条裙子更比那条漂亮。","这条裙子比那条更漂亮。","比 đặt trước đối tượng so sánh."],["这件衣服便宜又又舒服。","这件衣服又便宜又舒服。","又…又…"],["我一下试这条裙子。","我试一下这条裙子。","Động từ + 一下."],["这个颜色我不太适合。","这个颜色不太适合我。","适合 + người."]],"order":[["比 / 这条裙子 / 更漂亮 / 那条","这条裙子比那条更漂亮。"],["又 / 这件衣服 / 舒服 / 又 / 便宜","这件衣服又便宜又舒服。"]],"sent":["这条裙子比那条更漂亮。","我想试一下这条裙子。","这件衣服又便宜又舒服。","这个颜色不太适合我。","今天商店打折。"],"read":[["给妈妈选生日礼物","妈妈的生日快到了，小美想给她买一件衣服。星期六，她和哥哥一起去商场。小美先看中了一条红色的裙子，觉得颜色很漂亮，可是哥哥提醒她，妈妈平时更喜欢简单的颜色。后来，他们又找到一件蓝色外套，价格比裙子贵一点，但是布料更舒服，也更适合秋天穿。小美担心尺寸不合适，就给爸爸打电话确认。最后，他们买了外套，还请店员帮忙包装。生日那天，妈妈试穿以后很高兴，说这件衣服不仅好看，而且很实用。小美觉得，选礼物最重要的不是自己的喜好，而是了解收礼物的人。"],["网上买衣服的麻烦","小张平时工作忙，经常在网上买衣服。上周，他买了一件衬衫，照片上看起来颜色很浅，收到以后却发现比想象中深得多。他试穿了一下，发现袖子也有点短。小张先查看商店的退换货说明，然后拍了几张照片联系店员。店员告诉他，只要衣服没有洗过，而且保留标签，就可以申请换货。小张按照要求寄回衬衫，三天后收到了合适的尺寸。这次以后，他决定买衣服前先看清楚尺寸表和其他顾客的评价，而不是只看商品照片。"],["不同的购物习惯","学校里有两位同学，小马喜欢去实体店买东西，小刘却更喜欢网购。小马认为，去商店可以直接试穿，也能摸到布料，比较容易判断质量。小刘说，网上的选择更多，还能比较不同商店的价格。上个月，他们都需要买一双运动鞋。小马在商场试了好几双，最后选了一双穿着舒服的；小刘在网上找到了便宜一点的同款鞋，但收到后发现尺寸不合适，只好申请换货。两个人讨论后觉得，没有一种购物方式适合所有情况。买鞋子最好重视舒适度，买日常用品则可以多比较价格。"]],"transzh":["这条裙子比那条更漂亮。","我想试一下这条裙子。","这件衣服又便宜又舒服。","这个颜色不太适合我。","今天商店打折。"],"transvi":["Chiếc váy này đẹp hơn chiếc váy kia.","Tôi muốn thử chiếc váy này.","Bộ quần áo này vừa rẻ vừa thoải mái.","Màu này không hợp với tôi lắm.","Hôm nay cửa hàng giảm giá."],"quiz":[{"q":"“裙子” có nghĩa là gì?","opts":["váy","quần","áo sơ mi","màu sắc"],"answer":0,"explain":"裙子 (qúnzi) = váy."},{"q":"“裤子” có nghĩa là gì?","opts":["áo sơ mi","màu sắc","phù hợp","quần"],"answer":3,"explain":"裤子 (kùzi) = quần."},{"q":"“衬衫” có nghĩa là gì?","opts":["phù hợp","thử","áo sơ mi","màu sắc"],"answer":2,"explain":"衬衫 (chènshān) = áo sơ mi."},{"q":"“颜色” có nghĩa là gì?","opts":["phòng thử đồ","màu sắc","phù hợp","thử"],"answer":1,"explain":"颜色 (yánsè) = màu sắc."},{"q":"“合适” có nghĩa là gì?","opts":["phù hợp","thử","phòng thử đồ","giảm giá"],"answer":0,"explain":"合适 (héshì) = phù hợp."},{"q":"“试” có nghĩa là gì?","opts":["phòng thử đồ","giảm giá","giá cả","thử"],"answer":3,"explain":"试 (shì) = thử."},{"q":"“试衣间” có nghĩa là gì?","opts":["giá cả","đắt","phòng thử đồ","giảm giá"],"answer":2,"explain":"试衣间 (shìyījiān) = phòng thử đồ."},{"q":"“打折” có nghĩa là gì?","opts":["rẻ","giảm giá","giá cả","đắt"],"answer":1,"explain":"打折 (dǎzhé) = giảm giá."},{"q":"“价格” có nghĩa là gì?","opts":["giá cả","đắt","rẻ","hơn nữa"],"answer":0,"explain":"价格 (jiàgé) = giá cả."},{"q":"“贵” có nghĩa là gì?","opts":["rẻ","hơn nữa","khá, so sánh","đắt"],"answer":3,"explain":"贵 (guì) = đắt."}]},{"title":"今天我出院了","vi":"Hôm nay tôi xuất viện rồi","topic":"Sức khỏe và hồi phục","v":[["出院","chūyuàn","xuất viện","我正在学习“出院”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["住院","zhùyuàn","nằm viện","我正在学习“住院”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["医院","yīyuàn","bệnh viện","我正在学习“医院”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["医生","yīshēng","bác sĩ","我正在学习“医生”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["护士","hùshi","y tá","我正在学习“护士”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["身体","shēntǐ","cơ thể, sức khỏe","我正在学习“身体”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["检查","jiǎnchá","khám, kiểm tra","我正在学习“检查”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["感冒","gǎnmào","cảm lạnh","我正在学习“感冒”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["发烧","fāshāo","sốt","我正在学习“发烧”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["休息","xiūxi","nghỉ ngơi","我正在学习“休息”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["恢复","huīfù","hồi phục","我正在学习“恢复”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["照顾","zhàogù","chăm sóc","我正在学习“照顾”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["健康","jiànkāng","khỏe mạnh","我正在学习“健康”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["终于","zhōngyú","cuối cùng","我正在学习“终于”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."],["放心","fàngxīn","yên tâm","我正在学习“放心”这个词。","Ví dụ luyện tập bổ sung (không trích nguyên văn sách)."]],"grammar":[["终于……了","Cuối cùng đã hoàn thành việc","我终于出院了。","Cuối cùng tôi đã xuất viện."],["应该 / 得","Nên / phải làm việc gì","你应该多休息。","Bạn nên nghỉ ngơi nhiều."],["因为……所以……","Vì… nên…","因为发烧，所以他去医院了。","Vì sốt nên anh ấy đến bệnh viện."]],"fill":[["我___出院了。","终于","终于: cuối cùng."],["你___多休息。","应该","应该: nên."],["___发烧，所以他去医院了。","因为","因为…所以…"],["医生让我好好___。","休息","休息: nghỉ ngơi."]],"fix":[["我出院终于了。","我终于出院了。","终于 đứng trước động từ."],["你多应该休息。","你应该多休息。","应该 + 多 + động từ."],["因为发烧，他所以去医院了。","因为发烧，所以他去医院了。","所以 đứng đầu vế kết quả."],["医生让我休息好好。","医生让我好好休息。","好好 đứng trước động từ."]],"order":[["终于 / 我 / 出院 / 了","我终于出院了。"],["应该 / 你 / 多休息","你应该多休息。"]],"sent":["今天我出院了。","我终于出院了。","你应该多休息。","因为发烧，所以他去医院了。","医生让我好好休息。"],"read":[["出院后的第一周","上个星期，林老师因为身体不舒服住进了医院。经过几天治疗，医生说他可以出院了，不过还需要在家休息一段时间。林老师原来计划第二天就回学校上课，妻子听了以后劝他不要着急。医生也提醒他，最近不能太累，要按时吃药，并且每天散步半个小时。回家后的第一天，林老师觉得很无聊，就想整理以前的工作材料。妻子帮他安排了一个简单的作息表：早上散步，下午看书，晚上早点睡觉。一个星期后，他的精神好了很多，也明白了休息和工作一样重要。"],["一次健康检查","公司每年都会安排员工做健康检查。小周以前总觉得自己年轻，不需要特别注意身体，所以常常熬夜，也不按时吃早饭。今年检查以后，医生告诉他，虽然没有严重的问题，但如果继续这样的生活习惯，身体可能会越来越差。小周听了有点担心，于是开始改变作息。他把睡觉时间提前了一个小时，还准备简单的早餐带到公司。刚开始，他觉得很难坚持，后来请同事每天中午陪他散步。一个月以后，他白天工作时不那么容易累了。小周发现，保持健康不一定要做很大的改变，重要的是每天坚持。"],["朋友之间的关心","小芳最近忙着准备考试，每天学习到很晚。她的朋友发现她上课时总是没有精神，还经常忘记吃午饭。一天中午，朋友约她一起去食堂，并问她是不是遇到了什么困难。小芳说，她担心考试成绩不好，所以想把所有时间都用来复习。朋友建议她先制定计划，把最难的内容放在精神最好的时候学习，晚上不要睡得太晚。周末，两个人一起整理了复习资料，也去公园散了步。过了几天，小芳发现自己学习时更容易集中注意力了。她感谢朋友，因为朋友不仅帮她复习，也提醒她照顾好身体。"]],"transzh":["今天我出院了。","我终于出院了。","你应该多休息。","因为发烧，所以他去医院了。","医生让我好好休息。"],"transvi":["Hôm nay tôi xuất viện rồi.","Cuối cùng tôi đã xuất viện.","Bạn nên nghỉ ngơi nhiều.","Vì bị sốt nên anh ấy đã đến bệnh viện.","Bác sĩ bảo tôi nghỉ ngơi cho tốt."],"quiz":[{"q":"“出院” có nghĩa là gì?","opts":["xuất viện","nằm viện","bệnh viện","bác sĩ"],"answer":0,"explain":"出院 (chūyuàn) = xuất viện."},{"q":"“住院” có nghĩa là gì?","opts":["bệnh viện","bác sĩ","y tá","nằm viện"],"answer":3,"explain":"住院 (zhùyuàn) = nằm viện."},{"q":"“医院” có nghĩa là gì?","opts":["y tá","cơ thể, sức khỏe","bệnh viện","bác sĩ"],"answer":2,"explain":"医院 (yīyuàn) = bệnh viện."},{"q":"“医生” có nghĩa là gì?","opts":["khám, kiểm tra","bác sĩ","y tá","cơ thể, sức khỏe"],"answer":1,"explain":"医生 (yīshēng) = bác sĩ."},{"q":"“护士” có nghĩa là gì?","opts":["y tá","cơ thể, sức khỏe","khám, kiểm tra","cảm lạnh"],"answer":0,"explain":"护士 (hùshi) = y tá."},{"q":"“身体” có nghĩa là gì?","opts":["khám, kiểm tra","cảm lạnh","sốt","cơ thể, sức khỏe"],"answer":3,"explain":"身体 (shēntǐ) = cơ thể, sức khỏe."},{"q":"“检查” có nghĩa là gì?","opts":["sốt","nghỉ ngơi","khám, kiểm tra","cảm lạnh"],"answer":2,"explain":"检查 (jiǎnchá) = khám, kiểm tra."},{"q":"“感冒” có nghĩa là gì?","opts":["hồi phục","cảm lạnh","sốt","nghỉ ngơi"],"answer":1,"explain":"感冒 (gǎnmào) = cảm lạnh."},{"q":"“发烧” có nghĩa là gì?","opts":["sốt","nghỉ ngơi","hồi phục","chăm sóc"],"answer":0,"explain":"发烧 (fāshāo) = sốt."},{"q":"“休息” có nghĩa là gì?","opts":["hồi phục","chăm sóc","khỏe mạnh","nghỉ ngơi"],"answer":3,"explain":"休息 (xiūxi) = nghỉ ngơi."}]}];
+            const $ = id => document.getElementById(id);
+            const safe = s => String(s ?? '').replace(/[&<>"']/g, c => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            }[c]));
+            // Thứ tự nét viết hiển thị trực tiếp; Hanzi Writer và dữ liệu nét được tải khi người dùng yêu cầu.
+            const strokeSelection = {};
+            let writerLoading = null;
+            let strokeWriter = null;
+            function renderStrokePicker(target, word) {
+                const el = $(target);
+                if (!el)
+                    return;
+                const chars = [...word].filter(c => /[\u3400-\u9fff]/u.test(c));
+                const active = chars[0] || '';
+                strokeSelection[target] = active;
+                el.innerHTML = `<div class="stroke-picker">${chars.map( (c, i) => `<button type="button" data-stroke-char="${safe(c)}" class="${i === 0 ? 'active' : ''}">${safe(c)}</button>`).join('')}</div><button type="button" class="primary" data-start-stroke="1">▶ Xem thứ tự nét ${safe(active)}</button><div class="stroke-stage" data-stage="1"><span style="font-size:90px;color:#c1d5cf">${safe(active)}</span></div><div class="statusline" data-stroke-status="1">Nhấn nút để xem thứ tự nét ngay tại đây (cần Internet để tải dữ liệu nét chuẩn).</div>`;
+                el.onclick = e => {
+                    const b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.strokeChar) {
+                        strokeSelection[target] = b.dataset.strokeChar;
+                        el.querySelectorAll('[data-stroke-char]').forEach(x => x.classList.toggle('active', x === b));
+                        el.querySelector('[data-start-stroke]').textContent = '▶ Xem thứ tự nét ' + b.dataset.strokeChar;
+                        el.querySelector('[data-stage]').innerHTML = '<span style="font-size:90px;color:#c1d5cf">' + safe(b.dataset.strokeChar) + '</span>';
+                        el.querySelector('[data-stroke-status]').textContent = 'Nhấn nút để xem thứ tự nét.';
+                    } else if (b.dataset.startStroke) {
+                        showStroke(target, strokeSelection[target]);
+                    }
+                }
+            }
+            function loadStrokeLibrary() {
+                if (window.HanziWriter)
+                    return Promise.resolve();
+                if (writerLoading)
+                    return writerLoading;
+                writerLoading = new Promise( (resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src = 'https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js';
+                    script.onload = () => window.HanziWriter ? resolve() : reject(Error('Không khởi tạo được thư viện nét viết.'));
+                    script.onerror = () => reject(Error('Không tải được thư viện nét viết. Hãy kiểm tra kết nối Internet.'));
+                    document.head.appendChild(script);
+                    setTimeout( () => reject(Error('Quá thời gian tải thư viện nét viết.')), 12000)
+                }
+                ).catch(e => {
+                    writerLoading = null;
+                    throw e
+                }
+                );
+                return writerLoading
+            }
+            async function showStroke(target, char) {
+                const el = $(target);
+                if (!el || !char)
+                    return;
+                const stage = el.querySelector('[data-stage]')
+                  , status = el.querySelector('[data-stroke-status]');
+                status.textContent = 'Đang tải nét viết của chữ ' + char + '…';
+                try {
+                    await loadStrokeLibrary();
+                    if (strokeSelection[target] !== char)
+                        return;
+                    stage.innerHTML = '';
+                    const box = document.createElement('div');
+                    stage.appendChild(box);
+                    const writer = window.HanziWriter.create(box, char, {
+                        width: 200,
+                        height: 200,
+                        padding: 8,
+                        showOutline: true,
+                        showCharacter: false,
+                        strokeAnimationSpeed: 1,
+                        delayBetweenStrokes: 350,
+                        charDataLoader: (c, onComplete, onError) => {
+                            fetch('https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/' + encodeURIComponent(c) + '.json').then(r => {
+                                if (!r.ok)
+                                    throw Error('Không có dữ liệu nét viết cho chữ ' + c);
+                                return r.json()
+                            }
+                            ).then(onComplete).catch(onError)
+                        }
+                        ,
+                        onLoadCharDataError: () => {
+                            status.textContent = 'Không tải được dữ liệu nét viết. Kiểm tra Internet rồi thử lại.'
+                        }
+                    });
+                    strokeWriter = writer;
+                    writer.animateCharacter({
+                        onComplete: () => {
+                            status.textContent = 'Đã xem xong thứ tự nét của chữ ' + char + '. Bấm lại để xem lại.'
+                        }
+                    });
+                    status.textContent = 'Đang phát thứ tự nét của chữ ' + char + '…';
+                } catch (e) {
+                    stage.innerHTML = '<span style="font-size:90px;color:#c1d5cf">' + safe(char) + '</span>';
+                    status.textContent = 'Không tải được hoạt ảnh: ' + e.message + ' Các mục học khác vẫn sử dụng bình thường.'
+                }
+            }
+            const tabs = [['vocab', '📖 Từ mới'], ['hanzi', '✍️ Chữ Hán'], ['grammar', '📘 Ngữ pháp'], ['reading', '📚 Đọc hiểu'], ['translate', '🌏 Luyện dịch'], ['test', '📝 Kiểm tra']];
+            let lesson = 0
+              , wordIndex = 0
+              , flipped = false
+              , weakOnly = false
+              , answers = {};
+            function storage(k) {
+                try {
+                    return localStorage.getItem(k)
+                } catch (e) {
+                    return null
+                }
+            }
+            function save(k, v) {
+                try {
+                    localStorage.setItem(k, v)
+                } catch (e) {}
+            }
+            function weakSet() {
+                try {
+                    return new Set(JSON.parse(storage('hsk3_weak_' + lesson) || '[]'))
+                } catch (e) {
+                    return new Set()
+                }
+            }
+            function speak(t) {
+                if (!('speechSynthesis'in window)) {
+                    alert('Trình duyệt không hỗ trợ giọng đọc.');
+                    return;
+                }
+                speechSynthesis.cancel();
+                let u = new SpeechSynthesisUtterance(t);
+                u.lang = 'zh-CN';
+                u.rate = .82;
+                let v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith('zh'));
+                if (v)
+                    u.voice = v;
+                speechSynthesis.speak(u)
+            }
+            function pool() {
+                let w = DATA[lesson].v.map( (_, i) => i);
+                return weakOnly ? w.filter(i => weakSet().has(i)) : w
+            }
+            function renderWord() {
+                let ids = pool()
+                  , weak = weakSet();
+                $('weakCount').textContent = `${weak.size} từ cần ôn lại`;
+                if (!ids.length) {
+                    $('wordHanzi').textContent = 'Chưa có từ cần ôn';
+                    ['wordPinyin', 'wordMeaning', 'wordExample', 'wordTranslation', 'cardCount'].forEach(id => $(id).textContent = '');
+                    return;
+                }
+                wordIndex = (wordIndex + ids.length) % ids.length;
+                let i = ids[wordIndex]
+                  , w = DATA[lesson].v[i];
+                $('cardCount').textContent = `Thẻ ${wordIndex + 1}/${ids.length}`;
+                $('wordHanzi').textContent = w[0];
+                $('wordPinyin').textContent = $('hidePinyin').checked ? '' : w[1];
+                $('wordMeaning').textContent = w[2];
+                $('wordExample').textContent = 'Ví dụ: ' + w[3];
+                $('wordTranslation').textContent = w[4];
+                ['wordMeaning', 'wordExample', 'wordTranslation'].forEach(id => $(id).classList.toggle('hidden', !flipped));
+                $('flipHint').textContent = flipped ? 'Nhấn để úp thẻ' : 'Nhấn để xem nghĩa và ví dụ';
+                $('mark').textContent = weak.has(i) ? '★ Bỏ đánh dấu' : '☆ Đánh dấu chưa thuộc';
+                renderStrokePicker('vocabStroke', w[0])
+            }
+            function flip() {
+                flipped = !flipped;
+                renderWord()
+            }
+            $('flip').onclick = flip;
+            $('flipCard').onclick = flip;
+            $('flipCard').onkeydown = e => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    flip()
+                }
+            }
+            ;
+            $('next').onclick = () => {
+                wordIndex++;
+                flipped = false;
+                renderWord()
+            }
+            ;
+            $('prev').onclick = () => {
+                wordIndex--;
+                flipped = false;
+                renderWord()
+            }
+            ;
+            $('hidePinyin').onchange = renderWord;
+            $('playWord').onclick = () => {
+                let ids = pool();
+                if (ids.length)
+                    speak(DATA[lesson].v[ids[wordIndex]][0])
+            }
+            ;
+            $('mark').onclick = () => {
+                let ids = pool();
+                if (!ids.length)
+                    return;
+                let w = weakSet()
+                  , i = ids[wordIndex];
+                w.has(i) ? w.delete(i) : w.add(i);
+                save('hsk3_weak_' + lesson, JSON.stringify([...w]));
+                renderWord()
+            }
+            ;
+            $('weakOnly').onclick = () => {
+                weakOnly = true;
+                wordIndex = 0;
+                flipped = false;
+                renderWord()
+            }
+            ;
+            $('allWords').onclick = () => {
+                weakOnly = false;
+                wordIndex = 0;
+                flipped = false;
+                renderWord()
+            }
+            ;
+            $('tabs').innerHTML = tabs.map( ([id,label], i) => `<button data-tab="${id}" class="${i ? '' : 'active'}">${label}</button>`).join('');
+            $('tabs').onclick = e => {
+                let b = e.target.closest('[data-tab]');
+                if (!b)
+                    return;
+                document.querySelectorAll('[data-tab]').forEach(x => x.classList.toggle('active', x === b));
+                document.querySelectorAll('.panel').forEach(x => x.classList.toggle('active', x.id === b.dataset.tab));
+                if (b.dataset.tab === 'result')
+                    renderResult()
+            }
+            ;
+            $('lessons').innerHTML = DATA.map( (d, i) => `<button data-lesson="${i}">Bài ${i + 1}</button>`).join('');
+            $('lessons').onclick = e => {
+                let b = e.target.closest('[data-lesson]');
+                if (b)
+                    loadLesson(+b.dataset.lesson)
+            }
+            ;
+            function renderVocabList() {
+                let d = DATA[lesson];
+                $('wordList').innerHTML = '<h3>Danh sách từ mới</h3><div class="grid">' + d.v.map( (w, i) => `<button class="card" data-word="${i}" style="text-align:left;margin:0"><b style="font-size:25px">${safe(w[0])}</b><br>${safe(w[1])}<br>${safe(w[2])}</button>`).join('') + '</div>';
+                $('wordList').onclick = e => {
+                    let b = e.target.closest('[data-word]');
+                    if (!b)
+                        return;
+                    weakOnly = false;
+                    wordIndex = +b.dataset.word;
+                    flipped = false;
+                    renderWord();
+                    $('flipCard').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    })
+                }
+            }
+            const parts = {
+                '机': '木 + 几',
+                '场': '土 + 昜 (thành phần gợi âm)',
+                '行': 'bộ 行',
+                '李': '木 + 子',
+                '箱': '⺮ + 相',
+                '接': '扌 + 妾',
+                '等': '⺮ + 寺',
+                '请': '讠 + 青',
+                '吃': '口 + 乞',
+                '饭': '饣 + 反',
+                '喝': '口 + 曷',
+                '菜': '艹 + 采',
+                '住': '亻 + 主',
+                '房': '户 + 方',
+                '间': '门 + 日',
+                '好': '女 + 子',
+                '朋': '月 + 月',
+                '明': '日 + 月',
+                '语': '讠 + 吾'
+            };
+            function renderHanzi() {
+                let d = DATA[lesson];
+                let list = d.v.slice(0, 8);
+                $('hanziArea').innerHTML = `<div class="card"><h3>Phân tích và luyện viết chữ Hán</h3><p>Chọn một chữ để phân tích và viết bằng chuột hoặc tay. Thứ tự nét được hiển thị ngay bên dưới. Khi có Internet, bấm Xem thứ tự nét để phát hoạt ảnh.</p><select id="charSelect" class="field">${[...new Set(d.v.flatMap(w => [...w[0]]))].map(c => `<option value="${safe(c)}">${safe(c)}</option>`).join('')}</select><div id="charInfo" class="result"></div><canvas id="writing" class="writebox" width="220" height="220" aria-label="Ô luyện viết"></canvas><div><button id="clearWrite">Xóa nét viết</button> <button id="strokeInline" type="button">▶ Xem thứ tự nét tại đây</button></div><div id="hanziStroke" class="stroke-panel"></div><p class="muted small">Phần viết tay chưa tự chấm độ chính xác từng nét.</p></div><h3>Nhận diện chữ Hán</h3>${list.map( (w, i) => {
+                    let choices = [w[0], ...d.v.filter(x => x[0] !== w[0]).slice((i + 1) % 7, (i + 1) % 7 + 3).map(x => x[0])];
+                    choices = [...new Set(choices)].sort( (a, b) => a.localeCompare(b, 'zh'));
+                    return `<div class="practice-box"><b>Câu ${i + 1}. Chọn chữ Hán: ${safe(w[2])}</b>${choices.map(c => `<button class="option" data-rec="${i}" data-val="${safe(c)}">${safe(c)}</button>`).join('')}<div id="rec${i}"></div></div>`
+                }
+                ).join('')}<h3>Điền từ vào chỗ trống</h3>${d.v.slice(0, 6).map( (w, i) => `<div class="practice-box">${i + 1}. <b>${safe(w[3].replace(w[0], '______'))}</b><p class="muted">Gợi ý: ${safe(w[2])}</p><input class="field" id="fill${i}" placeholder="Nhập chữ Hán"><button data-fill="${i}">Kiểm tra</button><div id="fillres${i}"></div></div>`).join('')}`;
+                function info() {
+                    let c = $('charSelect').value;
+                    $('charInfo').innerHTML = `<b style="font-size:40px">${safe(c)}</b><p>Phân tích: ${safe(parts[c] || 'Chữ Hán gồm các nét và thành phần cấu tạo; tra cứu thứ tự nét để quan sát chi tiết.')}</p>`;
+                    renderStrokePicker('hanziStroke', c)
+                }
+                $('charSelect').onchange = info;
+                info();
+                $('strokeInline').onclick = () => showStroke('hanziStroke', $('charSelect').value[0]);
+                let canvas = $('writing')
+                  , ctx = canvas.getContext('2d')
+                  , drawing = false;
+                ctx.lineWidth = 6;
+                ctx.lineCap = 'round';
+                ctx.strokeStyle = '#153f37';
+                const pos = e => {
+                    let r = canvas.getBoundingClientRect();
+                    return [(e.clientX - r.left) * canvas.width / r.width, (e.clientY - r.top) * canvas.height / r.height]
+                }
+                ;
+                canvas.onpointerdown = e => {
+                    drawing = true;
+                    canvas.setPointerCapture(e.pointerId);
+                    let[x,y] = pos(e);
+                    ctx.beginPath();
+                    ctx.moveTo(x, y)
+                }
+                ;
+                canvas.onpointermove = e => {
+                    if (!drawing)
+                        return;
+                    let[x,y] = pos(e);
+                    ctx.lineTo(x, y);
+                    ctx.stroke()
+                }
+                ;
+                canvas.onpointerup = canvas.onpointercancel = () => drawing = false;
+                $('clearWrite').onclick = () => ctx.clearRect(0, 0, canvas.width, canvas.height);
+                $('hanziArea').onclick = e => {
+                    let b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.rec !== undefined) {
+                        let i = +b.dataset.rec
+                          , ok = b.dataset.val === list[i][0];
+                        $('rec' + i).innerHTML = `<span class="${ok ? 'ok' : 'err'}">${ok ? '✓ Chính xác' : '✗ Chưa đúng. Đáp án: ' + safe(list[i][0])}</span>`;
+                        b.parentElement.querySelectorAll('[data-rec]').forEach(x => x.classList.toggle('selected', x === b))
+                    }
+                    if (b.dataset.fill !== undefined) {
+                        let i = +b.dataset.fill
+                          , val = $('fill' + i).value.trim();
+                        $('fillres' + i).innerHTML = val === d.v[i][0] ? '<span class="ok">✓ Chính xác</span>' : `<span class="err">Chưa đúng. Đáp án: ${safe(d.v[i][0])}</span>`
+                    }
+                }
+            }
+            ;function renderGrammar() {
+                let d = DATA[lesson];
+                $('grammarArea').innerHTML = d.grammar.map( (g, i) => `<div class="card"><h3>${i + 1}. ${safe(g[0])}</h3><p>${safe(g[1])}</p><p style="font-size:23px">${safe(g[2])} <button data-gram="${i}">🔊</button></p><p class="muted">${safe(g[3])}</p><p>Ứng dụng: Hãy tự đặt một câu dùng cấu trúc này.</p><textarea class="field" rows="2" placeholder="Viết câu tiếng Trung của bạn..."></textarea><button data-showgram="${i}">Xem câu tham khảo</button><div id="gr${i}" class="hidden result">${safe(g[2])}</div></div>`).join('');
+                $('grammarArea').onclick = e => {
+                    let b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.gram !== undefined)
+                        speak(d.grammar[+b.dataset.gram][2]);
+                    if (b.dataset.showgram !== undefined)
+                        $('gr' + b.dataset.showgram).classList.toggle('hidden')
+                }
+            }
+            const READING_Q = [[[{"q":"Hai người bạn sẽ đến Bắc Kinh khi nào?","a":"明天下午","ex":"明天下午：chiều mai; câu đầu nêu rõ thời gian.","opts":["明天下午","昨天上午","明天晚上"]},{"q":"Sau khi máy bay đến, họ cần làm gì trước khi ra lối ra?","a":"先拿行李","ex":"先拿行李，再到出口等我：lấy hành lý trước rồi đến lối ra.","opts":["先拿行李","先买咖啡","先回学校"]},{"q":"Nếu không tìm thấy người đón, họ sẽ làm gì?","a":"打电话","ex":"如果找不到我，就给我打电话：gọi điện cho người đón.","opts":["给我打电话","自己坐车回家","在饭馆等"]}],[{"q":"Vì sao người kể đến sân bay muộn?","a":"看错了时间","ex":"Người kể 看错了时间, tưởng 11 giờ thay vì 10 giờ.","opts":["看错了时间","飞机晚点了","忘记带行李"]},{"q":"Anna đã chờ bao lâu?","a":"半个小时","ex":"她已经等了半个小时：đã đợi nửa tiếng.","opts":["半个小时","两个小时","十分钟"]},{"q":"Hai người trở về trường bằng phương tiện gì?","a":"地铁","ex":"我们一起坐地铁回学校：cùng đi tàu điện ngầm về trường.","opts":["地铁","出租车","公交车"]}],[{"q":"Trước chuyến đi, cô bạn đã tìm thông tin gì?","a":"交通信息","ex":"她在网上查了机场到市中心的交通信息：tra cứu đường từ sân bay đến trung tâm.","opts":["机场到市中心的交通信息","北京的天气","学校课程"]},{"q":"Sau khi đến sân bay, cô ấy gặp hai khó khăn gì?","a":"手机没有网络，也不知道在哪儿买车票","ex":"Cô ấy không có mạng điện thoại và không biết mua vé ở đâu.","opts":["手机没有网络，也不知道在哪儿买车票","找不到护照","忘记航班号"]},{"q":"Theo đoạn cuối, ngoài chuẩn bị trước còn nên làm gì khi gặp vấn đề?","a":"主动向别人求助","ex":"遇到问题时，主动向别人求助也很重要：chủ động nhờ người khác giúp.","opts":["主动向别人求助","不和别人说话","立刻回家"]}]],[[{"q":"Họ đi ăn ở đâu vào tối nay?","a":"中国饭馆","ex":"今天晚上，我们去一家中国饭馆吃饭：một nhà hàng Trung Quốc.","opts":["中国饭馆","学校食堂","咖啡馆"]},{"q":"Người kể muốn ăn những gì?","a":"米饭和鸡肉","ex":"我想吃米饭和鸡肉：cơm và thịt gà.","opts":["米饭和鸡肉","面条和牛肉","饺子和鱼"]},{"q":"Món ăn có đặc điểm gì khiến người kể lưu ý?","a":"有一点儿辣","ex":"菜的味道很好，就是有一点儿辣：ngon nhưng hơi cay.","opts":["有一点儿辣","太甜","太咸"]}],[{"q":"Vì sao hai người bạn ăn chậm lúc đầu?","a":"以前没有用过筷子","ex":"他们以前没有用过筷子：trước đó chưa dùng đũa.","opts":["以前没有用过筷子","菜太辣","没有菜单"]},{"q":"Nhân viên phục vụ đã đưa cho họ vật gì?","a":"勺子","ex":"服务员…给他们拿来了勺子：đưa thìa.","opts":["勺子","叉子","筷子"]},{"q":"Cuối buổi, họ muốn tự làm gì vào lần sau?","a":"自己点菜","ex":"还说下次要自己点菜：lần sau muốn tự gọi món.","opts":["自己点菜","自己做饭","自己买菜"]}],[{"q":"Trong buổi liên hoan, hai bạn có yêu cầu ăn uống khác nhau thế nào?","a":"一位不吃肉，另一位不能吃太辣","ex":"Một người không ăn thịt, một người không ăn quá cay.","opts":["一位不吃肉，另一位不能吃太辣","两人都不吃饭","两人都只吃甜食"]},{"q":"Cả nhóm đã làm gì để phù hợp với mọi người?","a":"点了几道不同口味的菜","ex":"最后点了几道不同口味的菜：gọi món với nhiều hương vị.","opts":["点了几道不同口味的菜","只点了辣菜","没有点菜"]},{"q":"Vì sao chọn món mất thời gian nhưng vẫn đáng?","a":"每个人都吃得很开心","ex":"虽然选择花了一点时间，但是每个人都吃得很开心：mọi người đều vui.","opts":["每个人都吃得很开心","饭馆关门了","大家都不满意"]}]],[[{"q":"Nhà mới cách trường bao xa nếu đi bộ?","a":"十分钟","ex":"走路十分钟就能到：đi bộ 10 phút.","opts":["十分钟","半个小时","一个小时"]},{"q":"Trong nhà có mấy phòng ngủ?","a":"两个卧室","ex":"房子里有两个卧室：hai phòng ngủ.","opts":["两个卧室","一个卧室","三个卧室"]},{"q":"Người kể nhận xét thế nào về khu dân cư?","a":"很安静，环境也不错","ex":"小区很安静，环境也不错：yên tĩnh, môi trường tốt.","opts":["很安静，环境也不错","很吵","离学校很远"]}],[{"q":"Nhược điểm của căn nhà thứ nhất là gì?","a":"离地铁站太远","ex":"第一套房子很大，但是离地铁站太远：xa ga tàu điện ngầm.","opts":["离地铁站太远","没有厨房","房子太小"]},{"q":"Căn nhà thứ hai có những tiện ích nào gần đó?","a":"超市、医院和公园","ex":"附近有超市、医院和公园：siêu thị, bệnh viện, công viên.","opts":["超市、医院和公园","机场和火车站","商场和电影院"]},{"q":"Vì sao người kể muốn xem lại căn thứ hai?","a":"生活方便，环境挺好","ex":"Bạn thấy phù hợp; người kể cũng thấy môi trường tốt và tiện lợi.","opts":["生活方便，环境挺好","价格最贵","离地铁最远"]}],[{"q":"Đối với sinh viên, hai yếu tố nhà ở nào quan trọng?","a":"离学校近，附近有公共交通","ex":"离学校近不近、附近有没有公共交通：gần trường và giao thông công cộng.","opts":["离学校近，附近有公共交通","只看房子大小","只看商场"]},{"q":"Nhà cũ ở trung tâm có bất tiện gì vào buổi tối?","a":"晚上有点儿吵","ex":"晚上有点儿吵：buổi tối hơi ồn.","opts":["晚上有点儿吵","白天太冷","离机场太近"]},{"q":"Thông điệp chính ở câu cuối là gì?","a":"适合自己的生活方式更重要","ex":"适合自己的生活方式比别人认为的“好房子”更重要：hợp với bản thân quan trọng hơn đánh giá người khác.","opts":["适合自己的生活方式更重要","越贵的房子越好","别人喜欢最重要"]}]],[[{"q":"两个人为什么选择这家宾馆？","a":"离湖不远","ex":"文章说他们最后选择了一家离湖不远的宾馆。","opts":["离湖不远","价格最贵","离机场最近"]},{"q":"姐姐为什么改变了晚上拍照的计划？","a":"湖边的山路晚上没有灯","ex":"服务员提醒晚上山路没有灯，姐姐因此决定早起。","opts":["湖边的山路晚上没有灯","相机坏了","突然下大雨"]},{"q":"姐姐觉得旅行中最难忘的是什么？","a":"安静的感觉","ex":"结尾明确说最难忘的是安静的感觉。","opts":["安静的感觉","宾馆的早餐","买到的礼物"]}],[{"q":"他们为什么没有按原计划出发？","a":"朋友发烧了","ex":"朋友发烧，医生建议休息。","opts":["朋友发烧了","飞机取消了","宾馆关门了"]},{"q":"小李先联系了谁？","a":"宾馆工作人员","ex":"小李先给宾馆打电话修改入住时间。","opts":["宾馆工作人员","海边的游客","机场警察"]},{"q":"改期以后旅行有什么变化？","a":"天气好而且游客较少","ex":"文末说明晴天且游客较少。","opts":["天气好而且游客较少","一直下雨","宾馆更远了"]}],[{"q":"王老师出发前要求学生做什么？","a":"自己查路线","ex":"出发前老师让学生自己查路线。","opts":["自己查路线","只看照片","先买纪念品"]},{"q":"参观展览后学生有什么新发现？","a":"普通建筑也很有意思","ex":"展览让学生理解老房子的特点。","opts":["普通建筑也很有意思","古镇没有历史","河边没有房子"]},{"q":"下雨后学生在哪里整理笔记？","a":"茶馆里","ex":"文章说下午下雨，大家在茶馆整理笔记。","opts":["茶馆里","车站里","学校教室里"]}]],[[{"q":"老师为什么不满意第一张照片？","a":"照片缺少明确的故事","ex":"老师问照片想表达什么，小雨答不上来。","opts":["照片缺少明确的故事","照片没有颜色","照片不是用手机拍的"]},{"q":"第二张照片拍的是谁？","a":"奶奶","ex":"照片里是奶奶在厨房做饭。","opts":["奶奶","老师","同学"]},{"q":"小雨最后选择第二张照片的原因是什么？","a":"它让她想起童年的回忆","ex":"第二张照片有个人回忆和故事。","opts":["它让她想起童年的回忆","它的光线最好","它拍得最清楚"]}],[{"q":"他们最初约在哪里拍照？","a":"操场","ex":"约定下午三点在操场。","opts":["操场","图书馆里面","食堂"]},{"q":"小林为什么让大家换地方？","a":"太阳太亮","ex":"光线太强使大家睁不开眼睛。","opts":["太阳太亮","操场太冷","朋友迟到了"]},{"q":"大家最喜欢哪张照片？","a":"自然笑起来的照片","ex":"最后大家喜欢真实开心的瞬间。","opts":["自然笑起来的照片","站得最整齐的照片","没有人的风景照"]}],[{"q":"摄影展的主题是什么？","a":"我的城市","ex":"摄影展主题明确是“我的城市”。","opts":["我的城市","我的家人","校园运动会"]},{"q":"小陈为了写说明做了什么？","a":"采访卖书的爷爷","ex":"他采访爷爷了解街道历史。","opts":["采访卖书的爷爷","买了新相机","去了别的城市"]},{"q":"同学们从展览中明白了什么？","a":"好照片也能传递信息","ex":"结尾强调照片不仅好看，还能帮助认识地方。","opts":["好照片也能传递信息","旧街道不能拍照","商场最有故事"]}]],[[{"q":"小王为什么在车上很饿？","a":"早上只喝了牛奶","ex":"他早上只喝了一杯牛奶。","opts":["早上只喝了牛奶","午饭掉了","朋友没来接他"]},{"q":"订餐时需要填写什么？","a":"车厢和座位号","ex":"文章说明要填写车厢和座位号。","opts":["车厢和座位号","家庭地址","朋友的姓名"]},{"q":"小王为什么建议提前下单？","a":"有些餐点会卖完","ex":"他解释部分餐点很快卖完。","opts":["有些餐点会卖完","列车会提前到站","手机不能付款"]}],[{"q":"陈明为什么错过高铁？","a":"路上堵车而且出门晚","ex":"路上堵车导致到站太晚。","opts":["路上堵车而且出门晚","车票丢了","忘了带身份证"]},{"q":"错过后他做了什么？","a":"查看下一班车并通知家人","ex":"他查下一班并打电话说明。","opts":["查看下一班车并通知家人","马上回公司","取消所有行程"]},{"q":"这次经历让他学到什么？","a":"出发时要预留交通时间","ex":"结尾说明以后要留更多交通时间。","opts":["出发时要预留交通时间","高铁总是晚点","不要提前买票"]}],[{"q":"年轻人怎样帮李阿姨找检票口？","a":"查看车票和电子屏幕","ex":"他先核对车次时间，再看电子屏幕。","opts":["查看车票和电子屏幕","直接猜了一个","打电话给女儿"]},{"q":"乘客提醒她注意什么？","a":"贵重物品随身带","ex":"乘客提醒贵重物品随身携带。","opts":["贵重物品随身带","不要带行李","不要提前下车"]},{"q":"李阿姨最后的感受是什么？","a":"紧张但受到很多帮助","ex":"最后消息说遇到很多热心人。","opts":["紧张但受到很多帮助","非常生气","后悔出门"]}]],[[{"q":"小美最初看中了什么？","a":"红色裙子","ex":"最初看中红色裙子。","opts":["红色裙子","蓝色外套","黑色鞋子"]},{"q":"他们为什么最后买外套？","a":"更舒服也适合秋天","ex":"外套布料舒服且适合季节。","opts":["更舒服也适合秋天","因为最便宜","因为没有其他颜色"]},{"q":"小美从买礼物中明白了什么？","a":"要考虑收礼物人的需要","ex":"结尾强调了解收礼物的人。","opts":["要考虑收礼物人的需要","只买自己喜欢的","价格越高越好"]}],[{"q":"衬衫有什么问题？","a":"颜色偏深而且袖子短","ex":"文章明确提到颜色和袖长问题。","opts":["颜色偏深而且袖子短","价格太贵","没有扣子"]},{"q":"店员允许换货的条件是什么？","a":"没洗过且保留标签","ex":"店员要求未洗且标签保留。","opts":["没洗过且保留标签","必须买两件","必须当天寄回"]},{"q":"小张以后打算怎样购物？","a":"看尺寸表和评价","ex":"最后决定看尺寸表和评价。","opts":["看尺寸表和评价","只看照片","不再买任何衣服"]}],[{"q":"小马为什么喜欢实体店？","a":"可以试穿和摸布料","ex":"实体店可试穿并判断质量。","opts":["可以试穿和摸布料","商品总是免费","不用出门"]},{"q":"小刘买鞋遇到了什么问题？","a":"尺寸不合适","ex":"网购鞋子尺码不合适。","opts":["尺寸不合适","颜色没有了","鞋子丢失了"]},{"q":"他们最后的共同看法是什么？","a":"购物方式要看具体需要","ex":"他们认为不同情况适合不同方式。","opts":["购物方式要看具体需要","网购永远最好","实体店永远最便宜"]}]],[[{"q":"医生出院后建议林老师做什么？","a":"休息并按时吃药","ex":"医生要求休息、吃药和适量散步。","opts":["休息并按时吃药","立刻回学校","每天跑十公里"]},{"q":"妻子为什么劝他不要急着上课？","a":"他还需要恢复身体","ex":"出院后仍需休息。","opts":["他还需要恢复身体","学校放假了","学生不想上课"]},{"q":"一周后林老师有什么认识？","a":"休息也很重要","ex":"结尾强调休息和工作一样重要。","opts":["休息也很重要","工作越多越好","看书会生病"]}],[{"q":"小周以前有什么生活习惯？","a":"经常熬夜不吃早饭","ex":"文章说他常熬夜且不按时吃早饭。","opts":["经常熬夜不吃早饭","每天早睡","天天运动"]},{"q":"他怎样帮助自己坚持运动？","a":"请同事陪他散步","ex":"请同事中午一起散步。","opts":["请同事陪他散步","买了一辆车","每天去游泳"]},{"q":"小周最后明白了什么？","a":"健康习惯需要每天坚持","ex":"结尾强调每天坚持。","opts":["健康习惯需要每天坚持","只有生病才要运动","改变越大越好"]}],[{"q":"小芳为什么总是学习到很晚？","a":"担心考试成绩","ex":"她担心考试成绩不好。","opts":["担心考试成绩","想去旅行","老师要求通宵"]},{"q":"朋友给她什么建议？","a":"制定计划并早点休息","ex":"朋友建议合理安排学习和睡眠。","opts":["制定计划并早点休息","完全不复习","每天只看电视"]},{"q":"小芳感谢朋友的原因是什么？","a":"帮助学习也关心健康","ex":"朋友既帮复习也提醒照顾身体。","opts":["帮助学习也关心健康","送了昂贵礼物","帮她请假"]}]]];
+            function renderReading() {
+                const d = DATA[lesson];
+                $('readingArea').innerHTML = d.read.map( (r, i) => `<div class="card"><h3>Đoạn ${i + 1} · ${safe(r[0])}</h3><p class="reading">${safe(r[1])}</p><button data-read="${i}">🔊 Nghe đoạn văn</button><p class="muted">Đọc toàn bộ câu chuyện, chú ý trình tự sự việc, nguyên nhân và kết quả. Nhấn “Chấm đoạn này” để xem điểm và giải thích từng câu.</p>${READING_Q[lesson][i].map( (q, j) => `<div class="practice-box"><b>Câu ${j + 1}. ${safe(q.q)}</b>${q.opts.map( (opt, k) => `<label style="display:block;margin:7px 0"><input type="radio" name="read_${lesson}_${i}_${j}" value="${k}"> ${safe(opt)}</label>`).join('')}<div id="readFeedback_${i}_${j}" aria-live="polite"></div></div>`).join('')}<button class="primary" data-grade-read="${i}">✓ Chấm đoạn ${i + 1} và xem giải thích</button><div id="readScore_${i}" class="result hidden"></div></div>`).join('');
+                $('readingArea').onclick = e => {
+                    let b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.read !== undefined) {
+                        speak(d.read[+b.dataset.read][1]);
+                        return;
+                    }
+                    if (b.dataset.gradeRead !== undefined) {
+                        const i = +b.dataset.gradeRead;
+                        let correct = 0;
+                        READING_Q[lesson][i].forEach( (q, j) => {
+                            let selected = document.querySelector(`input[name="read_${lesson}_${i}_${j}"]:checked`);
+                            let good = !!selected && Number(selected.value) === 0;
+                            if (good)
+                                correct++;
+                            $('readFeedback_' + i + '_' + j).innerHTML = `<div class="result ${good ? '' : 'bad'}">${good ? '✓ Đúng' : '✗ Chưa đúng'} · <b>Đáp án: ${safe(q.opts[0])}</b><br><span>${safe(q.ex)}</span></div>`;
+                        }
+                        );
+                        let score = $('readScore_' + i);
+                        score.classList.remove('hidden');
+                        score.innerHTML = `<b>Kết quả đoạn ${i + 1}: ${correct}/3 câu · ${Math.round(correct / 3 * 100)}/100 điểm.</b> ${correct === 3 ? 'Em đã nắm được các chi tiết chính.' : 'Hãy đọc lại những câu chứa thông tin được giải thích ở trên.'}`;
+                    }
+                }
+                ;
+            }
+            function renderTranslate() {
+                let d = DATA[lesson];
+                let block = (arr, title) => `<h3>${title}</h3>` + arr.map( (s, i) => `<div class="practice-box"><b>${i + 1}. ${safe(s)}</b><textarea class="field" rows="2" placeholder="Nhập bản dịch của bạn"></textarea><button data-answer="${title === 'Trung → Việt' ? 'zh' : 'vi'}${i}">Hiện đáp án tham khảo</button><div id="tr${title === 'Trung → Việt' ? 'zh' : 'vi'}${i}" class="hidden result">${title === 'Trung → Việt' ? safe(d.transvi[i] || 'Hãy đối chiếu từ điển và giáo viên.') : safe(d.transzh[i] || 'Hãy đối chiếu từ điển và giáo viên.')}</div></div>`).join('');
+                $('translateArea').innerHTML = '<p class="muted">Bài dịch tự do: học sinh tự đối chiếu đáp án tham khảo, chưa chấm tự động.</p>' + block(d.sent, 'Trung → Việt') + block(d.transvi, 'Việt → Trung');
+                $('translateArea').onclick = e => {
+                    let b = e.target.closest('[data-answer]');
+                    if (b)
+                        $('tr' + b.dataset.answer).classList.toggle('hidden')
+                }
+            }
+            function questions() {
+                let d = DATA[lesson]
+                  , extra = d.v.slice(0, 5).map( (w, i) => ({
+                    q: `Chọn nghĩa của “${w[0]}”`,
+                    opts: [w[2], d.v[(i + 1) % d.v.length][2], d.v[(i + 2) % d.v.length][2], d.v[(i + 3) % d.v.length][2]],
+                    answer: 0,
+                    explain: `${w[0]} (${w[1]}) nghĩa là ${w[2]}.`
+                }));
+                return [...d.quiz, ...extra]
+            }
+            function renderTest() {
+                answers = {};
+                $('score').innerHTML = '';
+                $('testArea').innerHTML = questions().map( (q, i) => `<div class="card"><b>Câu ${i + 1}. ${safe(q.q)}</b>${q.opts.map( (o, j) => `<button class="option" data-q="${i}" data-opt="${j}">${String.fromCharCode(65 + j)}. ${safe(o)}</button>`).join('')}<div id="ex${i}"></div></div>`).join('');
+                $('testArea').onclick = e => {
+                    let b = e.target.closest('[data-q]');
+                    if (!b)
+                        return;
+                    let i = +b.dataset.q;
+                    answers[i] = +b.dataset.opt;
+                    b.parentElement.querySelectorAll('[data-q]').forEach(x => x.classList.toggle('selected', x === b))
+                }
+            }
+            $('submit').onclick = () => {
+                let qs = questions()
+                  , correct = 0;
+                qs.forEach( (q, i) => {
+                    let ok = answers[i] === q.answer;
+                    if (ok)
+                        correct++;
+                    $('ex' + i).innerHTML = `<div class="result ${ok ? '' : 'bad'}">${ok ? '✓ Đúng' : '✗ Chưa đúng'} · Đáp án: <b>${String.fromCharCode(65 + q.answer)}. ${safe(q.opts[q.answer])}</b><p>${safe(q.explain)}</p></div>`
+                }
+                );
+                let score = Math.round(correct / qs.length * 100);
+                $('score').innerHTML = `<div class="card"><h2>Điểm: ${score}/100</h2><p>Đúng ${correct}/${qs.length} câu; chưa trả lời ${qs.length - Object.keys(answers).length} câu.</p><p>Điểm sẽ được gửi lên hệ thống quản lý giáo viên sau khi chấm.</p></div>`;
+                save('hsk3_score_' + lesson, JSON.stringify({
+                    score,
+                    correct,
+                    total: qs.length,
+                    time: new Date().toLocaleString('vi-VN')
+                }));
+                $('syncScore').disabled = !window.HSK3_SCORE_API;
+                $('syncScore').textContent = window.HSK3_SCORE_API ? 'Gửi điểm về giáo viên' : 'Gửi điểm về giáo viên (chưa cấu hình)';
+                if ($('studentName').value.trim() && $('studentClass').value.trim()) {
+                    setTimeout( () => $('syncScore').click(), 0)
+                } else {
+                    $('syncStatus').textContent = 'Đã chấm bài. Nhập họ tên và lớp rồi bấm Gửi điểm về giáo viên để lưu.';
+                }
+                $('score').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                })
+            }
+            ;
+            function loadLesson(i) {
+                lesson = i;
+                let d = DATA[i];
+                $('lessonTitle').textContent = `Bài ${i + 1} · ${d.title}`;
+                $('lessonVi').textContent = d.vi;
+                document.querySelectorAll('[data-lesson]').forEach(b => b.classList.toggle('active', +b.dataset.lesson === i));
+                wordIndex = 0;
+                flipped = false;
+                weakOnly = false;
+                [['Thẻ từ', renderWord], ['Danh sách từ', renderVocabList], ['Chữ Hán', renderHanzi], ['Ngữ pháp', renderGrammar], ['Đọc hiểu', renderReading], ['Luyện dịch', renderTranslate], ['Kiểm tra', renderTest]].forEach( ([name,fn]) => {
+                    try {
+                        fn()
+                    } catch (e) {
+                        console.error('Lỗi mục ' + name, e);
+                        const area = {
+                            'Chữ Hán': 'hanziArea',
+                            'Ngữ pháp': 'grammarArea',
+                            'Đọc hiểu': 'readingArea',
+                            'Luyện dịch': 'translateArea',
+                            'Kiểm tra': 'testArea',
+                            'Kết quả': 'resultArea'
+                        }[name];
+                        if (area)
+                            $(area).textContent = 'Mục ' + name + ' gặp lỗi: ' + e.message
+                    }
+                }
+                );
+            }
+
+
+            /* Bản nâng cấp: luyện viết kiểu Hán ngữ 1, ngữ pháp ứng dụng, kiểm tra hỗn hợp. */
+            const PRACTICE = [{
+                fill: [['明天我们去___接朋友。', '机场', 'Địa điểm đón khách.'], ['我___你们吃饭。', '请', 'Mời ai làm gì.'], ['我___听懂老师的话。', '没', 'Phủ định kết quả đã xảy ra.'], ['你___去北京旅游吗？', '想', 'Diễn tả mong muốn.']],
+                fix: [['我明天机场去接朋友。', '我明天去机场接朋友。', 'Động từ 去 đứng trước địa điểm.'], ['她请吃我们饭。', '她请我们吃饭。', '请 + người + động từ.'], ['我听了懂老师的话。', '我听懂了老师的话。', 'Bổ ngữ kết quả đặt sau động từ.'], ['你想不想去旅游吗？', '你想不想去旅游？', 'Câu hỏi chính phản không thêm 吗.']],
+                order: [['机场 / 我们 / 去 / 明天', '我们明天去机场。'], ['介绍 / 让我 / 一下', '让我介绍一下。']]
+            }, {
+                fill: [['你想吃___就点什么。', '什么', '什么…就…'], ['这家饭馆的菜___好吃。', '很', 'Phó từ mức độ.'], ['我___喝茶，不想喝咖啡。', '想', 'Diễn tả mong muốn.'], ['我们___吃完饭再走。', '先', '先…再…']],
+                fix: [['你想吃什么就点哪儿。', '你想吃什么就点什么。', '什么…就…'], ['我喜欢很吃饺子。', '我很喜欢吃饺子。', '很 đặt trước 喜欢.'], ['我们先去吃饭再。', '我们先去吃饭，再回家。', '再 cần có hành động theo sau.'], ['你喝茶还是喝咖啡吗？', '你喝茶还是喝咖啡？', 'Câu hỏi lựa chọn 还是 không thêm 吗.']],
+                order: [['什么 / 想 / 吃 / 你', '你想吃什么？'], ['先 / 我们 / 吃饭 / 再 / 回家', '我们先吃饭再回家。']]
+            }, {
+                fill: [['这个小区___好的。', '挺', '挺…的 biểu thị đánh giá.'], ['这里___学校很近。', '离', '离 + nơi chốn + 近.'], ['我___住在这个小区。', '想', 'Diễn tả mong muốn.'], ['房间___大，也很干净。', '很', 'Phó từ mức độ.']],
+                fix: [['这里学校离很近。', '这里离学校很近。', 'A 离 B 很近.'], ['这个小区挺好。的', '这个小区挺好的。', '的 đứng cuối cụm đánh giá.'], ['我家很近离学校。', '我家离学校很近。', '离 đứng trước địa điểm so sánh.'], ['这个房间比那个房间很大。', '这个房间比那个房间大。', 'Câu so sánh 比 không dùng 很 trực tiếp trước tính từ.']],
+                order: [['小区 / 这个 / 挺好的', '这个小区挺好的。'], ['离 / 我家 / 学校 / 很近', '我家离学校很近。']]
+            },[{"fill": [["这家宾馆跟那家不___。", "一样", "跟…不一样: không giống."], ["我一点儿___不累。", "也", "一…也不: phủ định hoàn toàn."], ["___北京以外，我还去过上海。", "除了", "除了…以外: ngoài… ra."], ["飞机马上要___了。", "起飞", "起飞: cất cánh."]], "fix": [["这家宾馆跟那家一样不。", "这家宾馆跟那家不一样。", "不一样 đặt sau đối tượng so sánh."], ["我一点儿累也不。", "我一点儿也不累。", "一…也不…"], ["除了北京我以外去过上海。", "除了北京以外，我还去过上海。", "除了…以外…"], ["飞机起飞快要了。", "飞机快要起飞了。", "快要 + động từ + 了."]], "order": [["跟 / 这家宾馆 / 不一样 / 那家", "这家宾馆跟那家不一样。"], ["一点儿 / 我 / 也 / 不累", "我一点儿也不累。"]]}, {"fill": [["他跑___很快。", "得", "Động từ + 得 + bổ ngữ."], ["这些照片___张都好看。", "张", "Lặp lượng từ 张张."], ["树上___几只鸟。", "有", "Câu tồn tại dùng 有."], ["我一到家___给你打电话。", "就", "一…就…"]], "fix": [["他跑很快得。", "他跑得很快。", "得 đứng sau động từ."], ["这些照片都张张好看。", "这些照片张张都好看。", "张张都…"], ["树上几只鸟有。", "树上有几只鸟。", "Địa điểm + 有 + sự vật."], ["我一到家给你就打电话。", "我一到家就给你打电话。", "就 đặt trước động từ."]], "order": [["跑 / 得 / 他 / 很快", "他跑得很快。"], ["有 / 树上 / 几只鸟", "树上有几只鸟。"]]}, {"fill": [["我们___出发了。", "该", "该…了: đến lúc."], ["___不堵车，我们就不会迟到。", "如果", "如果…就…"], ["坐高铁越来___方便。", "越", "越来越…"], ["上车前___检查车票。", "必须", "必须: nhất định phải."]], "fix": [["我们出发该了。", "我们该出发了。", "该 + động từ + 了."], ["如果不堵车，就我们不会迟到。", "如果不堵车，我们就不会迟到。", "Chủ ngữ đứng trước 就."], ["坐高铁越方便来越。", "坐高铁越来越方便。", "越来越 + tính từ."], ["上车前检查必须车票。", "上车前必须检查车票。", "必须 đứng trước động từ."]], "order": [["该 / 我们 / 出发 / 了", "我们该出发了。"], ["越来越 / 坐高铁 / 方便", "坐高铁越来越方便。"]]}, {"fill": [["这条裙子___那条更漂亮。", "比", "比…更…"], ["这件衣服又便宜___舒服。", "又", "又…又…"], ["我想___一下这条裙子。", "试", "试一下: thử."], ["这个颜色不太___我。", "适合", "适合: phù hợp."]], "fix": [["这条裙子更比那条漂亮。", "这条裙子比那条更漂亮。", "比 đặt trước đối tượng so sánh."], ["这件衣服便宜又又舒服。", "这件衣服又便宜又舒服。", "又…又…"], ["我一下试这条裙子。", "我试一下这条裙子。", "Động từ + 一下."], ["这个颜色我不太适合。", "这个颜色不太适合我。", "适合 + người."]], "order": [["比 / 这条裙子 / 更漂亮 / 那条", "这条裙子比那条更漂亮。"], ["又 / 这件衣服 / 舒服 / 又 / 便宜", "这件衣服又便宜又舒服。"]]}, {"fill": [["我___出院了。", "终于", "终于: cuối cùng."], ["你___多休息。", "应该", "应该: nên."], ["___发烧，所以他去医院了。", "因为", "因为…所以…"], ["医生让我好好___。", "休息", "休息: nghỉ ngơi."]], "fix": [["我出院终于了。", "我终于出院了。", "终于 đứng trước động từ."], ["你多应该休息。", "你应该多休息。", "应该 + 多 + động từ."], ["因为发烧，他所以去医院了。", "因为发烧，所以他去医院了。", "所以 đứng đầu vế kết quả."], ["医生让我休息好好。", "医生让我好好休息。", "好好 đứng trước động từ."]], "order": [["终于 / 我 / 出院 / 了", "我终于出院了。"], ["应该 / 你 / 多休息", "你应该多休息。"]]}]].flat();
+            const REVIEW = [['fill', '我___北京旅游过。', '去', 'Ôn HSK 2: 去 + địa điểm + 旅游.'], ['fill', '他昨天___去学校。', '没', 'Ôn HSK 2: 没 phủ định hành động quá khứ.'], ['fix', '我昨天去了学校吗不？', '我昨天没去学校。', 'Ôn HSK 2: 没 + động từ.'], ['fill', '你___茶还是咖啡？', '喝', 'Ôn HSK 2: động từ 喝.'], ['fix', '我比他很高。', '我比他高。', 'Ôn HSK 2: câu so sánh 比.'], ['fill', '我已经___完作业了。', '做', 'Ôn HSK 2: 做完.'], ['fix', '我明天去了北京。', '我明天去北京。', 'Ôn HSK 2: hành động tương lai không dùng 了 hoàn thành.'], ['fill', '我正在___汉语。', '学', 'Ôn HSK 2: 正在 + động từ.']];
+            function normalizeAnswer(v) {
+                return String(v || '').normalize('NFKC').replace(/[\s\u3000，。！？!?、,.；;：:“”"'‘’]/g, '').trim()
+            }
+            function grammarItems() {
+                let p = PRACTICE[lesson];
+                return [...p.fill.map(x => ({
+                    type: 'fill',
+                    q: 'Điền từ: ' + x[0],
+                    a: x[1],
+                    ex: x[2]
+                })), ...p.fix.map(x => ({
+                    type: 'fix',
+                    q: 'Sửa câu sai: ' + x[0],
+                    a: x[1],
+                    ex: x[2]
+                })), ...p.order.map(x => ({
+                    type: 'order',
+                    q: 'Sắp xếp thành câu: ' + x[0],
+                    a: x[1],
+                    ex: 'Chú ý trật tự câu tiếng Trung.'
+                })), ...REVIEW.slice(0, 2).map(x => ({
+                    type: x[0],
+                    q: (x[0] === 'fix' ? 'Sửa câu sai: ' : 'Điền từ: ') + x[1],
+                    a: x[2],
+                    ex: x[3]
+                }))]
+            }
+            function renderGrammar() {
+                let d = DATA[lesson]
+                  , items = grammarItems();
+                $('grammarArea').innerHTML = d.grammar.map( (g, i) => `<div class="card"><h3>${i + 1}. ${safe(g[0])}</h3><p>${safe(g[1])}</p><p style="font-size:23px">${safe(g[2])} <button data-gram="${i}">🔊</button></p><p class="muted">${safe(g[3])}</p></div>`).join('') + '<h3>🧩 Bài tập ứng dụng ngữ pháp · ' + items.length + ' câu</h3><p class="muted">Điền từ, sửa câu sai, sắp xếp câu và ôn tập HSK 2. Chấm đúng/sai từng câu.</p>' + items.map( (q, i) => `<div class="card"><b>${i + 1}. ${safe(q.q)}</b><input class="field" id="gp${i}" type="text" autocomplete="off" placeholder="Nhập câu hoặc chữ Hán" style="width:100%;margin:10px 0"><div id="gpr${i}"></div></div>`).join('') + '<button class="primary" id="gradeGrammar">✓ Chấm bài ngữ pháp</button> <button id="resetGrammar">↻ Làm lại</button><h3 id="grammarResult"></h3>';
+                $('grammarArea').onclick = e => {
+                    let b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.gram !== undefined) {
+                        speak(d.grammar[+b.dataset.gram][2]);
+                        return
+                    }
+                    if (b.id === 'resetGrammar') {
+                        renderGrammar();
+                        return
+                    }
+                    if (b.id === 'gradeGrammar') {
+                        let ok = 0;
+                        items.forEach( (q, i) => {
+                            let val = $('gp' + i).value
+                              , good = normalizeAnswer(val) === normalizeAnswer(q.a);
+                            ok += good;
+                            $('gpr' + i).innerHTML = `<div class="result ${good ? '' : 'bad'}">${good ? '✓ Đúng' : '✗ Chưa đúng'} · Đáp án: <b>${safe(q.a)}</b><br>${safe(q.ex)}</div>`
+                        }
+                        );
+                        $('grammarResult').textContent = `Kết quả: ${ok}/${items.length} câu · ${Math.round(ok / items.length * 100)}/100 điểm`
+                    }
+                }
+            }
+            function makeExam() {
+                let d = DATA[lesson]
+                  , p = PRACTICE[lesson];
+                let mc = d.quiz.slice(0, 10).map(x => ({
+                    type: 'mc',
+                    q: x.q,
+                    opts: x.opts,
+                    a: x.answer,
+                    ex: x.explain || 'Ôn tập từ mới và ngữ pháp.'
+                }));
+                let fills = p.fill.map(x => ({
+                    type: 'fill',
+                    q: x[0],
+                    a: x[1],
+                    ex: x[2]
+                }));
+                let fixes = p.fix.map(x => ({
+                    type: 'fix',
+                    q: x[0],
+                    a: x[1],
+                    ex: x[2]
+                }));
+                let orders = p.order.map(x => ({
+                    type: 'order',
+                    q: x[0],
+                    a: x[1],
+                    ex: 'Sắp xếp đúng vị trí thành phần câu.'
+                }));
+                let reviews = REVIEW.map(x => ({
+                    type: x[0],
+                    q: x[1],
+                    a: x[2],
+                    ex: x[3]
+                }));
+                return [...mc, ...fills, ...fixes, ...orders, ...reviews.slice(0, 5)];
+            }
+            function renderTest() {
+                const qs = makeExam();
+                window.hsk3Exam = qs;
+                answers = {};
+                $('score').innerHTML = '';
+                $('testArea').innerHTML = '<p class="muted">25 câu: 10 trắc nghiệm, 4 điền từ, 4 sửa câu sai, 2 sắp xếp câu, 5 ôn tập HSK 2. Mỗi câu 4 điểm.</p>' + qs.map( (q, i) => `<div class="card"><b>Câu ${i + 1}. ${q.type === 'fix' ? 'Sửa câu sai: ' : q.type === 'order' ? 'Sắp xếp câu: ' : q.type === 'fill' ? 'Điền từ: ' : ''}${safe(q.q)}</b>${q.type === 'mc' ? q.opts.map( (o, j) => `<button class="option" data-q="${i}" data-opt="${j}">${String.fromCharCode(65 + j)}. ${safe(o)}</button>`).join('') : `<input type="text" class="field" id="exam${i}" placeholder="Nhập đáp án bằng chữ Hán" style="width:100%;margin-top:12px">`}<div id="ex${i}"></div></div>`).join('');
+                $('testArea').onclick = e => {
+                    let b = e.target.closest('[data-q]');
+                    if (!b)
+                        return;
+                    let i = +b.dataset.q;
+                    answers[i] = +b.dataset.opt;
+                    b.parentElement.querySelectorAll('[data-q]').forEach(x => x.classList.toggle('selected', x === b))
+                }
+            }
+            $('submit').onclick = () => {
+                let qs = window.hsk3Exam
+                  , correct = 0
+                  , missing = 0;
+                qs.forEach( (q, i) => {
+                    let v = q.type === 'mc' ? answers[i] : $('exam' + i).value;
+                    let blank = v === undefined || String(v).trim() === '';
+                    if (blank)
+                        missing++;
+                    let ok = q.type === 'mc' ? v === q.a : normalizeAnswer(v) === normalizeAnswer(q.a);
+                    if (ok)
+                        correct++;
+                    let ans = q.type === 'mc' ? `${String.fromCharCode(65 + q.a)}. ${q.opts[q.a]}` : q.a;
+                    $('ex' + i).innerHTML = `<div class="result ${ok ? '' : 'bad'}">${ok ? '✓ Đúng' : '✗ Chưa đúng'} · Đáp án: <b>${safe(ans)}</b><p>${safe(q.ex)}</p></div>`
+                }
+                );
+                let score = Math.round(correct / qs.length * 100);
+                $('score').innerHTML = `<div class="card"><h2>Điểm: ${score}/100</h2><p>Đúng ${correct}/${qs.length} câu · Chưa trả lời ${missing} câu.</p><p>Đáp án nhập chữ được chấm theo đáp án mẫu; câu tương đương có thể cần giáo viên xem lại.</p><p>Điểm sẽ được gửi lên hệ thống quản lý giáo viên sau khi chấm.</p></div>`;
+                save('hsk3_score_' + lesson, JSON.stringify({
+                    score,
+                    correct,
+                    total: qs.length,
+                    time: new Date().toLocaleString('vi-VN')
+                }));
+                $('syncScore').disabled = !window.HSK3_SCORE_API;
+                $('syncScore').textContent = window.HSK3_SCORE_API ? 'Gửi điểm về giáo viên' : 'Gửi điểm về giáo viên (chưa cấu hình)';
+                if ($('studentName').value.trim() && $('studentClass').value.trim()) {
+                    setTimeout( () => $('syncScore').click(), 0)
+                } else {
+                    $('syncStatus').textContent = 'Đã chấm bài. Nhập họ tên và lớp rồi bấm Gửi điểm về giáo viên để lưu.';
+                }
+                $('score').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                })
+            }
+            ;
+            let writers = {};
+            function renderHanzi() {
+                let d = DATA[lesson]
+                  , chars = [...new Set(d.v.flatMap(w => [...w[0]]))].filter(c => /[\u3400-\u9fff]/.test(c)).slice(0, 16);
+                window.hsk3WriteChars = chars;
+                writers = {};
+                $('hanziArea').innerHTML = '<div class="card"><h3>✍️ Luyện viết chữ Hán – giao diện Hán ngữ 1</h3><p>Chọn chữ, bấm <b>Xem thứ tự nét</b> để xem ngay trong ô; bấm <b>Luyện nét</b> để viết theo nét và nhận phản hồi ✓/✗. Cần Internet để tải dữ liệu nét chuẩn.</p><div id="writingGrid" class="hsk3-writing">' + chars.map( (c, i) => `<div class="card" style="text-align:center"><div class="hanzi" style="font-size:39px">${safe(c)}</div><div id="stroke${i}" class="hsk3-square" aria-label="Ô luyện viết ${safe(c)}"></div><p id="strokeMsg${i}" class="muted">Chọn nút bên dưới</p><button data-animate="${i}">▶ Xem thứ tự nét</button> <button data-quiz="${i}" class="primary">✍️ Luyện nét</button></div>`).join('') + '</div></div><h3>👀 Nhận diện chữ Hán</h3><div id="hanziRecognize"></div><h3>📝 Điền từ vào chỗ trống</h3><div id="hanziFill"></div>';
+                let words = d.v.slice(0, 8);
+                $('hanziRecognize').innerHTML = words.map( (w, i) => {
+                    let opts = [w[0], ...d.v.filter(x => x[0] !== w[0]).slice(i + 1, i + 4).map(x => x[0])];
+                    return `<div class="card"><b>${i + 1}. Chọn chữ Hán: ${safe(w[2])}</b>${opts.map(o => `<button class="option" data-rec="${i}" data-val="${safe(o)}">${safe(o)}</button>`).join('')}<div id="rec${i}"></div></div>`
+                }
+                ).join('');
+                $('hanziFill').innerHTML = words.slice(0, 6).map( (w, i) => `<div class="card"><b>${i + 1}. ${safe(w[3].replace(w[0], '______'))}</b><p class="muted">Gợi ý: ${safe(w[2])}</p><input id="fill${i}" class="field" placeholder="Nhập chữ Hán"><button data-fill="${i}">Kiểm tra</button><div id="fillres${i}"></div></div>`).join('');
+                $('hanziArea').onclick = async e => {
+                    let b = e.target.closest('button');
+                    if (!b)
+                        return;
+                    if (b.dataset.rec !== undefined) {
+                        let i = +b.dataset.rec
+                          , ok = b.dataset.val === words[i][0];
+                        $('rec' + i).innerHTML = ok ? '✓ Chính xác' : `✗ Đáp án: ${safe(words[i][0])}`;
+                        return
+                    }
+                    if (b.dataset.fill !== undefined) {
+                        let i = +b.dataset.fill
+                          , ok = normalizeAnswer($('fill' + i).value) === normalizeAnswer(words[i][0]);
+                        $('fillres' + i).textContent = ok ? '✓ Chính xác' : `✗ Đáp án: ${words[i][0]}`;
+                        return
+                    }
+                    let isQuiz = b.dataset.quiz !== undefined
+                      , idx = Number(isQuiz ? b.dataset.quiz : b.dataset.animate);
+                    if (!Number.isInteger(idx))
+                        return;
+                    let msg = $('strokeMsg' + idx);
+                    msg.textContent = 'Đang tải dữ liệu nét…';
+                    try {
+                        await ensureWriter();
+                        if (!writers[idx]) {
+                            writers[idx] = HanziWriter.create('stroke' + idx, chars[idx], {
+                                width: 174,
+                                height: 174,
+                                padding: 8,
+                                showOutline: true,
+                                showCharacter: false,
+                                strokeAnimationSpeed: 1,
+                                delayBetweenStrokes: 250
+                            })
+                        }
+                        let w = writers[idx];
+                        w.cancelQuiz();
+                        if (!isQuiz) {
+                            w.animateCharacter();
+                            msg.textContent = 'Đang xem thứ tự nét ngay trong ô.'
+                        } else {
+                            let right = 0
+                              , wrong = 0;
+                            msg.textContent = 'Viết theo nét trong ô';
+                            w.quiz({
+                                showHintAfterMisses: 2,
+                                onMistake: () => {
+                                    wrong++;
+                                    msg.textContent = `✗ Sai nét · Đúng ${right}, sai ${wrong}`
+                                }
+                                ,
+                                onCorrectStroke: () => {
+                                    right++;
+                                    msg.textContent = `✓ Đúng nét ${right} · Sai ${wrong}`
+                                }
+                                ,
+                                onComplete: () => {
+                                    msg.textContent = `✓ Hoàn thành ${right} nét · ${wrong} lần sai`
+                                }
+                            })
+                        }
+                    } catch (err) {
+                        msg.textContent = 'Chưa tải được dữ liệu nét. Hãy bật Internet rồi thử lại.';
+                        console.error(err)
+                    }
+                }
+                ;
+            }
+            function ensureWriter() {
+                if (window.HanziWriter)
+                    return Promise.resolve();
+                if (window._hsk3WriterPromise)
+                    return window._hsk3WriterPromise;
+                window._hsk3WriterPromise = new Promise( (resolve, reject) => {
+                    let s = document.createElement('script');
+                    s.src = 'https://cdn.jsdelivr.net/npm/hanzi-writer@3.7/dist/hanzi-writer.min.js';
+                    s.onload = () => window.HanziWriter ? resolve() : reject(Error('HanziWriter không sẵn sàng'));
+                    s.onerror = () => reject(Error('Không tải được thư viện nét'));
+                    document.head.append(s)
+                }
+                ).catch(e => {
+                    window._hsk3WriterPromise = null;
+                    throw e
+                }
+                );
+                return window._hsk3WriterPromise
+            }
+            loadLesson(0);
+
+            // Điền đường dẫn API đã xác thực của website hiện tại SAU KHI đối chiếu mã nguồn backend.
+            // Không đặt Supabase service_role key trong HTML hoặc GitHub.
+            window.HSK3_SCORE_API = '/api/new-hsk3';
+            let lastExamResult = null;
+            $('syncScore').addEventListener('click', async () => {
+                const status = $('syncStatus')
+                  , name = $('studentName').value.trim()
+                  , className = $('studentClass').value.trim();
+                if (!name || !className) {
+                    status.textContent = 'Vui lòng nhập đủ họ tên và lớp.';
+                    return;
+                }
+                if (!window.HSK3_SCORE_API) {
+                    status.textContent = 'Chưa kết nối API quản lý điểm. Chưa gửi dữ liệu.';
+                    return;
+                }
+                const raw = storage('hsk3_score_' + lesson);
+                if (!raw) {
+                    status.textContent = 'Hãy hoàn thành bài kiểm tra trước.';
+                    return;
+                }
+                const result = JSON.parse(raw);
+                const payload = {
+                    curriculum: 'NEW_HSK3',
+                    book: 'NEW HSK 3 (3.0)',
+                    lesson: lesson + 1,
+                    lesson_title: DATA[lesson].title,
+                    student_name: name,
+                    class_name: className,
+                    exam: 'Đề 1',
+                    score: result.score,
+                    correct: result.correct,
+                    total: result.total,
+                    submitted_at: new Date().toISOString()
+                };
+                try {
+                    if (location.protocol === 'file:') { status.textContent = 'Để lưu điểm, hãy mở trang trên Cloudflare Preview. File mở trực tiếp trên máy chỉ dùng để xem thử và làm bài.'; return; }
+                    status.textContent = 'Đang gửi điểm…';
+                    $('syncScore').disabled = true;
+                    const response = await fetch(window.HSK3_SCORE_API, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        credentials: 'same-origin',
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) { const detail = await response.json().catch(() => ({})); throw new Error('HTTP ' + response.status + (detail.error ? ': ' + detail.error : '') + (detail.code ? ' [' + detail.code + ']' : '')); }
+                    const data = await response.json();
+                    if (data?.success === false || data?.error)
+                        throw new Error(data.error || 'API từ chối lưu');
+                    status.textContent = '✅ Đã lưu điểm vào hệ thống quản lý giáo viên.';
+                } catch (e) {
+                    status.textContent = 'Chưa lưu được điểm: ' + e.message;
+                } finally {
+                    $('syncScore').disabled = false;
+                }
+            }
+            );
+        </script>
+    </body>
+</html>
